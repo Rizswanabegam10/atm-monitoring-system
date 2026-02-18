@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>{{ atm }} Cash Trend</title>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .graph-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: #00c6ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #0072ff;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #ff4e50;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            max-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Back Button -->
+<a href="/" class="back-btn">← Back to Dashboard</a>
+
+<!-- Page Title -->
+<h1>📊 Cash Trend Analysis - {{ atm }}</h1>
+
+<!-- Graph Container -->
+<div class="graph-container">
+    {% if data and data|length > 0 %}
+        <canvas id="cashChart"></canvas>
+    {% else %}
+        <div class="no-data">
+            <p>⚠ No historical data available for this ATM yet.</p>
+            <p>Data will appear after the first MQTT update.</p>
+        </div>
+    {% endif %}
+</div>
+
+<!-- Chart Script -->
+<script>
+    // Get data from Python backend (tuples: [cash, timestamp])
+    const rawData = {{ data | tojson }};
+    
+    console.log("Raw Data:", rawData); // Debug log
+
+    {% if data and data|length > 0 %}
+        // Extract timestamps (index 1) and cash values (index 0)
+        const labels = rawData.map(item => item[1]);  // timestamp at index 1
+        const cashData = rawData.map(item => item[0]); // cash at index 0
+
+        console.log("Labels:", labels);
+        console.log("Cash Data:", cashData);
+
+        // Chart creation
+        const ctx = document.getElementById("cashChart").getContext("2d");
+        
+        new Chart(ctx, {
+            type: "line",
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: "Cash Amount (₹)",
+                    data: cashData,
+                    borderColor: "#00c6ff",
+                    backgroundColor: "rgba(0, 198, 255, 0.1)",
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 6,
+                    pointBackgroundColor: "#00c6ff",
+                    pointBorderColor: "white",
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 8,
+                    pointHoverBackgroundColor: "#00ff88"
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            color: "white",
+                            font: {
+                                size: 14,
+                                weight: "600"
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: "white",
+                            callback: function(value) {
+                                return "₹" + value.toLocaleString("en-IN");
+                            }
+                        },
+                        grid: {
+                            color: "rgba(255, 255, 255, 0.1)"
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: "white",
+                            font: {
+                                size: 12
+                            }
+                        },
+                        grid: {
+                            color: "rgba(255, 255, 255, 0.05)"
+                        }
+                    }
+                }
+            }
+        });
+    {% endif %}
+</script>
+
+</body>
+</html>

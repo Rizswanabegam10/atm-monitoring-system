@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank ATM Monitoring Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .btn-alerts {
+            background: #ff1744;
+            color: white;
+            position: relative;
+        }
+
+        .btn-alerts:hover {
+            background: #ff0040;
+            transform: scale(1.05);
+        }
+
+        .alert-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #ffa500;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .btn-maintenance {
+            background: #ffa500;
+            color: white;
+        }
+
+        .btn-maintenance:hover {
+            background: #ff8c00;
+            transform: scale(1.05);
+        }
+
+        .btn-manage {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-manage:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+        .btn-download {
+            background: #00c6ff;
+            color: white;
+        }
+
+        .btn-download:hover {
+            background: #0072ff;
+            transform: scale(1.05);
+        }
+
+        .btn-logout {
+            background: #ff4e50;
+            color: white;
+        }
+
+        .btn-logout:hover {
+            background: #ff1744;
+            transform: scale(1.05);
+        }
+
+        .refresh-info {
+            text-align: center;
+            color: #00c6ff;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .card.theft-alert {
+            border-color: #ff1744;
+            background: rgba(255, 23, 68, 0.15);
+            animation: shake 0.5s infinite;
+        }
+
+        .card.temp-alert {
+            border-color: #ffa500;
+            background: rgba(255, 165, 0, 0.15);
+        }
+
+        .card.maintenance-due {
+            border-color: #ffa500;
+            background: rgba(255, 165, 0, 0.1);
+        }
+
+        .card.live-update {
+            border-color: #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .card:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: #00c6ff;
+            transform: translateY(-5px);
+        }
+
+        .atm-id {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #00c6ff;
+        }
+
+        .location {
+            font-size: 14px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .cash {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #00ff88;
+            transition: 0.5s;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            margin-right: 10px;
+        }
+
+        .low {
+            background: #ff4e50;
+            color: white;
+        }
+
+        .normal {
+            background: #00ff88;
+            color: #0f2027;
+        }
+
+        .warning {
+            background: #ffa500;
+            color: white;
+        }
+
+        .theft {
+            background: #ff1744;
+            color: white;
+            animation: pulse 0.8s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .info {
+            font-size: 12px;
+            color: #bbb;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .live-badge {
+            display: inline-block;
+            background: #00ff88;
+            color: #0f2027;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0.6; }
+        }
+
+        .graph-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+
+        .graph-btn:hover {
+            background: #764ba2;
+        }
+
+        .alert-icon {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        @media(max-width:600px){
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .top-bar {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🏦 Smart ATM Monitoring Dashboard</h1>
+
+<div class="refresh-info">
+    ⟳ Live updates every 2 seconds | Last sync: <span id="time"></span> | Status: <span id="status" style="color: #00ff88;">🟢 LIVE</span>
+</div>
+
+<div class="top-bar">
+    <a href="/alerts" class="btn btn-alerts">
+        🚨 Alerts
+        {% if alert_count > 0 %}
+            <span class="alert-badge">{{ alert_count }}</span>
+        {% endif %}
+    </a>
+    <a href="/maintenance" class="btn btn-maintenance">
+        🔧 Maintenance
+        {% if maintenance_count > 0 %}
+            <span class="alert-badge">{{ maintenance_count }}</span>
+        {% endif %}
+    </a>
+    <a href="/manage-cash" class="btn btn-manage">💰 Manage Cash</a>
+    <a href="/download" class="btn btn-download">⬇ Download CSV</a>
+    <a href="/logout" class="btn btn-logout">🚪 Logout</a>
+</div>
+
+<div class="dashboard" id="dashboard">
+    <!-- Cards will be populated by JavaScript -->
+</div>
+
+<script>
+    // API URL
+    const API_URL = `http://${window.location.hostname}:5000/api/live-data`;
+    const ATM_IDS = ["ATM001", "ATM002", "ATM003", "ATM004", "ATM005"];
+
+    // Fetch live data from API
+    async function fetchLiveData() {
+        try {
+            const response = await fetch(API_URL);
+            const data = await response.json();
+            updateDashboard(data);
+            document.getElementById("status").textContent = "🟢 LIVE";
+            document.getElementById("status").style.color = "#00ff88";
+        } catch (error) {
+            console.error("Error fetching data:", error);
+            document.getElementById("status").textContent = "🔴 OFFLINE";
+            document.getElementById("status").style.color = "#ff4e50";
+        }
+    }
+
+    // Update dashboard cards with live data
+    function updateDashboard(liveData) {
+        const dashboard = document.getElementById("dashboard");
+
+        ATM_IDS.forEach(atmId => {
+            const atm = liveData[atmId] || {};
+            let card = document.getElementById(`card-${atmId}`);
+
+            if (!card) {
+                card = document.createElement("div");
+                card.id = `card-${atmId}`;
+                card.className = "card live-update";
+                dashboard.appendChild(card);
+            }
+
+            // Determine status
+            let statusClass = "normal";
+            let statusText = "✓ HEALTHY";
+            let cardClass = "card live-update";
+            let alertIcon = "";
+
+            if (atm.vibration === 1) {
+                statusClass = "theft";
+                statusText = "🚨 THEFT ALERT";
+                cardClass = "card live-update theft-alert";
+                alertIcon = "🚨";
+            } else if (atm.temperature > 35 || atm.temperature < 10) {
+                statusClass = "warning";
+                statusText = "🌡️ TEMPERATURE ALERT";
+                cardClass = "card live-update temp-alert";
+                alertIcon = "⚠️";
+            } else if (atm.maintenance_due) {
+                statusClass = "warning";
+                statusText = "🔧 MAINTENANCE DUE";
+                cardClass = "card live-update maintenance-due";
+                alertIcon = "🔧";
+            } else if (atm.cash < 200000) {
+                statusClass = "warning";
+                statusText = "⚠ LOW CASH";
+                alertIcon = "💰";
+            } else if (atm.cash < 400000) {
+                statusClass = "warning";
+                statusText = "⚡ MEDIUM";
+            }
+
+            card.className = cardClass;
+            card.innerHTML = `
+                <div class="live-badge">● LIVE</div>
+                <div class="alert-icon">${alertIcon}</div>
+                <div class="atm-id">${atm.atm_id || atmId}</div>
+                <div class="location">📍 ${atm.location || 'Loading...'}</div>
+                <div class="cash">₹ ${(atm.cash || 0).toLocaleString('en-IN')}</div>
+                <span class="status ${statusClass}">${statusText}</span>
+                <div class="info">
+                    🌡 <strong>${(atm.temperature || 0).toFixed(1)}°C</strong> | ⏰ ${atm.last_update || 'N/A'}
+                    ${atm.vibration === 1 ? '<br><span style="color: #ff1744;">⚠ Vibration Detected - Possible Tampering!</span>' : ''}
+                    ${atm.temperature > 35 ? '<br><span style="color: #ffa500;">⚠ High Temperature Warning!</span>' : ''}
+                    ${atm.temperature < 10 ? '<br><span style="color: #00c6ff;">❄ Low Temperature Warning!</span>' : ''}
+                    ${atm.maintenance_due ? '<br><span style="color: #ffa500;">🔧 Maintenance is overdue!</span>' : ''}
+                </div>
+                <a href="/graph/${atmId}" class="graph-btn">📊 View Graph</a>
+            `;
+        });
+    }
+
+    // Update current time
+    function updateTime() {
+        const now = new Date();
+        document.getElementById("time").textContent = now.toLocaleTimeString();
+    }
+
+    // Initial fetch and set intervals
+    fetchLiveData();
+    updateTime();
+
+    // Auto-update every 2 seconds
+    setInterval(fetchLiveData, 2000);
+    setInterval(updateTime, 1000);
+</script>
+
+</body>
+</html>

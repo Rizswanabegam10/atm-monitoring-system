@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage ATM Cash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .back-btn:hover {
+            background: #764ba2;
+        }
+
+        .message {
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .message.success {
+            background: #00ff88;
+            color: #0f2027;
+        }
+
+        .message.error {
+            background: #ff4e50;
+            color: white;
+        }
+
+        .form-container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #00c6ff;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .form-group .atm-id {
+            color: #00c6ff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .form-group .location {
+            color: #bbb;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .btn-submit {
+            background: #00ff88;
+            color: #0f2027;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .btn-submit:hover {
+            background: #00dd77;
+        }
+
+        .btn-reset {
+            background: #ff4e50;
+            color: white;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .btn-reset:hover {
+            background: #ff1744;
+        }
+
+        .current-values {
+            background: rgba(0, 255, 136, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .current-values strong {
+            color: #00ff88;
+        }
+
+        @media(max-width:600px){
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="/" class="back-btn">← Back to Dashboard</a>
+
+    <h1>💰 Manage ATM Cash Amounts</h1>
+
+    {% if message %}
+        {% if "successfully" in message %}
+            <div class="message success">{{ message }}</div>
+        {% else %}
+            <div class="message error">{{ message }}</div>
+        {% endif %}
+    {% endif %}
+
+    <div class="form-container">
+        <form method="POST">
+            <div class="form-grid">
+                
+                {% for atm in atms %}
+                <div class="form-group">
+                    <div class="atm-id">{{ atm[0] }}</div>
+                    <div class="location">📍 {{ atm[1] }}</div>
+                    
+                    <label for="cash_{{ atm[0] }}">Enter Cash Amount (₹)</label>
+                    <input 
+                        type="number" 
+                        id="cash_{{ atm[0] }}" 
+                        name="cash_{{ atm[0] }}" 
+                        value="{{ atm[2] }}"
+                        min="0"
+                        step="1000"
+                        placeholder="Enter amount"
+                        required
+                    >
+
+                    <div class="current-values">
+                        <strong>Current:</strong> ₹{{ "{:,}".format(atm[2]) }}<br>
+                        <strong>Temp:</strong> {{ atm[3] }}°C<br>
+                        <strong>Updated:</strong> {{ atm[5] }}
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-submit">✓ Update All Cash</button>
+                <button type="reset" class="btn btn-reset">↻ Clear Form</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Bank Admin Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="login-body">
+
+    <!-- Login Container -->
+    <div class="login-container">
+
+        <!-- Bank Logo / Title -->
+        <div class="login-header">
+            <h1>🏦 Secure Bank Login</h1>
+            <p>Authorized personnel only</p>
+        </div>
+
+        <!-- Login Form -->
+        <form method="POST" class="login-form">
+
+            <!-- Username -->
+            <label for="username">Username</label>
+            <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                placeholder="Enter admin username" 
+                required>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Enter secure password" 
+                required>
+
+            <!-- Login Button -->
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Error Message -->
+        {% if error %}
+        <div class="error-box">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+
+        <!-- Footer -->
+        <div class="login-footer">
+            <p>© 2026 Secure Bank Systems</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

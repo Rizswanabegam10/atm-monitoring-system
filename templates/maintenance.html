@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .back-btn:hover {
+            background: #764ba2;
+        }
+
+        .maintenance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .maint-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .maint-card.due {
+            border-color: #ff1744;
+            background: rgba(255, 23, 68, 0.15);
+        }
+
+        .maint-card.upcoming {
+            border-color: #ffa500;
+            background: rgba(255, 165, 0, 0.15);
+        }
+
+        .maint-card.completed {
+            border-color: #00ff88;
+        }
+
+        .maint-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .atm-id {
+            font-size: 20px;
+            font-weight: 700;
+            color: #00c6ff;
+            margin-bottom: 10px;
+        }
+
+        .maint-type {
+            color: #00ff88;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .status-completed {
+            background: #00ff88;
+            color: #0f2027;
+        }
+
+        .status-due {
+            background: #ff1744;
+            color: white;
+            animation: blink 1s infinite;
+        }
+
+        .status-upcoming {
+            background: #ffa500;
+            color: white;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .maint-info {
+            font-size: 12px;
+            color: #bbb;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .maint-info strong {
+            color: #00c6ff;
+        }
+
+        .update-btn {
+            width: 100%;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .update-btn:hover {
+            background: #764ba2;
+        }
+
+        .notes-textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        @media(max-width:600px){
+            .maintenance-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="/" class="back-btn">← Back to Dashboard</a>
+
+    <h1>🔧 Preventive Maintenance Schedule</h1>
+
+    <div class="maintenance-grid">
+        {% for maint in maintenance_records %}
+            {% set today = "2026-02-12" %}
+            {% set next_due = maint[4] %}
+            {% if next_due <= today %}
+                {% set card_class = "maint-card due" %}
+                {% set status_class = "status-due" %}
+                {% set status_text = "🔴 DUE NOW" %}
+            {% else %}
+                {% set card_class = "maint-card completed" %}
+                {% set status_class = "status-completed" %}
+                {% set status_text = "✓ ON SCHEDULE" %}
+            {% endif %}
+
+            <div class="{{ card_class }}">
+                <div class="atm-id">{{ maint[1] }}</div>
+                <div class="maint-type">{{ maint[2] }}</div>
+                
+                <span class="status-badge {{ status_class }}">{{ status_text }}</span>
+
+                <div class="maint-info">
+                    <strong>Last Maintenance:</strong> {{ maint[3] }}<br>
+                    <strong>Next Due:</strong> {{ maint[4] }}<br>
+                    <strong>Status:</strong> {{ maint[5] }}
+                </div>
+
+                {% if maint[6] %}
+                    <div class="maint-info" style="color: #00ff88;">
+                        <strong>Notes:</strong> {{ maint[6] }}
+                    </div>
+                {% endif %}
+
+                <form method="POST" action="/maintenance/update/{{ maint[0] }}">
+                    <textarea name="notes" class="notes-textarea" placeholder="Add maintenance notes...">{{ maint[6] or '' }}</textarea>
+                    <button type="submit" class="update-btn">✓ Mark as Completed</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>

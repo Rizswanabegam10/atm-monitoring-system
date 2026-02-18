@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Alerts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .back-btn:hover {
+            background: #764ba2;
+        }
+
+        .alerts-table {
+            width: 100%;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            border-collapse: collapse;
+        }
+
+        .alerts-table thead {
+            background: rgba(0,198,255,0.2);
+        }
+
+        .alerts-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #00c6ff;
+        }
+
+        .alerts-table td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .alerts-table tbody tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .severity-critical {
+            background: #ff1744;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .severity-warning {
+            background: #ffa500;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .alert-type {
+            color: #00ff88;
+            font-weight: 600;
+        }
+
+        .resolve-btn {
+            background: #00ff88;
+            color: #0f2027;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .resolve-btn:hover {
+            background: #00dd77;
+        }
+
+        .no-alerts {
+            text-align: center;
+            padding: 40px;
+            color: #00ff88;
+            font-size: 18px;
+        }
+
+        @media(max-width:600px){
+            .alerts-table {
+                font-size: 12px;
+            }
+            .alerts-table th,
+            .alerts-table td {
+                padding: 10px 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="/" class="back-btn">← Back to Dashboard</a>
+
+    <h1>🚨 System Alerts</h1>
+
+    {% if alerts %}
+        <table class="alerts-table">
+            <thead>
+                <tr>
+                    <th>ATM ID</th>
+                    <th>Alert Type</th>
+                    <th>Message</th>
+                    <th>Severity</th>
+                    <th>Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for alert in alerts %}
+                <tr>
+                    <td><strong>{{ alert[1] }}</strong></td>
+                    <td><span class="alert-type">{{ alert[2] }}</span></td>
+                    <td>{{ alert[3] }}</td>
+                    <td>
+                        {% if alert[4] == 'critical' %}
+                            <span class="severity-critical">🔴 CRITICAL</span>
+                        {% else %}
+                            <span class="severity-warning">🟠 WARNING</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ alert[5] }}</td>
+                    <td>
+                        {% if alert[6] == 0 %}
+                            <form method="POST" action="/alert/resolve/{{ alert[0] }}" style="display:inline;">
+                                <button type="submit" class="resolve-btn">✓ Resolve</button>
+                            </form>
+                        {% else %}
+                            <span style="color: #00ff88;">✓ Resolved</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="no-alerts">
+            ✓ No active alerts. System is healthy!
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background: linear-gradient(135deg,#1e3c72,#2a5298);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding:20px;
+            color:white;
+        }
+
+        h1{
+            margin-bottom:20px;
+            font-weight:600;
+            font-size:28px;
+        }
+
+        .refresh-info {
+            text-align: center;
+            color: #00d4ff;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .search-box{
+            background: rgba(255,255,255,0.1);
+            padding:20px;
+            border-radius:15px;
+            margin-bottom:30px;
+            width:100%;
+            max-width:500px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .search-box form{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+
+        .search-box input{
+            padding:12px;
+            border:none;
+            border-radius:8px;
+            font-size:14px;
+            outline:none;
+        }
+
+        .search-box button{
+            padding:12px;
+            background:#00d4ff;
+            border:none;
+            border-radius:8px;
+            color:white;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .search-box button:hover{
+            background:#0072ff;
+        }
+
+        .message{
+            background: rgba(255,255,255,0.1);
+            padding:15px;
+            border-radius:8px;
+            margin-bottom:20px;
+            text-align:center;
+            min-width:300px;
+            animation: fadeIn 0.5s;
+        }
+
+        .results{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+            gap:20px;
+            width:100%;
+            padding:0 20px;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.1);
+            padding:20px;
+            border-radius:15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition:0.3s;
+            border: 2px solid transparent;
+            animation: fadeIn 0.5s;
+        }
+
+        .card:hover{
+            background: rgba(255,255,255,0.15);
+            border-color:#00d4ff;
+            transform:translateY(-5px);
+        }
+
+        .atm-id{
+            font-size:20px;
+            font-weight:700;
+            margin-bottom:10px;
+            color:#00d4ff;
+        }
+
+        .location{
+            font-size:14px;
+            margin-bottom:15px;
+            opacity:0.9;
+        }
+
+        .cash{
+            font-size:26px;
+            font-weight:700;
+            padding:10px;
+            border-radius:8px;
+            text-align:center;
+        }
+
+        .cash.high{
+            background: #00ff88;
+            color: #0f2027;
+        }
+
+        .cash.medium{
+            background: #ffa500;
+            color: white;
+        }
+
+        .cash.low{
+            background: #ff4e50;
+            color: white;
+        }
+
+        @keyframes fadeIn{
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width:600px){
+            .results {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>💳 Find ATM With Required Cash</h1>
+
+<div class="refresh-info">
+    ⟳ Data auto-refreshes every 10 seconds | Last update: <span id="time"></span>
+</div>
+
+<div class="search-box">
+    <form method="POST">
+        <input type="number" name="amount" placeholder="Enter Required Amount (₹)" required>
+        <input type="text" name="location" placeholder="Enter Location (Optional)">
+        <button type="submit">🔍 Search ATM</button>
+    </form>
+
+    {% if message %}
+        <div class="message">{{ message }}</div>
+    {% endif %}
+</div>
+
+<div class="results">
+
+    {% for atm in result %}
+    <div class="card">
+        <div class="atm-id">🏧 {{ atm[0] }}</div>
+        <div class="location">📍 {{ atm[1] }}</div>
+
+        {% if atm[2] > 400000 %}
+            <div class="cash high">₹ {{ atm[2] }}</div>
+        {% elif atm[2] > 200000 %}
+            <div class="cash medium">₹ {{ atm[2] }}</div>
+        {% else %}
+            <div class="cash low">₹ {{ atm[2] }}</div>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+</div>
+
+<script>
+    // Display current time
+    function updateTime() {
+        const now = new Date();
+        document.getElementById("time").textContent = now.toLocaleTimeString();
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+</script>
+
+</body>
+</html>
