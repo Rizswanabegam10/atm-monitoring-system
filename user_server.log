@@ -608,3 +608,80 @@
 2026-02-18 14:59:37,001 - INFO - 192.168.1.230 - - [18/Feb/2026 14:59:37] "GET / HTTP/1.1" 200 -
 2026-02-18 14:59:47,050 - INFO - 192.168.1.230 - - [18/Feb/2026 14:59:47] "GET / HTTP/1.1" 200 -
 2026-02-18 14:59:57,095 - INFO - 192.168.1.230 - - [18/Feb/2026 14:59:57] "GET / HTTP/1.1" 200 -
+2026-03-23 21:10:30,395 - INFO - User Server Started
+2026-03-23 21:10:30,396 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 21:10:30,463 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-23 21:10:30,463 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 21:10:30,465 - INFO -  * Restarting with stat
+2026-03-23 21:10:30,968 - INFO - User Server Started
+2026-03-23 21:10:30,970 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 21:10:30,994 - WARNING -  * Debugger is active!
+2026-03-23 21:10:31,004 - INFO -  * Debugger PIN: 470-879-029
+2026-03-23 21:25:07,409 - INFO - User Server Started
+2026-03-23 21:25:07,423 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 21:25:07,510 - WARNING -  * Debugger is active!
+2026-03-23 21:25:07,515 - INFO -  * Debugger PIN: 470-879-029
+2026-03-23 21:40:50,363 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-23 21:42:04,144 - INFO - User Server Started
+2026-03-23 21:42:04,146 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 21:42:04,196 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-23 21:42:04,196 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 21:42:04,198 - INFO -  * Restarting with stat
+2026-03-23 21:42:04,645 - INFO - User Server Started
+2026-03-23 21:42:04,647 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 21:42:04,682 - WARNING -  * Debugger is active!
+2026-03-23 21:42:04,685 - INFO -  * Debugger PIN: 470-879-029
+2026-03-23 21:42:10,881 - INFO - 192.168.1.19 - - [23/Mar/2026 21:42:10] "GET / HTTP/1.1" 200 -
+2026-03-23 21:42:11,257 - WARNING - 404 error occurred
+2026-03-23 21:42:11,258 - INFO - 192.168.1.19 - - [23/Mar/2026 21:42:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-23 21:42:17,500 - INFO - Search: Amount=7999, Location=, Results=5
+2026-03-23 21:42:17,501 - INFO - 192.168.1.19 - - [23/Mar/2026 21:42:17] "POST / HTTP/1.1" 200 -
+2026-03-23 21:47:03,636 - INFO - User Server Started
+2026-03-23 21:47:03,640 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 21:47:03,683 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-23 21:47:03,683 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 21:47:03,684 - INFO -  * Restarting with stat
+2026-03-23 21:47:04,106 - INFO - User Server Started
+2026-03-23 21:47:04,110 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 21:47:04,132 - WARNING -  * Debugger is active!
+2026-03-23 21:47:04,135 - INFO -  * Debugger PIN: 470-879-029
+2026-03-23 21:47:12,430 - INFO - 192.168.1.19 - - [23/Mar/2026 21:47:12] "GET / HTTP/1.1" 200 -
+2026-03-23 21:55:48,970 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-23 21:55:49,059 - INFO -  * Restarting with stat
+2026-03-23 21:55:49,667 - WARNING -  * Debugger is active!
+2026-03-23 21:55:49,670 - INFO -  * Debugger PIN: 470-879-029
+2026-03-23 21:56:02,862 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-23 21:56:02,862 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 21:56:02,864 - INFO -  * Restarting with stat
+2026-03-23 21:56:03,340 - WARNING -  * Debugger is active!
+2026-03-23 21:56:03,343 - INFO -  * Debugger PIN: 470-879-029
+2026-03-23 22:26:03,936 - INFO - User Server Started
+2026-03-23 22:26:03,938 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 22:26:04,060 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-23 22:26:04,060 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-23 22:26:04,063 - INFO -  * Restarting with stat
+2026-03-23 22:26:04,519 - INFO - User Server Started
+2026-03-23 22:26:04,521 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-23 22:26:04,547 - WARNING -  * Debugger is active!
+2026-03-23 22:26:04,554 - INFO -  * Debugger PIN: 470-879-029
+2026-03-23 22:26:18,733 - INFO - 192.168.1.19 - - [23/Mar/2026 22:26:18] "GET / HTTP/1.1" 200 -
+2026-03-23 22:26:18,972 - WARNING - 404 error occurred
+2026-03-23 22:26:18,973 - INFO - 192.168.1.19 - - [23/Mar/2026 22:26:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-24 00:25:32,553 - INFO - User Server Started
+2026-03-24 00:25:32,555 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-24 00:25:32,661 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-24 00:25:32,661 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 00:25:32,665 - INFO -  * Restarting with stat
+2026-03-24 00:25:33,184 - INFO - User Server Started
+2026-03-24 00:25:33,187 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-24 00:25:33,214 - WARNING -  * Debugger is active!
+2026-03-24 00:25:33,218 - INFO -  * Debugger PIN: 763-212-850
+2026-03-24 00:25:40,145 - INFO - 192.168.1.19 - - [24/Mar/2026 00:25:40] "GET / HTTP/1.1" 200 -
+2026-03-24 00:25:40,417 - WARNING - 404 error occurred
+2026-03-24 00:25:40,417 - INFO - 192.168.1.19 - - [24/Mar/2026 00:25:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
