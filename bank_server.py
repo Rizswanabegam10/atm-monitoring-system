@@ -1,6 +1,6 @@
 """
 ==============================================================
-SMART ATM MONITORING SYSTEM - BANK SIDE SERVER
+SMART ATM MONITORING SYSTEM - BANK SIDE SERVER (FIXED VERSION)
 ==============================================================
 """
 
@@ -66,6 +66,9 @@ live_atm_data = {
     "ATM005": {}
 }
 
+# Store high amount alerts from users
+high_amount_alerts = []
+
 # ==============================================================
 # ATM LOCATION DATA & TEMPS
 # ==============================================================
@@ -108,6 +111,7 @@ def init_database():
 
     cur.execute("""
     CREATE TABLE IF NOT EXISTS atm_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         atm_id TEXT,
         cash INTEGER,
         timestamp TEXT
@@ -135,6 +139,20 @@ def init_database():
         next_due TEXT,
         status TEXT,
         notes TEXT
+    )
+    """)
+
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS high_amount_alerts (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_name TEXT,
+        account_no TEXT,
+        card_id TEXT,
+        mobile TEXT,
+        amount_requested INTEGER,
+        location TEXT,
+        timestamp TEXT,
+        status TEXT DEFAULT 'pending'
     )
     """)
 
@@ -175,7 +193,44 @@ def init_database():
     conn.commit()
     conn.close()
 
+def populate_initial_history():
+    """Populate history table with initial data if empty"""
+    conn = sqlite3.connect(DATABASE)
+    cur = conn.cursor()
+    
+    cur.execute("SELECT COUNT(*) FROM atm_history")
+    count = cur.fetchone()[0]
+    
+    if count == 0:
+        print("📊 Populating initial history data...")
+        cur.execute("SELECT atm_id, cash FROM atm")
+        atms = cur.fetchall()
+        
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        for atm_id, cash in atms:
+            cur.execute("""
+            INSERT INTO atm_history (atm_id, cash, timestamp)
+            VALUES (?,?,?)
+            """, (atm_id, cash, current_time))
+            
+            for days_ago in range(1, 8):
+                past_time = (datetime.now() - timedelta(days=days_ago, hours=random.randint(0, 23))).strftime("%Y-%m-%d %H:%M:%S")
+                variation = random.randint(-50000, 50000)
+                past_cash = max(50000, cash + variation)
+                
+                cur.execute("""
+                INSERT INTO atm_history (atm_id, cash, timestamp)
+                VALUES (?,?,?)
+                """, (atm_id, past_cash, past_time))
+        
+        conn.commit()
+        print(f"✓ Initial history data populated")
+    
+    conn.close()
+
 init_database()
+populate_initial_history()
 
 # ==============================================================
 # EMAIL ALERT
@@ -183,9 +238,9 @@ init_database()
 
 def send_email_alert(subject, message):
     try:
-        sender = "mohanapriyangap@gmail.com"  # Set your Gmail
-        password = "lelu lles ucdl ndjs"  # Set your App Password
-        receiver = "rizswanabegam@gmail.com" # Set recipient
+        sender = "mohanapriyangap@gmail.com"
+        password = "lelu lles ucdl ndjs"
+        receiver = "rizswanabegam@gmail.com"
 
         msg = MIMEText(message)
         msg["Subject"] = subject
@@ -200,14 +255,13 @@ def send_email_alert(subject, message):
         print(f"✓ Alert sent: {subject}")
 
     except Exception as e:
-        print(f"⚠ Email alerts disabled (configure in bank_server.py)")
+        print(f"⚠ Email error: {e}")
 
 # ==============================================================
 # LOG ALERT TO DATABASE
 # ==============================================================
 
 def log_alert(atm_id, alert_type, message, severity="warning"):
-    """Log alert to database"""
     try:
         conn = sqlite3.connect(DATABASE)
         cur = conn.cursor()
@@ -229,7 +283,6 @@ def log_alert(atm_id, alert_type, message, severity="warning"):
 # ==============================================================
 
 def check_maintenance_due(atm_id):
-    """Check if maintenance is due for ATM"""
     try:
         conn = sqlite3.connect(DATABASE)
         cur = conn.cursor()
@@ -256,7 +309,6 @@ def check_maintenance_due(atm_id):
 # ==============================================================
 
 def get_atm_temperature(atm_id, base_temp):
-    """Generate realistic temperature with small variations"""
     variation = random.uniform(-1.5, 1.5)
     return round(base_temp + variation, 1)
 
@@ -265,7 +317,6 @@ def get_atm_temperature(atm_id, base_temp):
 # ==============================================================
 
 def update_live_data():
-    """Read from database and update live_atm_data"""
     conn = sqlite3.connect(DATABASE)
     cur = conn.cursor()
     cur.execute("SELECT * FROM atm ORDER BY atm_id")
@@ -284,7 +335,6 @@ def update_live_data():
             "maintenance_due": check_maintenance_due(atm_id)
         }
 
-# Initial update
 update_live_data()
 
 # ==============================================================
@@ -296,90 +346,79 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe(MQTT_TOPIC)
 
 def on_message(client, userdata, msg):
-    """
-    Only update ATM001 temperature & vibration from MQTT
-    CASH AMOUNT STAYS STATIC - Only change via manage-cash
-    """
     try:
         data = json.loads(msg.payload.decode())
-
-        # Only get temperature & vibration from MQTT
-        base_temp   = float(data.get("temperature", 25.5))
-        vibration   = int(data.get("vibration", 0))
-
+        base_temp = float(data.get("temperature", 25.5))
+        vibration = int(data.get("vibration", 0))
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         conn = sqlite3.connect(DATABASE)
         cur = conn.cursor()
 
-        # -------- UPDATE ATM001 ONLY (TEMP & VIBRATION) --------
-        atm001_temp = get_atm_temperature("ATM001", base_temp)
-        
-        cur.execute("""
-        UPDATE atm SET temperature=?, vibration=?, last_update=?
-        WHERE atm_id='ATM001'
-        """, (atm001_temp, vibration, current_time))
-
-        # Update temperature for all other ATMs (keep cash static)
-        for atm_id in ["ATM002", "ATM003", "ATM004", "ATM005"]:
+        for atm_id in ["ATM001", "ATM002", "ATM003", "ATM004", "ATM005"]:
             atm_base_temp = ATM_BASE_TEMPS.get(atm_id, 25.5)
-            atm_temp = get_atm_temperature(atm_id, atm_base_temp)
+            if atm_id == "ATM001":
+                atm_temp = get_atm_temperature(atm_id, base_temp)
+            else:
+                atm_temp = get_atm_temperature(atm_id, atm_base_temp)
             
-            cur.execute("""
-            UPDATE atm SET temperature=?, last_update=?
-            WHERE atm_id=?
-            """, (atm_temp, current_time, atm_id))
+            cur.execute("SELECT cash FROM atm WHERE atm_id=?", (atm_id,))
+            result = cur.fetchone()
+            if result:
+                atm_cash = result[0]
+                
+                if atm_id == "ATM001":
+                    cur.execute("""
+                    UPDATE atm SET temperature=?, vibration=?, last_update=?
+                    WHERE atm_id=?
+                    """, (atm_temp, vibration, current_time, atm_id))
+                else:
+                    cur.execute("""
+                    UPDATE atm SET temperature=?, last_update=?
+                    WHERE atm_id=?
+                    """, (atm_temp, current_time, atm_id))
+                
+                cur.execute("""
+                INSERT INTO atm_history (atm_id, cash, timestamp)
+                VALUES (?,?,?)
+                """, (atm_id, atm_cash, current_time))
 
         conn.commit()
+        
+        cur.execute("SELECT cash, temperature FROM atm WHERE atm_id='ATM001'")
+        atm001_cash, atm001_temp = cur.fetchone()
         conn.close()
-
-        # Update live data
+        
         update_live_data()
+        print(f"✓ MQTT Data Updated")
 
-        print(f"✓ MQTT Data Updated: ATM001 Temp={atm001_temp}°C, Vibration={vibration}")
-
-        # -------- TEMPERATURE ALERTS --------
         if atm001_temp > HIGH_TEMP_THRESHOLD:
-            alert_msg = f"High temperature detected: {atm001_temp}°C (Threshold: {HIGH_TEMP_THRESHOLD}°C)"
+            alert_msg = f"High temperature detected: {atm001_temp}°C"
             log_alert("ATM001", "HIGH_TEMPERATURE", alert_msg, "critical")
-            send_email_alert("🌡️ HIGH TEMPERATURE ALERT - ATM001",
-                             f"{alert_msg}\nTime: {current_time}\nImmediate cooling/maintenance required!")
+            send_email_alert("🌡️ HIGH TEMPERATURE ALERT", alert_msg)
 
         if atm001_temp < LOW_TEMP_THRESHOLD:
-            alert_msg = f"Low temperature detected: {atm001_temp}°C (Threshold: {LOW_TEMP_THRESHOLD}°C)"
+            alert_msg = f"Low temperature detected: {atm001_temp}°C"
             log_alert("ATM001", "LOW_TEMPERATURE", alert_msg, "warning")
-            send_email_alert("❄️ LOW TEMPERATURE ALERT - ATM001",
-                             f"{alert_msg}\nTime: {current_time}\nCheck heating system!")
-
-        # -------- CASH ALERT --------
-        conn = sqlite3.connect(DATABASE)
-        cur = conn.cursor()
-        cur.execute("SELECT cash FROM atm WHERE atm_id='ATM001'")
-        atm001_cash = cur.fetchone()[0]
-        conn.close()
+            send_email_alert("❄️ LOW TEMPERATURE ALERT", alert_msg)
 
         if atm001_cash < LOW_CASH_THRESHOLD:
-            alert_msg = f"Cash below threshold: ₹{atm001_cash}"
+            alert_msg = f"Cash below threshold: ₹{atm001_cash:,}"
             log_alert("ATM001", "LOW_CASH", alert_msg, "warning")
-            send_email_alert("⚠ LOW CASH ALERT - ATM001",
-                             f"{alert_msg}\nImmediate refill required!")
+            send_email_alert("⚠ LOW CASH ALERT", alert_msg)
 
-        # -------- VIBRATION/THEFT ALERT --------
         if vibration == 1:
             alert_msg = "Abnormal vibration/tampering detected"
             log_alert("ATM001", "VIBRATION", alert_msg, "critical")
-            send_email_alert("🚨 SECURITY ALERT - ATM001",
-                             f"{alert_msg}\nTime: {current_time}\nPlease investigate immediately!")
+            send_email_alert("🚨 SECURITY ALERT", alert_msg)
 
-        # -------- MAINTENANCE DUE ALERT --------
         if check_maintenance_due("ATM001"):
             alert_msg = "Preventive maintenance is due"
             log_alert("ATM001", "MAINTENANCE_DUE", alert_msg, "warning")
-            send_email_alert("🔧 MAINTENANCE DUE - ATM001",
-                             f"{alert_msg}\nSchedule maintenance visit now!")
+            send_email_alert("🔧 MAINTENANCE DUE", alert_msg)
 
     except Exception as e:
-        print(f"⚠ MQTT Data Processing Error: {e}")
+        print(f"⚠ MQTT Error: {e}")
 
 # ==============================================================
 # MQTT THREAD START
@@ -391,22 +430,21 @@ try:
     mqtt_client.on_message = on_message
     mqtt_client.connect(MQTT_BROKER, MQTT_PORT)
     threading.Thread(target=mqtt_client.loop_forever, daemon=True).start()
+    print("✓ MQTT Client Started")
 except Exception as e:
     print(f"⚠ MQTT Connection Error: {e}")
 
 # ==============================================================
-# API ENDPOINTS FOR LIVE DATA
+# API ENDPOINTS
 # ==============================================================
 
 @app.route("/api/live-data", methods=["GET"])
 def get_live_data():
-    """Get all ATM live data as JSON"""
     update_live_data()
     return jsonify(live_atm_data)
 
 @app.route("/api/atm/<atm_id>", methods=["GET"])
 def get_atm_live_data(atm_id):
-    """Get specific ATM live data"""
     update_live_data()
     if atm_id in live_atm_data:
         return jsonify(live_atm_data[atm_id])
@@ -414,12 +452,9 @@ def get_atm_live_data(atm_id):
 
 @app.route("/api/alerts", methods=["GET"])
 def get_alerts():
-    """Get all unresolved alerts"""
     conn = sqlite3.connect(DATABASE)
     cur = conn.cursor()
-    cur.execute("""
-    SELECT * FROM alerts WHERE resolved=0 ORDER BY created_at DESC
-    """)
+    cur.execute("SELECT * FROM alerts WHERE resolved=0 ORDER BY created_at DESC")
     rows = cur.fetchall()
     conn.close()
 
@@ -434,6 +469,137 @@ def get_alerts():
             "created_at": row[5]
         })
     return jsonify(alerts)
+
+@app.route("/api/history/<atm_id>", methods=["GET"])
+def get_history(atm_id):
+    conn = sqlite3.connect(DATABASE)
+    cur = conn.cursor()
+    
+    cur.execute("""
+    SELECT cash, timestamp
+    FROM atm_history
+    WHERE atm_id=?
+    ORDER BY timestamp DESC
+    LIMIT 30
+    """, (atm_id,))
+    
+    rows = cur.fetchall()
+    conn.close()
+    
+    history = []
+    for cash, timestamp in reversed(rows):
+        history.append({
+            "cash": cash,
+            "timestamp": timestamp
+        })
+    
+    return jsonify(history)
+
+# ==============================================================
+# HIGH AMOUNT ALERT API ENDPOINTS (FIXED)
+# ==============================================================
+
+@app.route("/api/high-amount-alert", methods=["POST"])
+def high_amount_alert():
+    try:
+        data = request.get_json()
+        print(f"📥 Received high amount alert: {data}")
+        
+        conn = sqlite3.connect(DATABASE)
+        cur = conn.cursor()
+        
+        cur.execute("""
+        INSERT INTO high_amount_alerts (user_name, account_no, card_id, mobile, amount_requested, location, timestamp, status)
+        VALUES (?,?,?,?,?,?,?,?)
+        """, (data.get("user_name"), data.get("account_no"), data.get("card_id"),
+              data.get("mobile"), data.get("amount_requested"), data.get("location"),
+              data.get("timestamp"), "pending"))
+        
+        alert_id = cur.lastrowid
+        conn.commit()
+        conn.close()
+        
+        alert_entry = {
+            "id": alert_id,
+            "user_name": data.get("user_name"),
+            "account_no": data.get("account_no"),
+            "card_id": data.get("card_id"),
+            "mobile": data.get("mobile"),
+            "amount_requested": data.get("amount_requested"),
+            "location": data.get("location"),
+            "timestamp": data.get("timestamp"),
+            "status": "pending"
+        }
+        
+        high_amount_alerts.insert(0, alert_entry)
+        
+        email_subject = f"⚠️ HIGH AMOUNT ALERT - ₹{data.get('amount_requested')}"
+        email_body = f"""
+        User: {data.get('user_name')}
+        Account: {data.get('account_no')}
+        Card ID: {data.get('card_id')}
+        Amount: ₹{data.get('amount_requested')}
+        Mobile: {data.get('mobile')}
+        Location: {data.get('location')}
+        Time: {data.get('timestamp')}
+        """
+        send_email_alert(email_subject, email_body)
+        
+        print(f"✓ High amount alert logged for {data.get('user_name')} with ID: {alert_id}")
+        
+        return jsonify({"status": "success", "id": alert_id}), 200
+        
+    except Exception as e:
+        print(f"⚠ Error in high amount alert: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route("/api/high-amount-alerts", methods=["GET"])
+def get_high_amount_alerts():
+    """Get only PENDING alerts"""
+    conn = sqlite3.connect(DATABASE)
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM high_amount_alerts WHERE status='pending' ORDER BY timestamp DESC")
+    rows = cur.fetchall()
+    conn.close()
+    
+    alerts = []
+    for row in rows:
+        alerts.append({
+            "id": row[0],
+            "user_name": row[1],
+            "account_no": row[2],
+            "card_id": row[3],
+            "mobile": row[4],
+            "amount_requested": row[5],
+            "location": row[6],
+            "timestamp": row[7],
+            "status": row[8]
+        })
+    
+    print(f"📊 Returning {len(alerts)} pending alerts")
+    return jsonify(alerts)
+
+
+@app.route("/api/high-amount-alerts/resolve/<int:alert_id>", methods=["POST"])
+def resolve_high_amount_alert(alert_id):
+    print(f"🔧 Resolving alert ID: {alert_id}")
+    
+    for alert in high_amount_alerts:
+        if alert["id"] == alert_id:
+            alert["status"] = "reviewed"
+            break
+    
+    conn = sqlite3.connect(DATABASE)
+    cur = conn.cursor()
+    cur.execute("UPDATE high_amount_alerts SET status='reviewed' WHERE id=?", (alert_id,))
+    conn.commit()
+    conn.close()
+    
+    print(f"✓ Alert {alert_id} resolved")
+    return jsonify({"status": "success"})
 
 # ==============================================================
 # AUTHENTICATION
@@ -473,11 +639,9 @@ def dashboard():
     cur.execute("SELECT * FROM atm ORDER BY atm_id")
     atms = cur.fetchall()
     
-    # Get alert count
     cur.execute("SELECT COUNT(*) FROM alerts WHERE resolved=0")
     alert_count = cur.fetchone()[0]
     
-    # Get maintenance due count
     cur.execute("SELECT COUNT(*) FROM maintenance WHERE next_due <= date('now')")
     maintenance_count = cur.fetchone()[0]
     
@@ -491,15 +655,12 @@ def dashboard():
 
 @app.route("/alerts")
 def alerts_page():
-    """View all alerts"""
     if not session.get("logged_in"):
         return redirect("/login")
 
     conn = sqlite3.connect(DATABASE)
     cur = conn.cursor()
-    cur.execute("""
-    SELECT * FROM alerts ORDER BY created_at DESC LIMIT 100
-    """)
+    cur.execute("SELECT * FROM alerts ORDER BY created_at DESC LIMIT 100")
     rows = cur.fetchall()
     conn.close()
 
@@ -507,15 +668,12 @@ def alerts_page():
 
 @app.route("/alert/resolve/<int:alert_id>", methods=["POST"])
 def resolve_alert(alert_id):
-    """Mark alert as resolved"""
     if not session.get("logged_in"):
         return redirect("/login")
 
     conn = sqlite3.connect(DATABASE)
     cur = conn.cursor()
-    cur.execute("""
-    UPDATE alerts SET resolved=1 WHERE id=?
-    """, (alert_id,))
+    cur.execute("UPDATE alerts SET resolved=1 WHERE id=?", (alert_id,))
     conn.commit()
     conn.close()
 
@@ -527,15 +685,12 @@ def resolve_alert(alert_id):
 
 @app.route("/maintenance")
 def maintenance():
-    """View maintenance schedule"""
     if not session.get("logged_in"):
         return redirect("/login")
 
     conn = sqlite3.connect(DATABASE)
     cur = conn.cursor()
-    cur.execute("""
-    SELECT * FROM maintenance ORDER BY next_due ASC
-    """)
+    cur.execute("SELECT * FROM maintenance ORDER BY next_due ASC")
     rows = cur.fetchall()
     conn.close()
 
@@ -543,7 +698,6 @@ def maintenance():
 
 @app.route("/maintenance/update/<int:maint_id>", methods=["POST"])
 def update_maintenance(maint_id):
-    """Update maintenance record"""
     if not session.get("logged_in"):
         return redirect("/login")
 
@@ -554,6 +708,10 @@ def update_maintenance(maint_id):
 
         conn = sqlite3.connect(DATABASE)
         cur = conn.cursor()
+        
+        cur.execute("SELECT atm_id FROM maintenance WHERE id=?", (maint_id,))
+        atm_id = cur.fetchone()[0]
+        
         cur.execute("""
         UPDATE maintenance SET last_date=?, next_due=?, status=?, notes=?
         WHERE id=?
@@ -562,18 +720,19 @@ def update_maintenance(maint_id):
         conn.close()
 
         update_live_data()
+        log_alert(atm_id, "MAINTENANCE_COMPLETED", f"Maintenance completed on {current_date}", "info")
+        
         return redirect("/maintenance")
     except Exception as e:
         print(f"⚠ Error updating maintenance: {e}")
         return redirect("/maintenance")
 
 # ==============================================================
-# CASH MANAGEMENT - UPDATE ATM CASH MANUALLY
+# CASH MANAGEMENT
 # ==============================================================
 
 @app.route("/manage-cash", methods=["GET", "POST"])
 def manage_cash():
-    """Manually update ATM cash amounts"""
     if not session.get("logged_in"):
         return redirect("/login")
 
@@ -585,11 +744,10 @@ def manage_cash():
             cur = conn.cursor()
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            # Update each ATM cash amount
             for atm_id in ["ATM001", "ATM002", "ATM003", "ATM004", "ATM005"]:
-                cash = request.form.get(f"cash_{atm_id}", "")
+                cash = request.form.get(f"cash_{atm_id}")
                 
-                if cash:
+                if cash is not None and cash != "":
                     cash = int(cash)
                     cur.execute("""
                     UPDATE atm SET cash=?, last_update=?
@@ -597,20 +755,31 @@ def manage_cash():
                     """, (cash, current_time, atm_id))
                     
                     cur.execute("""
-                    INSERT INTO atm_history VALUES (?,?,?)
+                    INSERT INTO atm_history (atm_id, cash, timestamp)
+                    VALUES (?,?,?)
                     """, (atm_id, cash, current_time))
+                    
+                    print(f"✓ Updated {atm_id} with cash: ₹{cash:,}")
+                    
+                    if cash < LOW_CASH_THRESHOLD:
+                        log_alert(atm_id, "LOW_CASH", f"Cash below threshold: ₹{cash:,}", "warning")
+                else:
+                    cur.execute("SELECT cash FROM atm WHERE atm_id=?", (atm_id,))
+                    current_cash = cur.fetchone()[0]
+                    cur.execute("""
+                    INSERT INTO atm_history (atm_id, cash, timestamp)
+                    VALUES (?,?,?)
+                    """, (atm_id, current_cash, current_time))
 
             conn.commit()
             conn.close()
-            
             update_live_data()
             message = "✓ Cash amounts updated successfully!"
-            print(f"✓ Admin updated cash amounts at {current_time}")
             
         except Exception as e:
+            print("ERROR:", e)
             message = f"❌ Error updating cash: {str(e)}"
 
-    # Get current ATM data
     conn = sqlite3.connect(DATABASE)
     cur = conn.cursor()
     cur.execute("SELECT * FROM atm ORDER BY atm_id")
@@ -636,15 +805,23 @@ def graph(atm_id):
     FROM atm_history
     WHERE atm_id=?
     ORDER BY timestamp DESC
-    LIMIT 10
+    LIMIT 30
     """, (atm_id,))
 
     rows = cur.fetchall()
+    
+    cur.execute("SELECT location, cash FROM atm WHERE atm_id=?", (atm_id,))
+    atm_info = cur.fetchone()
     conn.close()
 
     data = list(reversed(rows))
+    
+    atm_data = {
+        "location": atm_info[0] if atm_info else "Unknown",
+        "current_cash": atm_info[1] if atm_info else 0
+    }
 
-    return render_template("graph.html", atm=atm_id, data=data)
+    return render_template("graph.html", atm=atm_id, data=data, atm_data=atm_data)
 
 # ==============================================================
 # CSV EXPORT
@@ -669,6 +846,19 @@ def download_csv():
         writer.writerows(rows)
 
     return send_file(filename, as_attachment=True)
+
+# ==============================================================
+# JINJA TEMPLATE FILTERS
+# ==============================================================
+
+@app.template_filter('format_currency')
+def format_currency(value):
+    if not value:
+        return "0"
+    try:
+        return f"{int(value):,}"
+    except:
+        return str(value)
 
 # ==============================================================
 # ERROR HANDLERS
@@ -698,10 +888,8 @@ if __name__ == "__main__":
     print(f"✓ Live Data API: http://{MACHINE_IP}:5000/api/live-data")
     print(f"✓ Login: admin / bank123")
     print("="*60)
-    print("📊 ATM CASH: STATIC (Manual Update Only)")
-    print("🌡️  TEMPERATURE: LIVE from MQTT (Alert > 35°C or < 10°C)")
-    print("⚡ VIBRATION: LIVE from MQTT (Security Alert)")
-    print("🔧 MAINTENANCE: Preventive (Every 30 days)")
+    print("📊 HIGH AMOUNT ALERTS: Shows only pending requests")
+    print("📊 When Resolve clicked, row disappears after 5 seconds")
     print("="*60 + "\n")
     
     app.run(host=MACHINE_IP, port=5000, debug=True)

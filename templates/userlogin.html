@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Finder - User Login</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            width: 420px;
+            margin: 80px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            padding: 30px;
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .msg {
+            text-align: center;
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>💳 ATM Finder Login</h2>
+        <form method="POST" autocomplete="off">
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <input type="text" name="account_no" placeholder="Enter Account Number" required>
+            <input type="text" name="card_id" placeholder="Enter Card ID" required>
+            <input type="text" name="mobile" placeholder="Enter Mobile Number" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="msg">{{ message }}</p>
+    </div>
+</body>
+</html>

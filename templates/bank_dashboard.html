@@ -123,6 +123,7 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             padding: 0 20px;
+            margin-bottom: 30px;
         }
 
         .card {
@@ -271,6 +272,130 @@
             font-size: 16px;
         }
 
+        .high-amount-section {
+            margin: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .high-amount-section h2 {
+            color: #ffa500;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .alerts-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+
+        .alerts-table th {
+            background: #0f2027;
+            color: #00c6ff;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .alerts-table td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .alerts-table tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .resolve-btn {
+            background: #00ff88;
+            color: #0f2027;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .resolve-btn:hover {
+            background: #00cc66;
+            transform: scale(1.05);
+        }
+
+        .resolve-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status-pending {
+            color: #ff4e50;
+            font-weight: 600;
+        }
+
+        .alert-badge-large {
+            background: #ff4e50;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .timer-badge {
+            background: #ffa500;
+            color: #0f2027;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 10px;
+            margin-left: 8px;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 30px;
+            color: #00ff88;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .error-data {
+            text-align: center;
+            padding: 30px;
+            color: #ff4e50;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .loading-data {
+            text-align: center;
+            padding: 30px;
+            color: #00c6ff;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .row-removing {
+            animation: fadeOut 0.5s ease forwards;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(100%);
+                display: none;
+            }
+        }
+
         @media(max-width:600px){
             .dashboard {
                 grid-template-columns: 1fr;
@@ -285,6 +410,14 @@
                 width: 100%;
                 text-align: center;
             }
+            .alerts-table {
+                font-size: 10px;
+                display: block;
+                overflow-x: auto;
+            }
+            .alerts-table th, .alerts-table td {
+                padding: 5px;
+            }
         }
     </style>
 </head>
@@ -294,7 +427,7 @@
 <h1>🏦 Smart ATM Monitoring Dashboard</h1>
 
 <div class="refresh-info">
-    ⟳ Live updates every 2 seconds | Last sync: <span id="time"></span> | Status: <span id="status" style="color: #00ff88;">🟢 LIVE</span>
+    ⟳ ATM data updates every 2 seconds | Last sync: <span id="time"></span> | Status: <span id="status" style="color: #00ff88;">🟢 LIVE</span>
 </div>
 
 <div class="top-bar">
@@ -315,16 +448,269 @@
     <a href="/logout" class="btn btn-logout">🚪 Logout</a>
 </div>
 
+<!-- High Amount Alerts Section -->
+<div class="high-amount-section">
+    <h2>
+        ⚠️ High Amount Requests from Users
+        <span id="pending-count" class="alert-badge-large">0</span>
+        <button onclick="refreshTable()" class="resolve-btn" id="refreshBtn" style="background: #00c6ff; color: #0f2027;">
+            🔄 Refresh Table
+        </button>
+    </h2>
+    <div id="high-amount-alerts-container">
+        <div class="loading-data">📡 Loading alerts...</div>
+    </div>
+</div>
+
 <div class="dashboard" id="dashboard">
     <!-- Cards will be populated by JavaScript -->
 </div>
 
 <script>
-    // API URL
+    // API URLs
     const API_URL = `http://${window.location.hostname}:5000/api/live-data`;
+    const HIGH_AMOUNT_API_URL = `http://${window.location.hostname}:5000/api/high-amount-alerts`;
     const ATM_IDS = ["ATM001", "ATM002", "ATM003", "ATM004", "ATM005"];
 
-    // Fetch live data from API
+    // ==============================================================
+    // REFRESH TABLE FUNCTION
+    // ==============================================================
+    async function refreshTable() {
+        const refreshBtn = document.getElementById("refreshBtn");
+        const container = document.getElementById("high-amount-alerts-container");
+        
+        refreshBtn.innerHTML = "⏳ Refreshing...";
+        refreshBtn.disabled = true;
+        container.innerHTML = '<div class="loading-data">🔄 Refreshing table...</div>';
+        
+        try {
+            const response = await fetch(HIGH_AMOUNT_API_URL);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const alerts = await response.json();
+            console.log("Received alerts:", alerts); // Debug log
+            
+            displayAlertsTable(alerts);
+            
+            const pendingAlerts = alerts.filter(alert => alert.status === 'pending');
+            document.getElementById("pending-count").textContent = pendingAlerts.length;
+            
+            if (pendingAlerts.length === 0) {
+                container.innerHTML = '<div class="no-data">✅ No pending alerts! All requests have been resolved.</div>';
+            }
+            
+            showNotification(`✓ Table refreshed! ${pendingAlerts.length} pending alerts`, "success");
+            
+        } catch (error) {
+            console.error("Error refreshing:", error);
+            container.innerHTML = `<div class="error-data">❌ Failed to load alerts: ${error.message}</div>`;
+            showNotification("❌ Failed to refresh table", "error");
+        } finally {
+            refreshBtn.innerHTML = "🔄 Refresh Table";
+            refreshBtn.disabled = false;
+        }
+    }
+
+    // ==============================================================
+    // DISPLAY ALERTS TABLE
+    // ==============================================================
+    function displayAlertsTable(alerts) {
+        const container = document.getElementById("high-amount-alerts-container");
+        
+        if (!alerts || alerts.length === 0) {
+            container.innerHTML = '<div class="no-data">✅ No pending alerts! All requests have been resolved.</div>';
+            document.getElementById("pending-count").textContent = "0";
+            return;
+        }
+        
+        // Filter only pending alerts
+        const pendingAlerts = alerts.filter(alert => alert.status === 'pending');
+        
+        if (pendingAlerts.length === 0) {
+            container.innerHTML = '<div class="no-data">✅ No pending alerts! All requests have been resolved.</div>';
+            document.getElementById("pending-count").textContent = "0";
+            return;
+        }
+        
+        let html = `
+            <table class="alerts-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>User Name</th>
+                        <th>Account No</th>
+                        <th>Card ID</th>
+                        <th>Amount</th>
+                        <th>Mobile</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        
+        pendingAlerts.forEach(alert => {
+            html += `
+                <tr id="alert-row-${alert.id}">
+                    <td>${escapeHtml(alert.timestamp) || 'N/A'}</td>
+                    <td><strong>${escapeHtml(alert.user_name) || 'N/A'}</strong></td>
+                    <td>${escapeHtml(alert.account_no) || 'N/A'}</td>
+                    <td>${escapeHtml(alert.card_id) || 'N/A'}</td>
+                    <td style="color: #ffa500; font-weight: bold;">₹${alert.amount_requested ? alert.amount_requested.toLocaleString('en-IN') : 'N/A'}</td>
+                    <td>${escapeHtml(alert.mobile) || 'N/A'}</td>
+                    <td>${escapeHtml(alert.location) || 'N/A'}</td>
+                    <td class="status-pending">⚠️ Pending</td>
+                    <td>
+                        <button onclick="resolveAndRemove(${alert.id})" class="resolve-btn" id="resolve-btn-${alert.id}">
+                            ✓ Resolve
+                        </button>
+                    </td>
+                </tr>
+            `;
+        });
+        
+        html += `</tbody>
+            </table>`;
+        container.innerHTML = html;
+    }
+    
+    // ==============================================================
+    // RESOLVE AND REMOVE ROW AFTER 5 SECONDS
+    // ==============================================================
+    async function resolveAndRemove(alertId) {
+        try {
+            const resolveBtn = document.getElementById(`resolve-btn-${alertId}`);
+            const row = document.getElementById(`alert-row-${alertId}`);
+            
+            if (!row) {
+                console.error("Row not found for alert:", alertId);
+                return;
+            }
+            
+            if (resolveBtn) {
+                resolveBtn.textContent = "⏳ Resolving...";
+                resolveBtn.disabled = true;
+            }
+            
+            // Add timer display to action cell
+            const actionCell = row.cells[8];
+            const timerSpan = document.createElement('span');
+            timerSpan.className = 'timer-badge';
+            timerSpan.id = `timer-${alertId}`;
+            timerSpan.textContent = ' (5s)';
+            actionCell.appendChild(timerSpan);
+            
+            // Call resolve API
+            const response = await fetch(`http://${window.location.hostname}:5000/api/high-amount-alerts/resolve/${alertId}`, {
+                method: 'POST'
+            });
+            
+            if (response.ok) {
+                let secondsLeft = 5;
+                const timerInterval = setInterval(() => {
+                    secondsLeft--;
+                    const timerSpanEl = document.getElementById(`timer-${alertId}`);
+                    if (timerSpanEl) {
+                        timerSpanEl.textContent = ` (${secondsLeft}s)`;
+                    }
+                    
+                    if (secondsLeft <= 0) {
+                        clearInterval(timerInterval);
+                        
+                        // Remove the row with animation
+                        row.classList.add('row-removing');
+                        setTimeout(() => {
+                            row.remove();
+                            
+                            // Check if table is empty
+                            const table = document.querySelector('#high-amount-alerts-container table');
+                            const tbody = table ? table.querySelector('tbody') : null;
+                            const remainingRows = tbody ? tbody.querySelectorAll('tr').length : 0;
+                            
+                            if (remainingRows === 0) {
+                                document.getElementById("high-amount-alerts-container").innerHTML = '<div class="no-data">✅ No pending alerts! All requests have been resolved.</div>';
+                            }
+                            
+                            // Update pending count
+                            const pendingCountSpan = document.getElementById("pending-count");
+                            let currentCount = parseInt(pendingCountSpan.textContent) || 0;
+                            pendingCountSpan.textContent = Math.max(0, currentCount - 1);
+                            
+                            if ((currentCount - 1) <= 0) {
+                                pendingCountSpan.style.background = "#00ff88";
+                                pendingCountSpan.style.color = "#0f2027";
+                            }
+                        }, 300);
+                        
+                        showNotification("✓ Alert resolved! Row removed.", "success");
+                    }
+                }, 1000);
+            } else {
+                throw new Error("Failed to resolve");
+            }
+        } catch (error) {
+            console.error("Error resolving alert:", error);
+            showNotification("❌ Error resolving alert", "error");
+            
+            const resolveBtn = document.getElementById(`resolve-btn-${alertId}`);
+            if (resolveBtn) {
+                resolveBtn.textContent = "✓ Resolve";
+                resolveBtn.disabled = false;
+            }
+            
+            // Remove timer if exists
+            const timerSpan = document.getElementById(`timer-${alertId}`);
+            if (timerSpan) {
+                timerSpan.remove();
+            }
+        }
+    }
+    
+    // Helper function to escape HTML
+    function escapeHtml(str) {
+        if (!str) return str;
+        return String(str).replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+    
+    function showNotification(message, type) {
+        const notification = document.createElement('div');
+        notification.style.position = 'fixed';
+        notification.style.bottom = '20px';
+        notification.style.right = '20px';
+        notification.style.padding = '12px 20px';
+        notification.style.borderRadius = '8px';
+        notification.style.color = 'white';
+        notification.style.fontWeight = '600';
+        notification.style.zIndex = '9999';
+        notification.style.animation = 'slideIn 0.3s ease';
+        
+        if (type === 'success') {
+            notification.style.background = '#00ff88';
+            notification.style.color = '#0f2027';
+            notification.innerHTML = '✓ ' + message;
+        } else {
+            notification.style.background = '#ff4e50';
+            notification.innerHTML = '❌ ' + message;
+        }
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.style.animation = 'slideOut 0.3s ease';
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+
+    // ATM Dashboard Functions
     async function fetchLiveData() {
         try {
             const response = await fetch(API_URL);
@@ -333,13 +719,12 @@
             document.getElementById("status").textContent = "🟢 LIVE";
             document.getElementById("status").style.color = "#00ff88";
         } catch (error) {
-            console.error("Error fetching data:", error);
+            console.error("Error fetching live data:", error);
             document.getElementById("status").textContent = "🔴 OFFLINE";
             document.getElementById("status").style.color = "#ff4e50";
         }
     }
 
-    // Update dashboard cards with live data
     function updateDashboard(liveData) {
         const dashboard = document.getElementById("dashboard");
 
@@ -354,7 +739,6 @@
                 dashboard.appendChild(card);
             }
 
-            // Determine status
             let statusClass = "normal";
             let statusText = "✓ HEALTHY";
             let cardClass = "card live-update";
@@ -394,29 +778,80 @@
                 <span class="status ${statusClass}">${statusText}</span>
                 <div class="info">
                     🌡 <strong>${(atm.temperature || 0).toFixed(1)}°C</strong> | ⏰ ${atm.last_update || 'N/A'}
-                    ${atm.vibration === 1 ? '<br><span style="color: #ff1744;">⚠ Vibration Detected - Possible Tampering!</span>' : ''}
-                    ${atm.temperature > 35 ? '<br><span style="color: #ffa500;">⚠ High Temperature Warning!</span>' : ''}
-                    ${atm.temperature < 10 ? '<br><span style="color: #00c6ff;">❄ Low Temperature Warning!</span>' : ''}
-                    ${atm.maintenance_due ? '<br><span style="color: #ffa500;">🔧 Maintenance is overdue!</span>' : ''}
+                    ${atm.vibration === 1 ? '<br><span style="color: #ff1744;">⚠ Vibration Detected!</span>' : ''}
+                    ${atm.temperature > 35 ? '<br><span style="color: #ffa500;">⚠ High Temperature!</span>' : ''}
+                    ${atm.temperature < 10 ? '<br><span style="color: #00c6ff;">❄ Low Temperature!</span>' : ''}
+                    ${atm.maintenance_due ? '<br><span style="color: #ffa500;">🔧 Maintenance Due!</span>' : ''}
                 </div>
                 <a href="/graph/${atmId}" class="graph-btn">📊 View Graph</a>
             `;
         });
     }
 
-    // Update current time
+    // Load initial data
+    async function loadInitialTable() {
+        const container = document.getElementById("high-amount-alerts-container");
+        container.innerHTML = '<div class="loading-data">📡 Loading alerts...</div>';
+        
+        try {
+            const response = await fetch(HIGH_AMOUNT_API_URL);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            
+            const alerts = await response.json();
+            console.log("Initial alerts loaded:", alerts); // Debug log
+            
+            displayAlertsTable(alerts);
+            const pendingAlerts = alerts.filter(a => a.status === 'pending');
+            document.getElementById("pending-count").textContent = pendingAlerts.length;
+            
+            if (pendingAlerts.length > 0) {
+                document.getElementById("pending-count").style.background = "#ff4e50";
+            } else {
+                document.getElementById("pending-count").style.background = "#00ff88";
+                document.getElementById("pending-count").style.color = "#0f2027";
+            }
+            
+        } catch (error) {
+            console.error("Error loading initial table:", error);
+            container.innerHTML = `<div class="error-data">❌ Error loading alerts: ${error.message}<br><br>Make sure Bank Server is running on port 5000</div>`;
+        }
+    }
+
     function updateTime() {
         const now = new Date();
         document.getElementById("time").textContent = now.toLocaleTimeString();
     }
 
-    // Initial fetch and set intervals
+    // CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Initialize
+    loadInitialTable();
     fetchLiveData();
     updateTime();
 
-    // Auto-update every 2 seconds
+    // ATM cards update every 2 seconds (ONLY ATM cards, NOT the high amount table)
     setInterval(fetchLiveData, 2000);
     setInterval(updateTime, 1000);
+    
+    // IMPORTANT: NO auto-refresh for high amount alerts table!
+    // Table ONLY refreshes when:
+    // 1. User clicks "Refresh Table" button
+    // 2. User clicks "Resolve" button (row disappears after 5 seconds)
 </script>
 
 </body>

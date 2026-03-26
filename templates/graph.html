@@ -1,126 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta -->
     <meta charset="UTF-8">
+    <title>Cash Trend - {{ atm }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title -->
-    <title>{{ atm }} Cash Trend</title>
-
-    <!-- Chart.js -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/static/style.css">
-
+    
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
         body {
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: white;
             min-height: 100vh;
             padding: 20px;
         }
-
-        .graph-container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 30px auto;
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 15px;
+            border-radius: 20px;
+            padding: 30px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
-
-        .back-btn {
-            display: inline-block;
-            margin: 20px;
-            padding: 10px 20px;
-            background: #00c6ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .back-btn:hover {
-            background: #0072ff;
-        }
-
-        .no-data {
-            text-align: center;
-            padding: 40px;
-            color: #ff4e50;
-        }
-
+        
         h1 {
             text-align: center;
-            color: white;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            font-size: 28px;
         }
-
+        
+        .atm-id {
+            text-align: center;
+            color: #00c6ff;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .location {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .chart-container {
+            margin: 30px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 20px;
+        }
+        
         canvas {
-            max-height: 500px;
+            max-height: 400px;
+            width: 100%;
+        }
+        
+        .info-box {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .debug-box {
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-family: monospace;
+            text-align: left;
+            border-left: 4px solid #00ff88;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        
+        .back-btn:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 50px;
+            color: #ffa500;
+            font-size: 18px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 15px;
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #00c6ff;
+            margin-bottom: 5px;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00ff88;
+        }
+        
+        .refresh-note {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+        
+        .btn-refresh {
+            background: #00ff88;
+            color: #0f2027;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        @media(max-width:600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .stat-value {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 
 <body>
-
-<!-- Back Button -->
-<a href="/" class="back-btn">← Back to Dashboard</a>
-
-<!-- Page Title -->
-<h1>📊 Cash Trend Analysis - {{ atm }}</h1>
-
-<!-- Graph Container -->
-<div class="graph-container">
-    {% if data and data|length > 0 %}
-        <canvas id="cashChart"></canvas>
-    {% else %}
-        <div class="no-data">
-            <p>⚠ No historical data available for this ATM yet.</p>
-            <p>Data will appear after the first MQTT update.</p>
-        </div>
-    {% endif %}
-</div>
-
-<!-- Chart Script -->
-<script>
-    // Get data from Python backend (tuples: [cash, timestamp])
-    const rawData = {{ data | tojson }};
-    
-    console.log("Raw Data:", rawData); // Debug log
-
-    {% if data and data|length > 0 %}
-        // Extract timestamps (index 1) and cash values (index 0)
-        const labels = rawData.map(item => item[1]);  // timestamp at index 1
-        const cashData = rawData.map(item => item[0]); // cash at index 0
-
-        console.log("Labels:", labels);
-        console.log("Cash Data:", cashData);
-
-        // Chart creation
-        const ctx = document.getElementById("cashChart").getContext("2d");
+    <div class="container">
+        <h1>📊 Cash Trend Analysis</h1>
+        <div class="atm-id">🏧 {{ atm }}</div>
+        <div class="location">📍 {{ atm_data.location if atm_data else 'Loading...' }}</div>
         
+        {% if data and data|length > 0 %}
+        <div class="debug-box">
+            <strong>🔍 Debug Information:</strong><br>
+            📊 Data Points Found: {{ data|length }}<br>
+            🕐 Time Range: {{ data[0][1] if data else 'N/A' }} to {{ data[-1][1] if data else 'N/A' }}<br>
+            💰 Cash Range: ₹{{ data|map(attribute=0)|min|format_currency }} - ₹{{ data|map(attribute=0)|max|format_currency }}<br>
+            🔄 Last Update: {{ data[-1][1] if data else 'N/A' }}
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-label">Current Cash</div>
+                <div class="stat-value">₹{{ atm_data.current_cash|format_currency }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Highest Cash</div>
+                <div class="stat-value">₹{{ data|map(attribute=0)|max|format_currency }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Lowest Cash</div>
+                <div class="stat-value">₹{{ data|map(attribute=0)|min|format_currency }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Data Points</div>
+                <div class="stat-value">{{ data|length }}</div>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="cashChart"></canvas>
+        </div>
+        
+        <div class="info-box">
+            💡 <strong>Note:</strong> Graph updates automatically when cash is updated via "Manage Cash" or when MQTT data is received.<br>
+            Showing last {{ data|length }} records. Each update saves a new data point to history.
+        </div>
+        
+        <div class="refresh-note">
+            ⟳ Data updates every 2 seconds from MQTT | 
+            <button onclick="location.reload()" class="btn-refresh">🔄 Refresh Graph</button>
+        </div>
+        {% else %}
+        <div class="no-data">
+            ⚠️ No historical data available for this ATM yet.<br><br>
+            
+            <div class="debug-box" style="margin: 20px auto; max-width: 500px;">
+                <strong>🔍 Troubleshooting:</strong><br>
+                • Current Cash: ₹{{ atm_data.current_cash|format_currency }}<br>
+                • Location: {{ atm_data.location }}<br>
+                • Please check:<br>
+                &nbsp;&nbsp;1. If cash has been updated via "Manage Cash"<br>
+                &nbsp;&nbsp;2. If MQTT data is being received<br>
+                &nbsp;&nbsp;3. If database has history records<br><br>
+                <button onclick="checkDatabase()" style="margin-top: 10px; padding: 5px 10px; background: #00ff88; border: none; border-radius: 5px; cursor: pointer;">Check Database Status</button>
+                <div id="db-status" style="margin-top: 10px; font-size: 11px; color: #00ff88;"></div>
+            </div>
+            
+            📡 Data will appear after:<br>
+            • First MQTT data reception (temperature update)<br>
+            • Manual cash update via <a href="/manage-cash" style="color: #00ff88;">Manage Cash</a><br><br>
+            
+            ⏳ Please wait for data or <a href="/manage-cash" style="color: #00ff88;">update cash manually</a>.
+        </div>
+        {% endif %}
+        
+        <div style="text-align: center;">
+            <a href="/" class="back-btn">← Back to Dashboard</a>
+        </div>
+    </div>
+    
+    {% if data and data|length > 0 %}
+    <script>
+        // Prepare data for Chart.js
+        const rawData = {{ data | tojson }};
+        
+        console.log("Raw data received:", rawData);
+        
+        // Extract timestamps and cash amounts
+        const timestamps = rawData.map(item => {
+            const date = new Date(item[1]);
+            return date.toLocaleString();
+        });
+        
+        const cashAmounts = rawData.map(item => item[0]);
+        
+        console.log("Timestamps:", timestamps);
+        console.log("Cash amounts:", cashAmounts);
+        
+        // Create chart
+        const ctx = document.getElementById('cashChart').getContext('2d');
         new Chart(ctx, {
-            type: "line",
+            type: 'line',
             data: {
-                labels: labels,
+                labels: timestamps,
                 datasets: [{
-                    label: "Cash Amount (₹)",
-                    data: cashData,
-                    borderColor: "#00c6ff",
-                    backgroundColor: "rgba(0, 198, 255, 0.1)",
-                    borderWidth: 3,
+                    label: 'Cash Amount (₹)',
+                    data: cashAmounts,
+                    borderColor: '#00ff88',
+                    backgroundColor: 'rgba(0, 255, 136, 0.1)',
+                    borderWidth: 2,
                     fill: true,
                     tension: 0.4,
-                    pointRadius: 6,
-                    pointBackgroundColor: "#00c6ff",
-                    pointBorderColor: "white",
-                    pointBorderWidth: 2,
-                    pointHoverRadius: 8,
-                    pointHoverBackgroundColor: "#00ff88"
+                    pointBackgroundColor: '#00c6ff',
+                    pointBorderColor: '#fff',
+                    pointRadius: 4,
+                    pointHoverRadius: 6
                 }]
             },
             options: {
@@ -128,45 +287,78 @@
                 maintainAspectRatio: true,
                 plugins: {
                     legend: {
-                        display: true,
                         labels: {
-                            color: "white",
+                            color: '#fff',
                             font: {
-                                size: 14,
-                                weight: "600"
+                                size: 12
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return '₹ ' + context.raw.toLocaleString('en-IN');
                             }
                         }
                     }
                 },
                 scales: {
                     y: {
-                        beginAtZero: true,
+                        beginAtZero: false,
                         ticks: {
-                            color: "white",
+                            color: '#fff',
                             callback: function(value) {
-                                return "₹" + value.toLocaleString("en-IN");
+                                return '₹ ' + value.toLocaleString('en-IN');
                             }
                         },
                         grid: {
-                            color: "rgba(255, 255, 255, 0.1)"
+                            color: 'rgba(255,255,255,0.1)'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Cash Amount (₹)',
+                            color: '#00c6ff'
                         }
                     },
                     x: {
                         ticks: {
-                            color: "white",
-                            font: {
-                                size: 12
-                            }
+                            color: '#fff',
+                            maxRotation: 45,
+                            minRotation: 45
                         },
                         grid: {
-                            color: "rgba(255, 255, 255, 0.05)"
+                            color: 'rgba(255,255,255,0.1)'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Date & Time',
+                            color: '#00c6ff'
                         }
                     }
                 }
             }
         });
+    </script>
     {% endif %}
-</script>
-
+    
+    <script>
+        function checkDatabase() {
+            fetch(`/api/atm/{{ atm }}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('db-status').innerHTML = `
+                        ✅ ATM Status:<br>
+                        • Current Cash: ₹${data.cash?.toLocaleString() || 0}<br>
+                        • Last Update: ${data.last_update || 'Never'}<br>
+                        • Temperature: ${data.temperature || 'N/A'}°C<br>
+                        • Vibration: ${data.vibration === 1 ? '⚠️ Detected' : '✓ Normal'}<br><br>
+                        💡 Try updating cash manually from the Manage Cash page to generate history data.
+                    `;
+                })
+                .catch(err => {
+                    document.getElementById('db-status').innerHTML = '❌ Error checking database: ' + err.message;
+                });
+        }
+    </script>
 </body>
 </html>

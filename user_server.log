@@ -685,3 +685,2149 @@
 2026-03-24 00:25:40,145 - INFO - 192.168.1.19 - - [24/Mar/2026 00:25:40] "GET / HTTP/1.1" 200 -
 2026-03-24 00:25:40,417 - WARNING - 404 error occurred
 2026-03-24 00:25:40,417 - INFO - 192.168.1.19 - - [24/Mar/2026 00:25:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-24 00:39:38,824 - INFO - User Server Started
+2026-03-24 00:39:38,826 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-24 00:39:38,888 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-24 00:39:38,888 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 00:39:38,890 - INFO -  * Restarting with stat
+2026-03-24 00:39:39,387 - INFO - User Server Started
+2026-03-24 00:39:39,389 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-24 00:39:39,417 - WARNING -  * Debugger is active!
+2026-03-24 00:39:39,419 - INFO -  * Debugger PIN: 763-212-850
+2026-03-24 00:46:14,923 - INFO - User Server Started
+2026-03-24 00:46:14,925 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-24 00:46:14,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-24 00:46:14,967 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 00:46:14,969 - INFO -  * Restarting with stat
+2026-03-24 00:46:15,473 - INFO - User Server Started
+2026-03-24 00:46:15,476 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-24 00:46:15,520 - WARNING -  * Debugger is active!
+2026-03-24 00:46:15,525 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 00:46:19,790 - INFO - 192.168.1.19 - - [24/Mar/2026 00:46:19] "GET / HTTP/1.1" 200 -
+2026-03-24 00:46:19,978 - WARNING - 404 error occurred
+2026-03-24 00:46:19,979 - INFO - 192.168.1.19 - - [24/Mar/2026 00:46:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-24 10:21:04,335 - INFO - User Server Started
+2026-03-24 10:21:04,337 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 10:21:04,397 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 10:21:04,397 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 10:21:04,400 - INFO -  * Restarting with stat
+2026-03-24 10:21:05,001 - INFO - User Server Started
+2026-03-24 10:21:05,006 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 10:21:05,040 - WARNING -  * Debugger is active!
+2026-03-24 10:21:05,048 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 10:32:29,799 - INFO - User Server Started
+2026-03-24 10:32:29,802 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 10:32:29,852 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 10:32:29,852 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 10:32:29,854 - INFO -  * Restarting with stat
+2026-03-24 10:32:30,420 - INFO - User Server Started
+2026-03-24 10:32:30,422 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 10:32:30,462 - WARNING -  * Debugger is active!
+2026-03-24 10:32:30,465 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 10:59:48,959 - INFO - User Server Started
+2026-03-24 10:59:48,962 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 10:59:49,018 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 10:59:49,018 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 10:59:49,020 - INFO -  * Restarting with stat
+2026-03-24 10:59:49,918 - INFO - User Server Started
+2026-03-24 10:59:49,922 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 10:59:49,967 - WARNING -  * Debugger is active!
+2026-03-24 10:59:49,970 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 10:59:54,746 - INFO - 192.168.1.156 - - [24/Mar/2026 10:59:54] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-24 10:59:54,766 - INFO - 192.168.1.156 - - [24/Mar/2026 10:59:54] "GET /login HTTP/1.1" 200 -
+2026-03-24 10:59:54,847 - WARNING - 404 error occurred
+2026-03-24 10:59:54,848 - INFO - 192.168.1.156 - - [24/Mar/2026 10:59:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-24 11:03:50,606 - INFO - 192.168.1.156 - - [24/Mar/2026 11:03:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-24 11:03:50,631 - INFO - 192.168.1.156 - - [24/Mar/2026 11:03:50] "GET / HTTP/1.1" 200 -
+2026-03-24 11:03:59,476 - INFO - Search: Amount=4000, Location=, Results=5
+2026-03-24 11:03:59,477 - INFO - 192.168.1.156 - - [24/Mar/2026 11:03:59] "POST / HTTP/1.1" 200 -
+2026-03-24 11:04:09,766 - INFO - 192.168.1.156 - - [24/Mar/2026 11:04:09] "GET / HTTP/1.1" 200 -
+2026-03-24 11:04:19,838 - INFO - 192.168.1.156 - - [24/Mar/2026 11:04:19] "GET / HTTP/1.1" 200 -
+2026-03-24 11:04:29,898 - INFO - 192.168.1.156 - - [24/Mar/2026 11:04:29] "GET / HTTP/1.1" 200 -
+2026-03-24 11:04:39,975 - INFO - 192.168.1.156 - - [24/Mar/2026 11:04:39] "GET / HTTP/1.1" 200 -
+2026-03-24 11:04:50,041 - INFO - 192.168.1.156 - - [24/Mar/2026 11:04:50] "GET / HTTP/1.1" 200 -
+2026-03-24 11:05:00,099 - INFO - 192.168.1.156 - - [24/Mar/2026 11:05:00] "GET / HTTP/1.1" 200 -
+2026-03-24 11:05:10,161 - INFO - 192.168.1.156 - - [24/Mar/2026 11:05:10] "GET / HTTP/1.1" 200 -
+2026-03-24 11:05:20,211 - INFO - 192.168.1.156 - - [24/Mar/2026 11:05:20] "GET / HTTP/1.1" 200 -
+2026-03-24 11:05:30,276 - INFO - 192.168.1.156 - - [24/Mar/2026 11:05:30] "GET / HTTP/1.1" 200 -
+2026-03-24 11:05:40,326 - INFO - 192.168.1.156 - - [24/Mar/2026 11:05:40] "GET / HTTP/1.1" 200 -
+2026-03-24 11:05:50,386 - INFO - 192.168.1.156 - - [24/Mar/2026 11:05:50] "GET / HTTP/1.1" 200 -
+2026-03-24 11:06:00,469 - INFO - 192.168.1.156 - - [24/Mar/2026 11:06:00] "GET / HTTP/1.1" 200 -
+2026-03-24 11:06:10,531 - INFO - 192.168.1.156 - - [24/Mar/2026 11:06:10] "GET / HTTP/1.1" 200 -
+2026-03-24 11:06:20,596 - INFO - 192.168.1.156 - - [24/Mar/2026 11:06:20] "GET / HTTP/1.1" 200 -
+2026-03-24 11:06:30,671 - INFO - 192.168.1.156 - - [24/Mar/2026 11:06:30] "GET / HTTP/1.1" 200 -
+2026-03-24 11:06:40,730 - INFO - 192.168.1.156 - - [24/Mar/2026 11:06:40] "GET / HTTP/1.1" 200 -
+2026-03-24 11:06:50,813 - INFO - 192.168.1.156 - - [24/Mar/2026 11:06:50] "GET / HTTP/1.1" 200 -
+2026-03-24 11:07:00,887 - INFO - 192.168.1.156 - - [24/Mar/2026 11:07:00] "GET / HTTP/1.1" 200 -
+2026-03-24 11:07:10,935 - INFO - 192.168.1.156 - - [24/Mar/2026 11:07:10] "GET / HTTP/1.1" 200 -
+2026-03-24 11:07:20,975 - INFO - 192.168.1.156 - - [24/Mar/2026 11:07:20] "GET / HTTP/1.1" 200 -
+2026-03-24 11:07:31,026 - INFO - 192.168.1.156 - - [24/Mar/2026 11:07:31] "GET / HTTP/1.1" 200 -
+2026-03-24 11:07:41,072 - INFO - 192.168.1.156 - - [24/Mar/2026 11:07:41] "GET / HTTP/1.1" 200 -
+2026-03-24 11:07:51,122 - INFO - 192.168.1.156 - - [24/Mar/2026 11:07:51] "GET / HTTP/1.1" 200 -
+2026-03-24 11:08:01,179 - INFO - 192.168.1.156 - - [24/Mar/2026 11:08:01] "GET / HTTP/1.1" 200 -
+2026-03-24 11:08:11,230 - INFO - 192.168.1.156 - - [24/Mar/2026 11:08:11] "GET / HTTP/1.1" 200 -
+2026-03-24 11:08:21,316 - INFO - 192.168.1.156 - - [24/Mar/2026 11:08:21] "GET / HTTP/1.1" 200 -
+2026-03-24 11:08:31,389 - INFO - 192.168.1.156 - - [24/Mar/2026 11:08:31] "GET / HTTP/1.1" 200 -
+2026-03-24 11:08:41,453 - INFO - 192.168.1.156 - - [24/Mar/2026 11:08:41] "GET / HTTP/1.1" 200 -
+2026-03-24 11:08:51,508 - INFO - 192.168.1.156 - - [24/Mar/2026 11:08:51] "GET / HTTP/1.1" 200 -
+2026-03-24 11:09:01,564 - INFO - 192.168.1.156 - - [24/Mar/2026 11:09:01] "GET / HTTP/1.1" 200 -
+2026-03-24 11:09:11,619 - INFO - 192.168.1.156 - - [24/Mar/2026 11:09:11] "GET / HTTP/1.1" 200 -
+2026-03-24 11:09:21,665 - INFO - 192.168.1.156 - - [24/Mar/2026 11:09:21] "GET / HTTP/1.1" 200 -
+2026-03-24 11:09:31,707 - INFO - 192.168.1.156 - - [24/Mar/2026 11:09:31] "GET / HTTP/1.1" 200 -
+2026-03-24 11:09:41,781 - INFO - 192.168.1.156 - - [24/Mar/2026 11:09:41] "GET / HTTP/1.1" 200 -
+2026-03-24 11:09:51,861 - INFO - 192.168.1.156 - - [24/Mar/2026 11:09:51] "GET / HTTP/1.1" 200 -
+2026-03-24 11:10:01,932 - INFO - 192.168.1.156 - - [24/Mar/2026 11:10:01] "GET / HTTP/1.1" 200 -
+2026-03-24 11:10:11,978 - INFO - 192.168.1.156 - - [24/Mar/2026 11:10:11] "GET / HTTP/1.1" 200 -
+2026-03-24 11:10:22,045 - INFO - 192.168.1.156 - - [24/Mar/2026 11:10:22] "GET / HTTP/1.1" 200 -
+2026-03-24 11:10:32,098 - INFO - 192.168.1.156 - - [24/Mar/2026 11:10:32] "GET / HTTP/1.1" 200 -
+2026-03-24 11:10:42,160 - INFO - 192.168.1.156 - - [24/Mar/2026 11:10:42] "GET / HTTP/1.1" 200 -
+2026-03-24 11:10:52,219 - INFO - 192.168.1.156 - - [24/Mar/2026 11:10:52] "GET / HTTP/1.1" 200 -
+2026-03-24 11:11:02,271 - INFO - 192.168.1.156 - - [24/Mar/2026 11:11:02] "GET / HTTP/1.1" 200 -
+2026-03-24 11:11:12,316 - INFO - 192.168.1.156 - - [24/Mar/2026 11:11:12] "GET / HTTP/1.1" 200 -
+2026-03-24 11:11:22,372 - INFO - 192.168.1.156 - - [24/Mar/2026 11:11:22] "GET / HTTP/1.1" 200 -
+2026-03-24 11:11:32,417 - INFO - 192.168.1.156 - - [24/Mar/2026 11:11:32] "GET / HTTP/1.1" 200 -
+2026-03-24 11:11:42,481 - INFO - 192.168.1.156 - - [24/Mar/2026 11:11:42] "GET / HTTP/1.1" 200 -
+2026-03-24 11:11:52,550 - INFO - 192.168.1.156 - - [24/Mar/2026 11:11:52] "GET / HTTP/1.1" 200 -
+2026-03-24 11:12:02,633 - INFO - 192.168.1.156 - - [24/Mar/2026 11:12:02] "GET / HTTP/1.1" 200 -
+2026-03-24 11:12:12,709 - INFO - 192.168.1.156 - - [24/Mar/2026 11:12:12] "GET / HTTP/1.1" 200 -
+2026-03-24 11:12:22,756 - INFO - 192.168.1.156 - - [24/Mar/2026 11:12:22] "GET / HTTP/1.1" 200 -
+2026-03-24 11:12:32,801 - INFO - 192.168.1.156 - - [24/Mar/2026 11:12:32] "GET / HTTP/1.1" 200 -
+2026-03-24 11:12:42,879 - INFO - 192.168.1.156 - - [24/Mar/2026 11:12:42] "GET / HTTP/1.1" 200 -
+2026-03-24 11:12:52,941 - INFO - 192.168.1.156 - - [24/Mar/2026 11:12:52] "GET / HTTP/1.1" 200 -
+2026-03-24 11:13:03,012 - INFO - 192.168.1.156 - - [24/Mar/2026 11:13:03] "GET / HTTP/1.1" 200 -
+2026-03-24 11:13:13,091 - INFO - 192.168.1.156 - - [24/Mar/2026 11:13:13] "GET / HTTP/1.1" 200 -
+2026-03-24 11:13:23,157 - INFO - 192.168.1.156 - - [24/Mar/2026 11:13:23] "GET / HTTP/1.1" 200 -
+2026-03-24 11:13:33,209 - INFO - 192.168.1.156 - - [24/Mar/2026 11:13:33] "GET / HTTP/1.1" 200 -
+2026-03-24 11:13:43,288 - INFO - 192.168.1.156 - - [24/Mar/2026 11:13:43] "GET / HTTP/1.1" 200 -
+2026-03-24 11:13:53,339 - INFO - 192.168.1.156 - - [24/Mar/2026 11:13:53] "GET / HTTP/1.1" 200 -
+2026-03-24 11:14:03,395 - INFO - 192.168.1.156 - - [24/Mar/2026 11:14:03] "GET / HTTP/1.1" 200 -
+2026-03-24 11:14:13,461 - INFO - 192.168.1.156 - - [24/Mar/2026 11:14:13] "GET / HTTP/1.1" 200 -
+2026-03-24 11:14:23,535 - INFO - 192.168.1.156 - - [24/Mar/2026 11:14:23] "GET / HTTP/1.1" 200 -
+2026-03-24 11:14:33,584 - INFO - 192.168.1.156 - - [24/Mar/2026 11:14:33] "GET / HTTP/1.1" 200 -
+2026-03-24 11:14:43,634 - INFO - 192.168.1.156 - - [24/Mar/2026 11:14:43] "GET / HTTP/1.1" 200 -
+2026-03-24 11:14:53,685 - INFO - 192.168.1.156 - - [24/Mar/2026 11:14:53] "GET / HTTP/1.1" 200 -
+2026-03-24 11:15:03,759 - INFO - 192.168.1.156 - - [24/Mar/2026 11:15:03] "GET / HTTP/1.1" 200 -
+2026-03-24 11:15:13,820 - INFO - 192.168.1.156 - - [24/Mar/2026 11:15:13] "GET / HTTP/1.1" 200 -
+2026-03-24 11:15:23,877 - INFO - 192.168.1.156 - - [24/Mar/2026 11:15:23] "GET / HTTP/1.1" 200 -
+2026-03-24 11:15:33,947 - INFO - 192.168.1.156 - - [24/Mar/2026 11:15:33] "GET / HTTP/1.1" 200 -
+2026-03-24 11:15:44,004 - INFO - 192.168.1.156 - - [24/Mar/2026 11:15:44] "GET / HTTP/1.1" 200 -
+2026-03-24 11:15:54,083 - INFO - 192.168.1.156 - - [24/Mar/2026 11:15:54] "GET / HTTP/1.1" 200 -
+2026-03-24 11:16:04,138 - INFO - 192.168.1.156 - - [24/Mar/2026 11:16:04] "GET / HTTP/1.1" 200 -
+2026-03-24 11:16:14,197 - INFO - 192.168.1.156 - - [24/Mar/2026 11:16:14] "GET / HTTP/1.1" 200 -
+2026-03-24 11:16:24,272 - INFO - 192.168.1.156 - - [24/Mar/2026 11:16:24] "GET / HTTP/1.1" 200 -
+2026-03-24 11:16:34,344 - INFO - 192.168.1.156 - - [24/Mar/2026 11:16:34] "GET / HTTP/1.1" 200 -
+2026-03-24 11:16:44,412 - INFO - 192.168.1.156 - - [24/Mar/2026 11:16:44] "GET / HTTP/1.1" 200 -
+2026-03-24 11:16:54,476 - INFO - 192.168.1.156 - - [24/Mar/2026 11:16:54] "GET / HTTP/1.1" 200 -
+2026-03-24 11:17:04,533 - INFO - 192.168.1.156 - - [24/Mar/2026 11:17:04] "GET / HTTP/1.1" 200 -
+2026-03-24 11:17:14,601 - INFO - 192.168.1.156 - - [24/Mar/2026 11:17:14] "GET / HTTP/1.1" 200 -
+2026-03-24 11:17:24,667 - INFO - 192.168.1.156 - - [24/Mar/2026 11:17:24] "GET / HTTP/1.1" 200 -
+2026-03-24 11:17:34,716 - INFO - 192.168.1.156 - - [24/Mar/2026 11:17:34] "GET / HTTP/1.1" 200 -
+2026-03-24 11:17:44,770 - INFO - 192.168.1.156 - - [24/Mar/2026 11:17:44] "GET / HTTP/1.1" 200 -
+2026-03-24 11:17:54,819 - INFO - 192.168.1.156 - - [24/Mar/2026 11:17:54] "GET / HTTP/1.1" 200 -
+2026-03-24 11:18:04,877 - INFO - 192.168.1.156 - - [24/Mar/2026 11:18:04] "GET / HTTP/1.1" 200 -
+2026-03-24 11:18:14,946 - INFO - 192.168.1.156 - - [24/Mar/2026 11:18:14] "GET / HTTP/1.1" 200 -
+2026-03-24 11:18:25,008 - INFO - 192.168.1.156 - - [24/Mar/2026 11:18:25] "GET / HTTP/1.1" 200 -
+2026-03-24 11:18:35,072 - INFO - 192.168.1.156 - - [24/Mar/2026 11:18:35] "GET / HTTP/1.1" 200 -
+2026-03-24 11:18:45,139 - INFO - 192.168.1.156 - - [24/Mar/2026 11:18:45] "GET / HTTP/1.1" 200 -
+2026-03-24 11:18:55,221 - INFO - 192.168.1.156 - - [24/Mar/2026 11:18:55] "GET / HTTP/1.1" 200 -
+2026-03-24 11:19:05,271 - INFO - 192.168.1.156 - - [24/Mar/2026 11:19:05] "GET / HTTP/1.1" 200 -
+2026-03-24 11:19:15,342 - INFO - 192.168.1.156 - - [24/Mar/2026 11:19:15] "GET / HTTP/1.1" 200 -
+2026-03-24 11:19:25,391 - INFO - 192.168.1.156 - - [24/Mar/2026 11:19:25] "GET / HTTP/1.1" 200 -
+2026-03-24 11:19:35,475 - INFO - 192.168.1.156 - - [24/Mar/2026 11:19:35] "GET / HTTP/1.1" 200 -
+2026-03-24 11:19:45,555 - INFO - 192.168.1.156 - - [24/Mar/2026 11:19:45] "GET / HTTP/1.1" 200 -
+2026-03-24 11:19:55,625 - INFO - 192.168.1.156 - - [24/Mar/2026 11:19:55] "GET / HTTP/1.1" 200 -
+2026-03-24 11:20:05,692 - INFO - 192.168.1.156 - - [24/Mar/2026 11:20:05] "GET / HTTP/1.1" 200 -
+2026-03-24 11:20:15,738 - INFO - 192.168.1.156 - - [24/Mar/2026 11:20:15] "GET / HTTP/1.1" 200 -
+2026-03-24 11:20:25,792 - INFO - 192.168.1.156 - - [24/Mar/2026 11:20:25] "GET / HTTP/1.1" 200 -
+2026-03-24 11:20:35,877 - INFO - 192.168.1.156 - - [24/Mar/2026 11:20:35] "GET / HTTP/1.1" 200 -
+2026-03-24 11:20:45,941 - INFO - 192.168.1.156 - - [24/Mar/2026 11:20:45] "GET / HTTP/1.1" 200 -
+2026-03-24 11:20:56,009 - INFO - 192.168.1.156 - - [24/Mar/2026 11:20:56] "GET / HTTP/1.1" 200 -
+2026-03-24 11:21:06,092 - INFO - 192.168.1.156 - - [24/Mar/2026 11:21:06] "GET / HTTP/1.1" 200 -
+2026-03-24 11:21:16,167 - INFO - 192.168.1.156 - - [24/Mar/2026 11:21:16] "GET / HTTP/1.1" 200 -
+2026-03-24 11:21:26,232 - INFO - 192.168.1.156 - - [24/Mar/2026 11:21:26] "GET / HTTP/1.1" 200 -
+2026-03-24 11:21:36,324 - INFO - 192.168.1.156 - - [24/Mar/2026 11:21:36] "GET / HTTP/1.1" 200 -
+2026-03-24 11:21:46,382 - INFO - 192.168.1.156 - - [24/Mar/2026 11:21:46] "GET / HTTP/1.1" 200 -
+2026-03-24 11:21:56,440 - INFO - 192.168.1.156 - - [24/Mar/2026 11:21:56] "GET / HTTP/1.1" 200 -
+2026-03-24 11:22:06,501 - INFO - 192.168.1.156 - - [24/Mar/2026 11:22:06] "GET / HTTP/1.1" 200 -
+2026-03-24 11:22:16,569 - INFO - 192.168.1.156 - - [24/Mar/2026 11:22:16] "GET / HTTP/1.1" 200 -
+2026-03-24 11:22:26,657 - INFO - 192.168.1.156 - - [24/Mar/2026 11:22:26] "GET / HTTP/1.1" 200 -
+2026-03-24 11:22:36,712 - INFO - 192.168.1.156 - - [24/Mar/2026 11:22:36] "GET / HTTP/1.1" 200 -
+2026-03-24 11:22:46,780 - INFO - 192.168.1.156 - - [24/Mar/2026 11:22:46] "GET / HTTP/1.1" 200 -
+2026-03-24 11:22:52,708 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-24 11:22:52,857 - INFO -  * Restarting with stat
+2026-03-24 11:22:53,566 - INFO - User Server Started
+2026-03-24 11:22:53,569 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 11:22:53,669 - WARNING -  * Debugger is active!
+2026-03-24 11:22:53,673 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 12:06:11,687 - INFO - User Server Started
+2026-03-24 12:06:11,690 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 12:06:11,747 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 12:06:11,747 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 12:06:11,749 - INFO -  * Restarting with stat
+2026-03-24 12:06:12,407 - INFO - User Server Started
+2026-03-24 12:06:12,410 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 12:06:12,437 - WARNING -  * Debugger is active!
+2026-03-24 12:06:12,440 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 12:06:18,061 - INFO - 192.168.1.156 - - [24/Mar/2026 12:06:18] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-24 12:06:18,090 - INFO - 192.168.1.156 - - [24/Mar/2026 12:06:18] "GET /login HTTP/1.1" 200 -
+2026-03-24 12:06:26,635 - INFO - 192.168.1.156 - - [24/Mar/2026 12:06:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-24 12:06:26,660 - INFO - 192.168.1.156 - - [24/Mar/2026 12:06:26] "GET / HTTP/1.1" 200 -
+2026-03-24 12:06:35,299 - WARNING - Could not send data to bank server
+2026-03-24 12:06:35,302 - INFO - Search: Amount=70000000, Location=, Results=0
+2026-03-24 12:06:35,303 - INFO - 192.168.1.156 - - [24/Mar/2026 12:06:35] "POST / HTTP/1.1" 200 -
+2026-03-24 12:15:28,519 - INFO - User Server Started
+2026-03-24 12:15:28,522 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 12:15:28,571 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 12:15:28,571 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 12:15:28,572 - INFO -  * Restarting with stat
+2026-03-24 12:15:29,291 - INFO - User Server Started
+2026-03-24 12:15:29,293 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 12:15:29,314 - WARNING -  * Debugger is active!
+2026-03-24 12:15:29,317 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 12:15:32,662 - INFO - 192.168.1.156 - - [24/Mar/2026 12:15:32] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-24 12:15:32,678 - INFO - 192.168.1.156 - - [24/Mar/2026 12:15:32] "GET /login HTTP/1.1" 200 -
+2026-03-24 12:18:53,531 - INFO - User Server Started
+2026-03-24 12:18:53,534 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 12:18:53,582 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 12:18:53,582 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 12:18:53,583 - INFO -  * Restarting with stat
+2026-03-24 12:18:54,204 - INFO - User Server Started
+2026-03-24 12:18:54,207 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 12:18:54,246 - WARNING -  * Debugger is active!
+2026-03-24 12:18:54,249 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 12:18:58,334 - INFO - 192.168.1.156 - - [24/Mar/2026 12:18:58] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-24 12:18:58,354 - INFO - 192.168.1.156 - - [24/Mar/2026 12:18:58] "GET /login HTTP/1.1" 200 -
+2026-03-24 12:19:05,426 - INFO - 192.168.1.156 - - [24/Mar/2026 12:19:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-24 12:19:05,449 - INFO - 192.168.1.156 - - [24/Mar/2026 12:19:05] "GET / HTTP/1.1" 200 -
+2026-03-24 13:01:16,985 - INFO - User Server Started
+2026-03-24 13:01:16,988 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:01:17,031 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 13:01:17,031 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 13:01:17,033 - INFO -  * Restarting with stat
+2026-03-24 13:01:17,684 - INFO - User Server Started
+2026-03-24 13:01:17,687 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:01:17,716 - WARNING -  * Debugger is active!
+2026-03-24 13:01:17,719 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:01:21,658 - INFO - 192.168.1.156 - - [24/Mar/2026 13:01:21] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-24 13:01:21,708 - INFO - 192.168.1.156 - - [24/Mar/2026 13:01:21] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2026-03-24 13:01:22,035 - INFO - 192.168.1.156 - - [24/Mar/2026 13:01:22] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-03-24 13:01:22,073 - INFO - 192.168.1.156 - - [24/Mar/2026 13:01:22] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-03-24 13:01:22,246 - INFO - 192.168.1.156 - - [24/Mar/2026 13:01:22] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=XGlvxKjvpB3uDNxrqw6u HTTP/1.1" 200 -
+2026-03-24 13:01:22,267 - INFO - 192.168.1.156 - - [24/Mar/2026 13:01:22] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-03-24 13:04:46,130 - INFO - User Server Started
+2026-03-24 13:04:46,133 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:04:46,200 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 13:04:46,200 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 13:04:46,203 - INFO -  * Restarting with stat
+2026-03-24 13:04:46,903 - INFO - User Server Started
+2026-03-24 13:04:46,905 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:04:46,933 - WARNING -  * Debugger is active!
+2026-03-24 13:04:46,937 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:04:51,107 - INFO - 192.168.1.156 - - [24/Mar/2026 13:04:51] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-24 13:04:51,148 - INFO - 192.168.1.156 - - [24/Mar/2026 13:04:51] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2026-03-24 13:04:51,409 - INFO - 192.168.1.156 - - [24/Mar/2026 13:04:51] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-24 13:04:51,411 - INFO - 192.168.1.156 - - [24/Mar/2026 13:04:51] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-24 13:04:51,551 - INFO - 192.168.1.156 - - [24/Mar/2026 13:04:51] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=kCmGrvhv41C8SVl1FWq9 HTTP/1.1" 200 -
+2026-03-24 13:06:09,335 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-24 13:06:09,428 - INFO -  * Restarting with stat
+2026-03-24 13:06:10,023 - INFO - User Server Started
+2026-03-24 13:06:10,026 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:06:10,063 - WARNING -  * Debugger is active!
+2026-03-24 13:06:10,067 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:06:26,026 - INFO - User Server Started
+2026-03-24 13:06:26,028 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:06:26,078 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 13:06:26,078 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 13:06:26,081 - INFO -  * Restarting with stat
+2026-03-24 13:06:26,557 - INFO - User Server Started
+2026-03-24 13:06:26,561 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:06:26,587 - WARNING -  * Debugger is active!
+2026-03-24 13:06:26,592 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:06:30,981 - INFO - 192.168.1.156 - - [24/Mar/2026 13:06:30] "GET / HTTP/1.1" 200 -
+2026-03-24 13:39:22,630 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-24 13:39:22,763 - INFO -  * Restarting with stat
+2026-03-24 13:39:23,360 - INFO - User Server Started
+2026-03-24 13:39:23,364 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:39:23,405 - WARNING -  * Debugger is active!
+2026-03-24 13:39:23,409 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:40:15,230 - INFO - User Server Started
+2026-03-24 13:40:15,232 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:40:15,276 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 13:40:15,277 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 13:40:15,278 - INFO -  * Restarting with stat
+2026-03-24 13:40:15,783 - INFO - User Server Started
+2026-03-24 13:40:15,785 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:40:15,814 - WARNING -  * Debugger is active!
+2026-03-24 13:40:15,816 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:40:28,936 - INFO - 192.168.1.156 - - [24/Mar/2026 13:40:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-24 13:40:29,170 - INFO - 192.168.1.156 - - [24/Mar/2026 13:40:29] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-03-24 13:40:29,175 - INFO - 192.168.1.156 - - [24/Mar/2026 13:40:29] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-03-24 13:40:29,312 - INFO - 192.168.1.156 - - [24/Mar/2026 13:40:29] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=uzkCopxv5OOd68VDEMEh HTTP/1.1" 200 -
+2026-03-24 13:40:29,339 - INFO - 192.168.1.156 - - [24/Mar/2026 13:40:29] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-03-24 13:43:19,988 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-24 13:43:20,055 - INFO -  * Restarting with stat
+2026-03-24 13:43:20,781 - INFO - User Server Started
+2026-03-24 13:43:20,784 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:43:20,814 - WARNING -  * Debugger is active!
+2026-03-24 13:43:20,818 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:44:09,669 - INFO - User Server Started
+2026-03-24 13:44:09,672 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:44:09,748 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 13:44:09,748 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 13:44:09,751 - INFO -  * Restarting with stat
+2026-03-24 13:44:10,703 - INFO - User Server Started
+2026-03-24 13:44:10,706 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:44:10,771 - WARNING -  * Debugger is active!
+2026-03-24 13:44:10,775 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:44:14,672 - INFO - 192.168.1.156 - - [24/Mar/2026 13:44:14] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-24 13:44:14,720 - INFO - 192.168.1.156 - - [24/Mar/2026 13:44:14] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2026-03-24 13:44:15,013 - INFO - 192.168.1.156 - - [24/Mar/2026 13:44:15] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-24 13:44:15,016 - INFO - 192.168.1.156 - - [24/Mar/2026 13:44:15] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-24 13:44:15,113 - INFO - 192.168.1.156 - - [24/Mar/2026 13:44:15] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=f2K7OzIqcWDCr8BRO8Zn HTTP/1.1" 200 -
+2026-03-24 13:45:00,754 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-24 13:45:00,887 - INFO -  * Restarting with stat
+2026-03-24 13:45:01,506 - INFO - User Server Started
+2026-03-24 13:45:01,509 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:45:01,534 - WARNING -  * Debugger is active!
+2026-03-24 13:45:01,537 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:45:09,328 - INFO - User Server Started
+2026-03-24 13:45:09,330 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:45:09,377 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-24 13:45:09,377 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-24 13:45:09,380 - INFO -  * Restarting with stat
+2026-03-24 13:45:09,887 - INFO - User Server Started
+2026-03-24 13:45:09,891 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-24 13:45:09,924 - WARNING -  * Debugger is active!
+2026-03-24 13:45:09,928 - INFO -  * Debugger PIN: 470-879-029
+2026-03-24 13:45:14,594 - INFO - 192.168.1.156 - - [24/Mar/2026 13:45:14] "GET / HTTP/1.1" 200 -
+2026-03-24 13:45:15,029 - WARNING - 404 error occurred
+2026-03-24 13:45:15,029 - INFO - 192.168.1.156 - - [24/Mar/2026 13:45:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-24 13:45:21,543 - INFO - Search: Amount=6000, Location=, Results=5
+2026-03-24 13:45:21,544 - INFO - 192.168.1.156 - - [24/Mar/2026 13:45:21] "POST / HTTP/1.1" 200 -
+2026-03-25 10:31:14,658 - INFO - User Server Started
+2026-03-25 10:31:14,661 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:31:14,840 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 10:31:14,840 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 10:31:14,845 - INFO -  * Restarting with stat
+2026-03-25 10:31:15,437 - INFO - User Server Started
+2026-03-25 10:31:15,440 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:31:15,466 - WARNING -  * Debugger is active!
+2026-03-25 10:31:15,474 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:31:21,016 - INFO - 192.168.1.156 - - [25/Mar/2026 10:31:21] "GET / HTTP/1.1" 200 -
+2026-03-25 10:31:22,413 - WARNING - 404 error occurred
+2026-03-25 10:31:22,414 - INFO - 192.168.1.156 - - [25/Mar/2026 10:31:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 10:31:32,433 - INFO - 192.168.1.156 - - [25/Mar/2026 10:31:32] "GET / HTTP/1.1" 200 -
+2026-03-25 10:31:42,518 - INFO - 192.168.1.156 - - [25/Mar/2026 10:31:42] "GET / HTTP/1.1" 200 -
+2026-03-25 10:31:52,615 - INFO - 192.168.1.156 - - [25/Mar/2026 10:31:52] "GET / HTTP/1.1" 200 -
+2026-03-25 10:32:02,694 - INFO - 192.168.1.156 - - [25/Mar/2026 10:32:02] "GET / HTTP/1.1" 200 -
+2026-03-25 10:32:12,785 - INFO - 192.168.1.156 - - [25/Mar/2026 10:32:12] "GET / HTTP/1.1" 200 -
+2026-03-25 10:32:22,879 - INFO - 192.168.1.156 - - [25/Mar/2026 10:32:22] "GET / HTTP/1.1" 200 -
+2026-03-25 10:32:32,970 - INFO - 192.168.1.156 - - [25/Mar/2026 10:32:32] "GET / HTTP/1.1" 200 -
+2026-03-25 10:32:43,061 - INFO - 192.168.1.156 - - [25/Mar/2026 10:32:43] "GET / HTTP/1.1" 200 -
+2026-03-25 10:32:53,125 - INFO - 192.168.1.156 - - [25/Mar/2026 10:32:53] "GET / HTTP/1.1" 200 -
+2026-03-25 10:33:03,222 - INFO - 192.168.1.156 - - [25/Mar/2026 10:33:03] "GET / HTTP/1.1" 200 -
+2026-03-25 10:33:13,311 - INFO - 192.168.1.156 - - [25/Mar/2026 10:33:13] "GET / HTTP/1.1" 200 -
+2026-03-25 10:33:23,400 - INFO - 192.168.1.156 - - [25/Mar/2026 10:33:23] "GET / HTTP/1.1" 200 -
+2026-03-25 10:33:33,482 - INFO - 192.168.1.156 - - [25/Mar/2026 10:33:33] "GET / HTTP/1.1" 200 -
+2026-03-25 10:33:43,569 - INFO - 192.168.1.156 - - [25/Mar/2026 10:33:43] "GET / HTTP/1.1" 200 -
+2026-03-25 10:33:53,665 - INFO - 192.168.1.156 - - [25/Mar/2026 10:33:53] "GET / HTTP/1.1" 200 -
+2026-03-25 10:34:03,741 - INFO - 192.168.1.156 - - [25/Mar/2026 10:34:03] "GET / HTTP/1.1" 200 -
+2026-03-25 10:34:13,837 - INFO - 192.168.1.156 - - [25/Mar/2026 10:34:13] "GET / HTTP/1.1" 200 -
+2026-03-25 10:34:23,936 - INFO - 192.168.1.156 - - [25/Mar/2026 10:34:23] "GET / HTTP/1.1" 200 -
+2026-03-25 10:34:34,036 - INFO - 192.168.1.156 - - [25/Mar/2026 10:34:34] "GET / HTTP/1.1" 200 -
+2026-03-25 10:34:44,118 - INFO - 192.168.1.156 - - [25/Mar/2026 10:34:44] "GET / HTTP/1.1" 200 -
+2026-03-25 10:34:54,212 - INFO - 192.168.1.156 - - [25/Mar/2026 10:34:54] "GET / HTTP/1.1" 200 -
+2026-03-25 10:35:04,305 - INFO - 192.168.1.156 - - [25/Mar/2026 10:35:04] "GET / HTTP/1.1" 200 -
+2026-03-25 10:35:14,400 - INFO - 192.168.1.156 - - [25/Mar/2026 10:35:14] "GET / HTTP/1.1" 200 -
+2026-03-25 10:35:24,480 - INFO - 192.168.1.156 - - [25/Mar/2026 10:35:24] "GET / HTTP/1.1" 200 -
+2026-03-25 10:35:34,572 - INFO - 192.168.1.156 - - [25/Mar/2026 10:35:34] "GET / HTTP/1.1" 200 -
+2026-03-25 10:35:44,657 - INFO - 192.168.1.156 - - [25/Mar/2026 10:35:44] "GET / HTTP/1.1" 200 -
+2026-03-25 10:35:54,752 - INFO - 192.168.1.156 - - [25/Mar/2026 10:35:54] "GET / HTTP/1.1" 200 -
+2026-03-25 10:36:04,846 - INFO - 192.168.1.156 - - [25/Mar/2026 10:36:04] "GET / HTTP/1.1" 200 -
+2026-03-25 10:36:14,935 - INFO - 192.168.1.156 - - [25/Mar/2026 10:36:14] "GET / HTTP/1.1" 200 -
+2026-03-25 10:36:25,026 - INFO - 192.168.1.156 - - [25/Mar/2026 10:36:25] "GET / HTTP/1.1" 200 -
+2026-03-25 10:36:35,101 - INFO - 192.168.1.156 - - [25/Mar/2026 10:36:35] "GET / HTTP/1.1" 200 -
+2026-03-25 10:36:45,187 - INFO - 192.168.1.156 - - [25/Mar/2026 10:36:45] "GET / HTTP/1.1" 200 -
+2026-03-25 10:36:55,263 - INFO - 192.168.1.156 - - [25/Mar/2026 10:36:55] "GET / HTTP/1.1" 200 -
+2026-03-25 10:37:05,360 - INFO - 192.168.1.156 - - [25/Mar/2026 10:37:05] "GET / HTTP/1.1" 200 -
+2026-03-25 10:37:15,456 - INFO - 192.168.1.156 - - [25/Mar/2026 10:37:15] "GET / HTTP/1.1" 200 -
+2026-03-25 10:37:25,556 - INFO - 192.168.1.156 - - [25/Mar/2026 10:37:25] "GET / HTTP/1.1" 200 -
+2026-03-25 10:37:35,654 - INFO - 192.168.1.156 - - [25/Mar/2026 10:37:35] "GET / HTTP/1.1" 200 -
+2026-03-25 10:37:45,739 - INFO - 192.168.1.156 - - [25/Mar/2026 10:37:45] "GET / HTTP/1.1" 200 -
+2026-03-25 10:37:55,818 - INFO - 192.168.1.156 - - [25/Mar/2026 10:37:55] "GET / HTTP/1.1" 200 -
+2026-03-25 10:38:05,907 - INFO - 192.168.1.156 - - [25/Mar/2026 10:38:05] "GET / HTTP/1.1" 200 -
+2026-03-25 10:38:15,990 - INFO - 192.168.1.156 - - [25/Mar/2026 10:38:15] "GET / HTTP/1.1" 200 -
+2026-03-25 10:38:26,087 - INFO - 192.168.1.156 - - [25/Mar/2026 10:38:26] "GET / HTTP/1.1" 200 -
+2026-03-25 10:38:36,192 - INFO - 192.168.1.156 - - [25/Mar/2026 10:38:36] "GET / HTTP/1.1" 200 -
+2026-03-25 10:38:46,278 - INFO - 192.168.1.156 - - [25/Mar/2026 10:38:46] "GET / HTTP/1.1" 200 -
+2026-03-25 10:38:56,395 - INFO - 192.168.1.156 - - [25/Mar/2026 10:38:56] "GET / HTTP/1.1" 200 -
+2026-03-25 10:39:06,498 - INFO - 192.168.1.156 - - [25/Mar/2026 10:39:06] "GET / HTTP/1.1" 200 -
+2026-03-25 10:39:16,593 - INFO - 192.168.1.156 - - [25/Mar/2026 10:39:16] "GET / HTTP/1.1" 200 -
+2026-03-25 10:39:26,675 - INFO - 192.168.1.156 - - [25/Mar/2026 10:39:26] "GET / HTTP/1.1" 200 -
+2026-03-25 10:39:36,774 - INFO - 192.168.1.156 - - [25/Mar/2026 10:39:36] "GET / HTTP/1.1" 200 -
+2026-03-25 10:39:46,853 - INFO - 192.168.1.156 - - [25/Mar/2026 10:39:46] "GET / HTTP/1.1" 200 -
+2026-03-25 10:39:56,931 - INFO - 192.168.1.156 - - [25/Mar/2026 10:39:56] "GET / HTTP/1.1" 200 -
+2026-03-25 10:40:06,998 - INFO - 192.168.1.156 - - [25/Mar/2026 10:40:06] "GET / HTTP/1.1" 200 -
+2026-03-25 10:40:17,113 - INFO - 192.168.1.156 - - [25/Mar/2026 10:40:17] "GET / HTTP/1.1" 200 -
+2026-03-25 10:40:27,222 - INFO - 192.168.1.156 - - [25/Mar/2026 10:40:27] "GET / HTTP/1.1" 200 -
+2026-03-25 10:40:37,309 - INFO - 192.168.1.156 - - [25/Mar/2026 10:40:37] "GET / HTTP/1.1" 200 -
+2026-03-25 10:40:47,405 - INFO - 192.168.1.156 - - [25/Mar/2026 10:40:47] "GET / HTTP/1.1" 200 -
+2026-03-25 10:40:47,411 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 10:40:47,571 - INFO -  * Restarting with stat
+2026-03-25 10:40:49,160 - INFO - User Server Started
+2026-03-25 10:40:49,163 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:40:49,251 - WARNING -  * Debugger is active!
+2026-03-25 10:40:49,255 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:40:57,572 - INFO - 192.168.1.156 - - [25/Mar/2026 10:40:57] "GET / HTTP/1.1" 200 -
+2026-03-25 10:41:08,629 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 10:41:08,716 - INFO -  * Restarting with stat
+2026-03-25 10:41:09,315 - INFO - User Server Started
+2026-03-25 10:41:09,319 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:41:09,346 - WARNING -  * Debugger is active!
+2026-03-25 10:41:09,350 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:41:16,671 - INFO - User Server Started
+2026-03-25 10:41:16,674 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:41:16,748 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 10:41:16,748 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 10:41:16,750 - INFO -  * Restarting with stat
+2026-03-25 10:41:17,329 - INFO - User Server Started
+2026-03-25 10:41:17,333 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:41:17,373 - WARNING -  * Debugger is active!
+2026-03-25 10:41:17,376 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:41:22,183 - INFO - 192.168.1.156 - - [25/Mar/2026 10:41:22] "GET / HTTP/1.1" 200 -
+2026-03-25 10:42:29,069 - INFO - User Server Started
+2026-03-25 10:42:29,075 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:42:29,131 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 10:42:29,131 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 10:42:29,133 - INFO -  * Restarting with stat
+2026-03-25 10:42:29,792 - INFO - User Server Started
+2026-03-25 10:42:29,796 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:42:29,840 - WARNING -  * Debugger is active!
+2026-03-25 10:42:29,844 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:42:34,379 - INFO - 192.168.1.156 - - [25/Mar/2026 10:42:34] "GET / HTTP/1.1" 200 -
+2026-03-25 10:44:56,001 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 10:44:56,151 - INFO -  * Restarting with stat
+2026-03-25 10:44:56,720 - INFO - User Server Started
+2026-03-25 10:44:56,723 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:44:56,752 - WARNING -  * Debugger is active!
+2026-03-25 10:44:56,755 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:45:04,334 - INFO - User Server Started
+2026-03-25 10:45:04,336 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:45:04,386 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 10:45:04,386 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 10:45:04,388 - INFO -  * Restarting with stat
+2026-03-25 10:45:04,962 - INFO - User Server Started
+2026-03-25 10:45:04,966 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:45:05,005 - WARNING -  * Debugger is active!
+2026-03-25 10:45:05,009 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:45:11,512 - INFO - 192.168.1.156 - - [25/Mar/2026 10:45:11] "GET / HTTP/1.1" 200 -
+2026-03-25 10:46:02,234 - INFO - User Server Started
+2026-03-25 10:46:02,236 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:46:02,287 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 10:46:02,287 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 10:46:02,289 - INFO -  * Restarting with stat
+2026-03-25 10:46:02,848 - INFO - User Server Started
+2026-03-25 10:46:02,852 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 10:46:02,896 - WARNING -  * Debugger is active!
+2026-03-25 10:46:02,901 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 10:46:06,907 - INFO - 192.168.1.156 - - [25/Mar/2026 10:46:06] "GET / HTTP/1.1" 200 -
+2026-03-25 10:47:49,724 - INFO - 192.168.1.156 - - [25/Mar/2026 10:47:49] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2026-03-25 10:58:01,430 - INFO - 192.168.1.156 - - [25/Mar/2026 10:58:01] "GET / HTTP/1.1" 200 -
+2026-03-25 10:58:02,173 - WARNING - 404 error occurred
+2026-03-25 10:58:02,174 - INFO - 192.168.1.156 - - [25/Mar/2026 10:58:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 10:58:31,302 - INFO - 192.168.1.156 - - [25/Mar/2026 10:58:31] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2026-03-25 11:07:30,435 - INFO - User Server Started
+2026-03-25 11:07:30,440 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:07:30,493 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:07:30,493 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:07:30,496 - INFO -  * Restarting with stat
+2026-03-25 11:07:31,242 - INFO - User Server Started
+2026-03-25 11:07:31,246 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:07:31,289 - WARNING -  * Debugger is active!
+2026-03-25 11:07:31,292 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:07:35,381 - INFO - 192.168.1.156 - - [25/Mar/2026 11:07:35] "GET / HTTP/1.1" 200 -
+2026-03-25 11:10:48,178 - INFO - 192.168.1.156 - - [25/Mar/2026 11:10:48] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2026-03-25 11:16:29,827 - INFO - 192.168.1.156 - - [25/Mar/2026 11:16:29] "GET / HTTP/1.1" 200 -
+2026-03-25 11:16:45,622 - INFO - 192.168.1.156 - - [25/Mar/2026 11:16:45] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2026-03-25 11:26:47,019 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 11:26:47,167 - INFO -  * Restarting with stat
+2026-03-25 11:26:47,919 - INFO - User Server Started
+2026-03-25 11:26:47,924 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:26:47,972 - WARNING -  * Debugger is active!
+2026-03-25 11:26:47,975 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:27:00,170 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 11:27:00,285 - INFO -  * Restarting with stat
+2026-03-25 11:27:01,050 - INFO - User Server Started
+2026-03-25 11:27:01,053 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:27:01,093 - WARNING -  * Debugger is active!
+2026-03-25 11:27:01,100 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:27:09,079 - INFO - User Server Started
+2026-03-25 11:27:09,083 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:27:09,163 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:27:09,163 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:27:09,166 - INFO -  * Restarting with stat
+2026-03-25 11:27:09,815 - INFO - User Server Started
+2026-03-25 11:27:09,819 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:27:09,864 - WARNING -  * Debugger is active!
+2026-03-25 11:27:09,868 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:27:13,905 - INFO - 192.168.1.156 - - [25/Mar/2026 11:27:13] "GET / HTTP/1.1" 200 -
+2026-03-25 11:27:26,393 - INFO - 192.168.1.156 - - [25/Mar/2026 11:27:26] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-03-25 11:27:26,853 - INFO - 192.168.1.156 - - [25/Mar/2026 11:27:26] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-25 11:27:26,871 - INFO - 192.168.1.156 - - [25/Mar/2026 11:27:26] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-25 11:27:26,967 - INFO - 192.168.1.156 - - [25/Mar/2026 11:27:26] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=6S4E7zTstfaJ2wcbbfaK HTTP/1.1" 200 -
+2026-03-25 11:30:40,532 - INFO - User Server Started
+2026-03-25 11:30:40,535 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:30:40,598 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:30:40,598 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:30:40,600 - INFO -  * Restarting with stat
+2026-03-25 11:30:41,236 - INFO - User Server Started
+2026-03-25 11:30:41,239 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:30:41,272 - WARNING -  * Debugger is active!
+2026-03-25 11:30:41,276 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:30:44,313 - INFO - 192.168.1.156 - - [25/Mar/2026 11:30:44] "GET / HTTP/1.1" 200 -
+2026-03-25 11:30:53,935 - WARNING - Login failed attempt
+2026-03-25 11:30:53,935 - INFO - 192.168.1.156 - - [25/Mar/2026 11:30:53] "POST /login HTTP/1.1" 200 -
+2026-03-25 11:32:37,338 - INFO - Login success for testuser
+2026-03-25 11:32:37,343 - INFO - 192.168.1.156 - - [25/Mar/2026 11:32:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 11:32:37,503 - INFO - 192.168.1.156 - - [25/Mar/2026 11:32:37] "[35m[1mGET /dashboard?username=testuser HTTP/1.1[0m" 500 -
+2026-03-25 11:32:37,794 - INFO - 192.168.1.156 - - [25/Mar/2026 11:32:37] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-03-25 11:32:37,795 - INFO - 192.168.1.156 - - [25/Mar/2026 11:32:37] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-03-25 11:32:37,881 - INFO - 192.168.1.156 - - [25/Mar/2026 11:32:37] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=4bP2UnqDg8f2o9QBpC8k HTTP/1.1" 200 -
+2026-03-25 11:32:37,903 - INFO - 192.168.1.156 - - [25/Mar/2026 11:32:37] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-03-25 11:33:42,271 - INFO - User Server Started
+2026-03-25 11:33:42,274 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:33:42,327 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:33:42,327 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:33:42,331 - INFO -  * Restarting with stat
+2026-03-25 11:33:42,876 - INFO - User Server Started
+2026-03-25 11:33:42,880 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:33:42,910 - WARNING -  * Debugger is active!
+2026-03-25 11:33:42,916 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:33:47,208 - INFO - 192.168.1.156 - - [25/Mar/2026 11:33:47] "GET / HTTP/1.1" 200 -
+2026-03-25 11:33:59,384 - INFO - Login success for testuser
+2026-03-25 11:33:59,386 - INFO - 192.168.1.156 - - [25/Mar/2026 11:33:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 11:33:59,433 - INFO - 192.168.1.156 - - [25/Mar/2026 11:33:59] "[35m[1mGET /dashboard?username=testuser HTTP/1.1[0m" 500 -
+2026-03-25 11:33:59,670 - INFO - 192.168.1.156 - - [25/Mar/2026 11:33:59] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-25 11:33:59,673 - INFO - 192.168.1.156 - - [25/Mar/2026 11:33:59] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-25 11:33:59,764 - INFO - 192.168.1.156 - - [25/Mar/2026 11:33:59] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=H9DcCymhblB31cW1jHlQ HTTP/1.1" 200 -
+2026-03-25 11:34:53,925 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 11:34:54,020 - INFO -  * Restarting with stat
+2026-03-25 11:34:54,566 - INFO - User Server Started
+2026-03-25 11:34:54,571 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:34:54,603 - WARNING -  * Debugger is active!
+2026-03-25 11:34:54,606 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:35:01,241 - INFO - User Server Started
+2026-03-25 11:35:01,244 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:35:01,305 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:35:01,306 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:35:01,307 - INFO -  * Restarting with stat
+2026-03-25 11:35:01,925 - INFO - User Server Started
+2026-03-25 11:35:01,928 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:35:01,966 - WARNING -  * Debugger is active!
+2026-03-25 11:35:01,970 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:35:05,557 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-25 11:35:05,874 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:05] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-25 11:35:05,875 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:05] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-25 11:35:06,021 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:06] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=oEnoPWGE8oaODVGbg4bi HTTP/1.1" 200 -
+2026-03-25 11:35:06,051 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:06] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-03-25 11:35:38,146 - INFO - User Server Started
+2026-03-25 11:35:38,148 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:35:38,213 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:35:38,213 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:35:38,215 - INFO -  * Restarting with stat
+2026-03-25 11:35:38,730 - INFO - User Server Started
+2026-03-25 11:35:38,733 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:35:38,763 - WARNING -  * Debugger is active!
+2026-03-25 11:35:38,766 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:35:42,705 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:42] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-25 11:35:42,979 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:42] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-25 11:35:42,983 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:42] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-25 11:35:43,121 - INFO - 192.168.1.156 - - [25/Mar/2026 11:35:43] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=uuNGlzo9JfaFJ77kXbsy HTTP/1.1" 200 -
+2026-03-25 11:36:22,393 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 11:36:22,490 - INFO -  * Restarting with stat
+2026-03-25 11:36:23,134 - INFO - User Server Started
+2026-03-25 11:36:23,137 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:36:23,164 - WARNING -  * Debugger is active!
+2026-03-25 11:36:23,167 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:36:28,482 - INFO - 192.168.1.156 - - [25/Mar/2026 11:36:28] "GET / HTTP/1.1" 200 -
+2026-03-25 11:36:29,339 - WARNING - 404 error occurred
+2026-03-25 11:36:29,340 - INFO - 192.168.1.156 - - [25/Mar/2026 11:36:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 11:43:07,144 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 11:43:07,224 - INFO -  * Restarting with stat
+2026-03-25 11:43:07,901 - INFO - User Server Started
+2026-03-25 11:43:07,907 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:43:07,946 - WARNING -  * Debugger is active!
+2026-03-25 11:43:07,950 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:43:13,040 - INFO - User Server Started
+2026-03-25 11:43:13,045 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:43:13,109 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:43:13,109 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:43:13,110 - INFO -  * Restarting with stat
+2026-03-25 11:43:13,765 - INFO - User Server Started
+2026-03-25 11:43:13,771 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:43:13,822 - WARNING -  * Debugger is active!
+2026-03-25 11:43:13,825 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:43:17,509 - INFO - 192.168.1.156 - - [25/Mar/2026 11:43:17] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 11:43:17,527 - INFO - 192.168.1.156 - - [25/Mar/2026 11:43:17] "GET /login HTTP/1.1" 200 -
+2026-03-25 11:43:23,041 - INFO - 192.168.1.156 - - [25/Mar/2026 11:43:23] "POST /login HTTP/1.1" 200 -
+2026-03-25 11:44:28,518 - INFO - 192.168.1.156 - - [25/Mar/2026 11:44:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 11:44:28,546 - INFO - 192.168.1.156 - - [25/Mar/2026 11:44:28] "GET / HTTP/1.1" 200 -
+2026-03-25 11:44:35,378 - INFO - Search: Amount=50000, Location=, Results=5
+2026-03-25 11:44:35,380 - INFO - 192.168.1.156 - - [25/Mar/2026 11:44:35] "POST / HTTP/1.1" 200 -
+2026-03-25 11:44:45,515 - INFO - 192.168.1.156 - - [25/Mar/2026 11:44:45] "GET / HTTP/1.1" 200 -
+2026-03-25 11:44:55,626 - INFO - 192.168.1.156 - - [25/Mar/2026 11:44:55] "GET / HTTP/1.1" 200 -
+2026-03-25 11:45:05,725 - INFO - 192.168.1.156 - - [25/Mar/2026 11:45:05] "GET / HTTP/1.1" 200 -
+2026-03-25 11:45:15,820 - INFO - 192.168.1.156 - - [25/Mar/2026 11:45:15] "GET / HTTP/1.1" 200 -
+2026-03-25 11:45:25,920 - INFO - 192.168.1.156 - - [25/Mar/2026 11:45:25] "GET / HTTP/1.1" 200 -
+2026-03-25 11:45:36,035 - INFO - 192.168.1.156 - - [25/Mar/2026 11:45:36] "GET / HTTP/1.1" 200 -
+2026-03-25 11:45:46,119 - INFO - 192.168.1.156 - - [25/Mar/2026 11:45:46] "GET / HTTP/1.1" 200 -
+2026-03-25 11:45:56,233 - INFO - 192.168.1.156 - - [25/Mar/2026 11:45:56] "GET / HTTP/1.1" 200 -
+2026-03-25 11:46:06,354 - INFO - 192.168.1.156 - - [25/Mar/2026 11:46:06] "GET / HTTP/1.1" 200 -
+2026-03-25 11:46:09,087 - INFO - User Server Started
+2026-03-25 11:46:09,093 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:46:09,157 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:46:09,157 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:46:09,159 - INFO -  * Restarting with stat
+2026-03-25 11:46:09,769 - INFO - User Server Started
+2026-03-25 11:46:09,774 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:46:09,803 - WARNING -  * Debugger is active!
+2026-03-25 11:46:09,809 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:46:13,698 - INFO - 192.168.1.156 - - [25/Mar/2026 11:46:13] "GET / HTTP/1.1" 200 -
+2026-03-25 11:46:16,440 - INFO - 192.168.1.156 - - [25/Mar/2026 11:46:16] "GET / HTTP/1.1" 200 -
+2026-03-25 11:48:47,761 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 11:48:47,863 - INFO -  * Restarting with stat
+2026-03-25 11:48:48,521 - INFO - User Server Started
+2026-03-25 11:48:48,524 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:48:48,554 - WARNING -  * Debugger is active!
+2026-03-25 11:48:48,558 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:48:53,109 - INFO - User Server Started
+2026-03-25 11:48:53,119 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:48:53,174 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:48:53,214 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:48:53,218 - INFO -  * Restarting with stat
+2026-03-25 11:48:53,804 - INFO - User Server Started
+2026-03-25 11:48:53,807 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:48:53,841 - WARNING -  * Debugger is active!
+2026-03-25 11:48:53,847 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:48:57,882 - INFO - 192.168.1.156 - - [25/Mar/2026 11:48:57] "GET / HTTP/1.1" 200 -
+2026-03-25 11:49:08,068 - INFO - 192.168.1.156 - - [25/Mar/2026 11:49:08] "GET / HTTP/1.1" 200 -
+2026-03-25 11:49:18,170 - INFO - 192.168.1.156 - - [25/Mar/2026 11:49:18] "GET / HTTP/1.1" 200 -
+2026-03-25 11:49:27,289 - INFO - User Server Started
+2026-03-25 11:49:27,293 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:49:27,344 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:49:27,345 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:49:27,346 - INFO -  * Restarting with stat
+2026-03-25 11:49:27,982 - INFO - User Server Started
+2026-03-25 11:49:27,986 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:49:28,018 - WARNING -  * Debugger is active!
+2026-03-25 11:49:28,022 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:49:28,276 - INFO - 192.168.1.156 - - [25/Mar/2026 11:49:28] "GET / HTTP/1.1" 200 -
+2026-03-25 11:49:32,302 - INFO - 192.168.1.156 - - [25/Mar/2026 11:49:32] "GET / HTTP/1.1" 200 -
+2026-03-25 11:51:15,436 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 11:51:15,547 - INFO -  * Restarting with stat
+2026-03-25 11:51:16,391 - INFO - User Server Started
+2026-03-25 11:51:16,408 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:51:16,454 - WARNING -  * Debugger is active!
+2026-03-25 11:51:16,460 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:51:21,357 - INFO - User Server Started
+2026-03-25 11:51:21,360 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:51:21,440 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:51:21,440 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:51:21,442 - INFO -  * Restarting with stat
+2026-03-25 11:51:22,064 - INFO - User Server Started
+2026-03-25 11:51:22,068 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:51:22,174 - WARNING -  * Debugger is active!
+2026-03-25 11:51:22,181 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:51:25,897 - INFO - 192.168.1.156 - - [25/Mar/2026 11:51:25] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 11:51:26,498 - INFO - 192.168.1.156 - - [25/Mar/2026 11:51:26] "GET /login HTTP/1.1" 200 -
+2026-03-25 11:51:26,597 - WARNING - 404 error occurred
+2026-03-25 11:51:26,598 - INFO - 192.168.1.156 - - [25/Mar/2026 11:51:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 11:51:38,713 - INFO - 192.168.1.156 - - [25/Mar/2026 11:51:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 11:51:38,741 - INFO - 192.168.1.156 - - [25/Mar/2026 11:51:38] "GET / HTTP/1.1" 200 -
+2026-03-25 11:51:49,060 - INFO - 192.168.1.156 - - [25/Mar/2026 11:51:49] "GET / HTTP/1.1" 200 -
+2026-03-25 11:53:31,924 - INFO - 192.168.1.156 - - [25/Mar/2026 11:53:31] "GET / HTTP/1.1" 200 -
+2026-03-25 11:53:43,401 - INFO - User Server Started
+2026-03-25 11:53:43,406 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:53:43,471 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 11:53:43,471 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 11:53:43,473 - INFO -  * Restarting with stat
+2026-03-25 11:53:44,153 - INFO - User Server Started
+2026-03-25 11:53:44,156 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 11:53:44,179 - WARNING -  * Debugger is active!
+2026-03-25 11:53:44,184 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 11:53:44,222 - INFO - 192.168.1.156 - - [25/Mar/2026 11:53:44] "GET / HTTP/1.1" 200 -
+2026-03-25 11:53:47,512 - INFO - 192.168.1.156 - - [25/Mar/2026 11:53:47] "GET / HTTP/1.1" 200 -
+2026-03-25 11:53:54,303 - INFO - 192.168.1.156 - - [25/Mar/2026 11:53:54] "GET / HTTP/1.1" 200 -
+2026-03-25 12:05:05,018 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 12:05:05,159 - INFO -  * Restarting with stat
+2026-03-25 12:05:06,144 - INFO - User Server Started
+2026-03-25 12:05:06,148 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:05:06,191 - WARNING -  * Debugger is active!
+2026-03-25 12:05:06,194 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:05:09,529 - INFO - User Server Started
+2026-03-25 12:05:09,533 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:05:09,593 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:05:09,593 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:05:09,595 - INFO -  * Restarting with stat
+2026-03-25 12:05:10,296 - INFO - User Server Started
+2026-03-25 12:05:10,298 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:05:10,341 - WARNING -  * Debugger is active!
+2026-03-25 12:05:10,346 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:05:13,382 - INFO - 192.168.1.156 - - [25/Mar/2026 12:05:13] "GET / HTTP/1.1" 200 -
+2026-03-25 12:05:23,756 - INFO - 192.168.1.156 - - [25/Mar/2026 12:05:23] "GET / HTTP/1.1" 200 -
+2026-03-25 12:05:33,826 - INFO - 192.168.1.156 - - [25/Mar/2026 12:05:33] "GET / HTTP/1.1" 200 -
+2026-03-25 12:05:43,901 - INFO - 192.168.1.156 - - [25/Mar/2026 12:05:43] "GET / HTTP/1.1" 200 -
+2026-03-25 12:05:53,968 - INFO - 192.168.1.156 - - [25/Mar/2026 12:05:53] "GET / HTTP/1.1" 200 -
+2026-03-25 12:06:04,042 - INFO - 192.168.1.156 - - [25/Mar/2026 12:06:04] "GET / HTTP/1.1" 200 -
+2026-03-25 12:06:14,133 - INFO - 192.168.1.156 - - [25/Mar/2026 12:06:14] "GET / HTTP/1.1" 200 -
+2026-03-25 12:06:24,213 - INFO - 192.168.1.156 - - [25/Mar/2026 12:06:24] "GET / HTTP/1.1" 200 -
+2026-03-25 12:06:34,297 - INFO - 192.168.1.156 - - [25/Mar/2026 12:06:34] "GET / HTTP/1.1" 200 -
+2026-03-25 12:06:44,356 - INFO - 192.168.1.156 - - [25/Mar/2026 12:06:44] "GET / HTTP/1.1" 200 -
+2026-03-25 12:08:02,700 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 12:08:02,794 - INFO -  * Restarting with stat
+2026-03-25 12:08:03,395 - INFO - User Server Started
+2026-03-25 12:08:03,396 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:08:03,421 - WARNING -  * Debugger is active!
+2026-03-25 12:08:03,428 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:08:07,599 - INFO - User Server Started
+2026-03-25 12:08:07,602 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:08:07,655 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:08:07,656 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:08:07,659 - INFO -  * Restarting with stat
+2026-03-25 12:08:08,283 - INFO - User Server Started
+2026-03-25 12:08:08,285 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:08:08,326 - WARNING -  * Debugger is active!
+2026-03-25 12:08:08,329 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:08:12,925 - INFO - 192.168.1.156 - - [25/Mar/2026 12:08:12] "GET / HTTP/1.1" 200 -
+2026-03-25 12:08:13,702 - WARNING - 404 error occurred
+2026-03-25 12:08:13,703 - INFO - 192.168.1.156 - - [25/Mar/2026 12:08:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 12:16:29,253 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 12:16:29,344 - INFO -  * Restarting with stat
+2026-03-25 12:17:57,197 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:17:57,198 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:17:57,200 - INFO -  * Restarting with stat
+2026-03-25 12:17:57,807 - WARNING -  * Debugger is active!
+2026-03-25 12:17:57,813 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:18:01,567 - INFO - 192.168.1.156 - - [25/Mar/2026 12:18:01] "GET / HTTP/1.1" 200 -
+2026-03-25 12:18:01,779 - INFO - 192.168.1.156 - - [25/Mar/2026 12:18:01] "GET /static/style.css HTTP/1.1" 200 -
+2026-03-25 12:18:01,854 - INFO - 192.168.1.156 - - [25/Mar/2026 12:18:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 12:18:34,963 - INFO - 192.168.1.156 - - [25/Mar/2026 12:18:34] "POST / HTTP/1.1" 200 -
+2026-03-25 12:18:35,015 - INFO - 192.168.1.156 - - [25/Mar/2026 12:18:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-25 12:18:49,092 - INFO - 192.168.1.156 - - [25/Mar/2026 12:18:49] "POST / HTTP/1.1" 200 -
+2026-03-25 12:18:49,151 - INFO - 192.168.1.156 - - [25/Mar/2026 12:18:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-25 12:19:43,921 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:19:43,921 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:19:43,923 - INFO -  * Restarting with stat
+2026-03-25 12:19:44,546 - WARNING -  * Debugger is active!
+2026-03-25 12:19:44,549 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:19:48,536 - INFO - 192.168.1.156 - - [25/Mar/2026 12:19:48] "GET / HTTP/1.1" 200 -
+2026-03-25 12:19:48,711 - INFO - 192.168.1.156 - - [25/Mar/2026 12:19:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-25 12:20:49,903 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:20:49,904 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:20:49,909 - INFO -  * Restarting with stat
+2026-03-25 12:20:50,595 - WARNING -  * Debugger is active!
+2026-03-25 12:20:50,601 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:20:56,896 - INFO - 192.168.1.156 - - [25/Mar/2026 12:20:56] "GET / HTTP/1.1" 200 -
+2026-03-25 12:20:57,055 - INFO - 192.168.1.156 - - [25/Mar/2026 12:20:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-03-25 12:21:40,349 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 12:21:40,447 - INFO -  * Restarting with stat
+2026-03-25 12:21:41,199 - INFO - User Server Started
+2026-03-25 12:21:41,201 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:21:41,233 - WARNING -  * Debugger is active!
+2026-03-25 12:21:41,237 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:21:45,237 - INFO - 192.168.1.156 - - [25/Mar/2026 12:21:45] "GET / HTTP/1.1" 200 -
+2026-03-25 12:29:50,583 - INFO - User Server Started
+2026-03-25 12:29:50,586 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:29:50,657 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:29:50,657 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:29:50,662 - INFO -  * Restarting with stat
+2026-03-25 12:29:51,353 - INFO - User Server Started
+2026-03-25 12:29:51,355 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:29:51,407 - WARNING -  * Debugger is active!
+2026-03-25 12:29:51,415 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:29:55,223 - INFO - 192.168.1.156 - - [25/Mar/2026 12:29:55] "GET / HTTP/1.1" 200 -
+2026-03-25 12:29:56,103 - WARNING - 404 error occurred
+2026-03-25 12:29:56,104 - INFO - 192.168.1.156 - - [25/Mar/2026 12:29:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 12:36:54,633 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 12:36:54,740 - INFO -  * Restarting with stat
+2026-03-25 12:36:55,591 - INFO - User Server Started
+2026-03-25 12:36:55,596 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:36:55,658 - WARNING -  * Debugger is active!
+2026-03-25 12:36:55,664 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:37:03,013 - INFO - User Server Started
+2026-03-25 12:37:03,018 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:37:03,080 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:37:03,080 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:37:03,082 - INFO -  * Restarting with stat
+2026-03-25 12:37:03,643 - INFO - User Server Started
+2026-03-25 12:37:03,646 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:37:03,675 - WARNING -  * Debugger is active!
+2026-03-25 12:37:03,678 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:37:07,900 - INFO - 192.168.1.156 - - [25/Mar/2026 12:37:07] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 12:37:08,490 - INFO - 192.168.1.156 - - [25/Mar/2026 12:37:08] "GET /login HTTP/1.1" 200 -
+2026-03-25 12:37:08,691 - WARNING - 404 error occurred
+2026-03-25 12:37:08,692 - INFO - 192.168.1.156 - - [25/Mar/2026 12:37:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 12:38:03,781 - INFO - 192.168.1.156 - - [25/Mar/2026 12:38:03] "POST /login HTTP/1.1" 200 -
+2026-03-25 12:38:51,332 - INFO - 192.168.1.156 - - [25/Mar/2026 12:38:51] "POST /login HTTP/1.1" 200 -
+2026-03-25 12:48:39,092 - INFO - User Server Started
+2026-03-25 12:48:39,097 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:48:39,156 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 12:48:39,157 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 12:48:39,159 - INFO -  * Restarting with stat
+2026-03-25 12:48:39,842 - INFO - User Server Started
+2026-03-25 12:48:39,846 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 12:48:39,884 - WARNING -  * Debugger is active!
+2026-03-25 12:48:39,886 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 12:48:42,597 - INFO - 192.168.1.156 - - [25/Mar/2026 12:48:42] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 12:48:42,615 - INFO - 192.168.1.156 - - [25/Mar/2026 12:48:42] "GET /login HTTP/1.1" 200 -
+2026-03-25 12:49:38,155 - INFO - 192.168.1.156 - - [25/Mar/2026 12:49:38] "POST /login HTTP/1.1" 200 -
+2026-03-25 13:01:18,440 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 13:01:18,528 - INFO -  * Restarting with stat
+2026-03-25 13:01:19,534 - INFO - User Server Started
+2026-03-25 13:01:19,539 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:01:19,594 - WARNING -  * Debugger is active!
+2026-03-25 13:01:19,603 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:01:24,329 - INFO - User Server Started
+2026-03-25 13:01:24,334 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:01:24,405 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:01:24,405 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:01:24,406 - INFO -  * Restarting with stat
+2026-03-25 13:01:25,168 - INFO - User Server Started
+2026-03-25 13:01:25,171 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:01:25,206 - WARNING -  * Debugger is active!
+2026-03-25 13:01:25,209 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:01:28,161 - INFO - 192.168.1.156 - - [25/Mar/2026 13:01:28] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:01:28,181 - INFO - 192.168.1.156 - - [25/Mar/2026 13:01:28] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:02:43,248 - INFO - 192.168.1.156 - - [25/Mar/2026 13:02:43] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-03-25 13:02:43,557 - INFO - 192.168.1.156 - - [25/Mar/2026 13:02:43] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-25 13:02:43,558 - INFO - 192.168.1.156 - - [25/Mar/2026 13:02:43] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-25 13:02:43,661 - INFO - 192.168.1.156 - - [25/Mar/2026 13:02:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=2abQ634LtII1NjPXjJGH HTTP/1.1" 200 -
+2026-03-25 13:02:43,685 - INFO - 192.168.1.156 - - [25/Mar/2026 13:02:43] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-03-25 13:08:17,086 - INFO - User Server Started
+2026-03-25 13:08:17,089 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:08:17,169 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:08:17,169 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:08:17,171 - INFO -  * Restarting with stat
+2026-03-25 13:08:17,789 - INFO - User Server Started
+2026-03-25 13:08:17,792 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:08:17,826 - WARNING -  * Debugger is active!
+2026-03-25 13:08:17,833 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:08:21,208 - INFO - 192.168.1.156 - - [25/Mar/2026 13:08:21] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:08:21,227 - INFO - 192.168.1.156 - - [25/Mar/2026 13:08:21] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:09:15,712 - INFO - 192.168.1.156 - - [25/Mar/2026 13:09:15] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2026-03-25 13:09:16,002 - INFO - 192.168.1.156 - - [25/Mar/2026 13:09:16] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-25 13:09:16,006 - INFO - 192.168.1.156 - - [25/Mar/2026 13:09:16] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-25 13:09:16,098 - INFO - 192.168.1.156 - - [25/Mar/2026 13:09:16] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=JtBdJx4rWed6ooOKsw0j HTTP/1.1" 200 -
+2026-03-25 13:09:16,124 - INFO - 192.168.1.156 - - [25/Mar/2026 13:09:16] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-03-25 13:10:28,764 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\init_users.py', reloading
+2026-03-25 13:10:28,875 - INFO -  * Restarting with stat
+2026-03-25 13:10:29,617 - INFO - User Server Started
+2026-03-25 13:10:29,628 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:10:29,672 - WARNING -  * Debugger is active!
+2026-03-25 13:10:29,676 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:10:42,633 - INFO - User Server Started
+2026-03-25 13:10:42,636 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:10:42,700 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:10:42,700 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:10:42,701 - INFO -  * Restarting with stat
+2026-03-25 13:10:43,328 - INFO - User Server Started
+2026-03-25 13:10:43,332 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:10:43,367 - WARNING -  * Debugger is active!
+2026-03-25 13:10:43,370 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:10:47,564 - INFO - 192.168.1.156 - - [25/Mar/2026 13:10:47] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:10:47,584 - INFO - 192.168.1.156 - - [25/Mar/2026 13:10:47] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:11:36,710 - INFO - User rizswana logged in successfully
+2026-03-25 13:11:36,711 - INFO - 192.168.1.156 - - [25/Mar/2026 13:11:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 13:11:36,741 - INFO - 192.168.1.156 - - [25/Mar/2026 13:11:36] "GET / HTTP/1.1" 200 -
+2026-03-25 13:11:41,974 - ERROR - Search error: no such table: atm
+2026-03-25 13:11:41,975 - INFO - 192.168.1.156 - - [25/Mar/2026 13:11:41] "POST / HTTP/1.1" 200 -
+2026-03-25 13:11:47,680 - ERROR - Search error: no such table: atm
+2026-03-25 13:11:47,681 - INFO - 192.168.1.156 - - [25/Mar/2026 13:11:47] "POST / HTTP/1.1" 200 -
+2026-03-25 13:11:57,789 - INFO - 192.168.1.156 - - [25/Mar/2026 13:11:57] "GET / HTTP/1.1" 200 -
+2026-03-25 13:12:01,618 - ERROR - Search error: no such table: atm
+2026-03-25 13:12:01,619 - INFO - 192.168.1.156 - - [25/Mar/2026 13:12:01] "POST / HTTP/1.1" 200 -
+2026-03-25 13:12:11,745 - INFO - 192.168.1.156 - - [25/Mar/2026 13:12:11] "GET / HTTP/1.1" 200 -
+2026-03-25 13:12:21,899 - INFO - 192.168.1.156 - - [25/Mar/2026 13:12:21] "GET / HTTP/1.1" 200 -
+2026-03-25 13:20:09,911 - INFO - User Server Started
+2026-03-25 13:20:09,915 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:20:09,969 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:20:09,969 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:20:09,970 - INFO -  * Restarting with stat
+2026-03-25 13:20:10,556 - INFO - User Server Started
+2026-03-25 13:20:10,562 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:20:10,601 - WARNING -  * Debugger is active!
+2026-03-25 13:20:10,603 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:20:14,326 - INFO - 192.168.1.156 - - [25/Mar/2026 13:20:14] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:20:14,346 - INFO - 192.168.1.156 - - [25/Mar/2026 13:20:14] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:20:14,484 - WARNING - 404 error occurred
+2026-03-25 13:20:14,484 - INFO - 192.168.1.156 - - [25/Mar/2026 13:20:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 13:20:42,713 - INFO - User rizswana logged in successfully
+2026-03-25 13:20:42,714 - INFO - 192.168.1.156 - - [25/Mar/2026 13:20:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 13:20:42,736 - INFO - 192.168.1.156 - - [25/Mar/2026 13:20:42] "GET / HTTP/1.1" 200 -
+2026-03-25 13:20:46,603 - INFO - Search: Amount=500, Location=, Results=5
+2026-03-25 13:20:46,604 - INFO - 192.168.1.156 - - [25/Mar/2026 13:20:46] "POST / HTTP/1.1" 200 -
+2026-03-25 13:20:56,745 - INFO - 192.168.1.156 - - [25/Mar/2026 13:20:56] "GET / HTTP/1.1" 200 -
+2026-03-25 13:21:03,408 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 13:21:03,508 - INFO -  * Restarting with stat
+2026-03-25 13:21:04,125 - INFO - User Server Started
+2026-03-25 13:21:13,262 - INFO - User Server Started
+2026-03-25 13:21:13,266 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:21:13,331 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:21:13,331 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:21:13,336 - INFO -  * Restarting with stat
+2026-03-25 13:21:13,913 - INFO - User Server Started
+2026-03-25 13:21:13,918 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:21:13,963 - WARNING -  * Debugger is active!
+2026-03-25 13:21:13,966 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:21:17,064 - INFO - 192.168.1.156 - - [25/Mar/2026 13:21:17] "GET / HTTP/1.1" 200 -
+2026-03-25 13:21:17,558 - INFO - 192.168.1.156 - - [25/Mar/2026 13:21:17] "GET / HTTP/1.1" 200 -
+2026-03-25 13:21:51,572 - INFO - User Server Started
+2026-03-25 13:21:51,576 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:21:51,701 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:21:51,702 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:21:51,703 - INFO -  * Restarting with stat
+2026-03-25 13:21:52,362 - INFO - User Server Started
+2026-03-25 13:21:52,365 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:21:52,406 - WARNING -  * Debugger is active!
+2026-03-25 13:21:52,411 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:21:56,654 - INFO - 192.168.1.156 - - [25/Mar/2026 13:21:56] "GET / HTTP/1.1" 200 -
+2026-03-25 13:22:20,982 - INFO - User Server Started
+2026-03-25 13:22:20,986 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:22:21,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:22:21,049 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:22:21,050 - INFO -  * Restarting with stat
+2026-03-25 13:22:21,671 - INFO - User Server Started
+2026-03-25 13:22:21,676 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:22:21,703 - WARNING -  * Debugger is active!
+2026-03-25 13:22:21,706 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:22:25,202 - INFO - 192.168.1.156 - - [25/Mar/2026 13:22:25] "GET / HTTP/1.1" 200 -
+2026-03-25 13:22:49,700 - INFO - User Server Started
+2026-03-25 13:22:49,703 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:22:49,759 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:22:49,759 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:22:49,761 - INFO -  * Restarting with stat
+2026-03-25 13:22:50,314 - INFO - User Server Started
+2026-03-25 13:22:50,318 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:22:50,344 - WARNING -  * Debugger is active!
+2026-03-25 13:22:50,347 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:22:54,132 - INFO - 192.168.1.156 - - [25/Mar/2026 13:22:54] "GET / HTTP/1.1" 200 -
+2026-03-25 13:23:09,670 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 13:23:09,788 - INFO -  * Restarting with stat
+2026-03-25 13:23:10,565 - INFO - User Server Started
+2026-03-25 13:23:17,885 - INFO - User Server Started
+2026-03-25 13:23:17,890 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:23:17,951 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:23:17,951 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:23:17,953 - INFO -  * Restarting with stat
+2026-03-25 13:23:18,537 - INFO - User Server Started
+2026-03-25 13:23:18,541 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:23:18,590 - WARNING -  * Debugger is active!
+2026-03-25 13:23:18,593 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:23:21,887 - INFO - 192.168.1.156 - - [25/Mar/2026 13:23:21] "GET / HTTP/1.1" 200 -
+2026-03-25 13:26:26,123 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 13:26:26,232 - INFO -  * Restarting with stat
+2026-03-25 13:26:27,100 - INFO - User Server Started
+2026-03-25 13:26:27,104 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:26:27,136 - WARNING -  * Debugger is active!
+2026-03-25 13:26:27,141 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:26:30,595 - INFO - 192.168.1.156 - - [25/Mar/2026 13:26:30] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:26:31,196 - INFO - 192.168.1.156 - - [25/Mar/2026 13:26:31] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:26:31,388 - WARNING - 404 error occurred
+2026-03-25 13:26:31,389 - INFO - 192.168.1.156 - - [25/Mar/2026 13:26:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 13:27:07,187 - INFO - User rizswana logged in successfully
+2026-03-25 13:27:07,188 - INFO - 192.168.1.156 - - [25/Mar/2026 13:27:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 13:27:07,217 - INFO - 192.168.1.156 - - [25/Mar/2026 13:27:07] "GET / HTTP/1.1" 200 -
+2026-03-25 13:27:15,236 - INFO - Search: Amount=400, Location=, Results=5
+2026-03-25 13:27:15,238 - INFO - 192.168.1.156 - - [25/Mar/2026 13:27:15] "POST / HTTP/1.1" 200 -
+2026-03-25 13:27:25,376 - INFO - 192.168.1.156 - - [25/Mar/2026 13:27:25] "GET / HTTP/1.1" 200 -
+2026-03-25 13:27:35,476 - INFO - 192.168.1.156 - - [25/Mar/2026 13:27:35] "GET / HTTP/1.1" 200 -
+2026-03-25 13:27:41,208 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 13:27:41,335 - INFO -  * Restarting with stat
+2026-03-25 13:27:41,903 - INFO - User Server Started
+2026-03-25 13:27:41,908 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:27:41,960 - WARNING -  * Debugger is active!
+2026-03-25 13:27:41,964 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:28:14,386 - INFO - User Server Started
+2026-03-25 13:28:14,390 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:28:14,488 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:28:14,489 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:28:14,492 - INFO -  * Restarting with stat
+2026-03-25 13:28:15,328 - INFO - User Server Started
+2026-03-25 13:28:15,336 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:28:15,376 - WARNING -  * Debugger is active!
+2026-03-25 13:28:15,380 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:28:19,254 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:19] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:28:19,269 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:19] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:28:19,976 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:19] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:28:19,982 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:19] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:28:20,146 - WARNING - 404 error occurred
+2026-03-25 13:28:20,146 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 13:28:20,151 - WARNING - 404 error occurred
+2026-03-25 13:28:20,152 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 13:28:44,134 - INFO - User rizswana logged in successfully
+2026-03-25 13:28:44,135 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 13:28:44,166 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:44] "GET / HTTP/1.1" 200 -
+2026-03-25 13:28:48,520 - INFO - Search: Amount=8999, Location=, Results=5
+2026-03-25 13:28:48,522 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:48] "POST / HTTP/1.1" 200 -
+2026-03-25 13:28:56,786 - INFO - Search: Amount=900000000, Location=, Results=0
+2026-03-25 13:28:56,786 - INFO - 192.168.1.156 - - [25/Mar/2026 13:28:56] "POST / HTTP/1.1" 200 -
+2026-03-25 13:31:50,516 - INFO - User Server Started
+2026-03-25 13:31:50,520 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:31:50,609 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:31:50,609 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:31:50,614 - INFO -  * Restarting with stat
+2026-03-25 13:31:51,308 - INFO - User Server Started
+2026-03-25 13:31:51,314 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:31:51,342 - WARNING -  * Debugger is active!
+2026-03-25 13:31:51,345 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:31:55,064 - INFO - 192.168.1.156 - - [25/Mar/2026 13:31:55] "GET / HTTP/1.1" 200 -
+2026-03-25 13:32:35,611 - INFO - User Server Started
+2026-03-25 13:32:35,615 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:32:35,691 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:32:35,692 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:32:35,693 - INFO -  * Restarting with stat
+2026-03-25 13:32:36,402 - INFO - User Server Started
+2026-03-25 13:32:36,404 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:32:36,437 - WARNING -  * Debugger is active!
+2026-03-25 13:32:36,444 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:32:40,762 - INFO - 192.168.1.156 - - [25/Mar/2026 13:32:40] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:32:40,767 - INFO - 192.168.1.156 - - [25/Mar/2026 13:32:40] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:32:40,836 - INFO - 192.168.1.156 - - [25/Mar/2026 13:32:40] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:32:41,458 - INFO - 192.168.1.156 - - [25/Mar/2026 13:32:41] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:32:41,637 - WARNING - 404 error occurred
+2026-03-25 13:32:41,638 - INFO - 192.168.1.156 - - [25/Mar/2026 13:32:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 13:32:41,642 - WARNING - 404 error occurred
+2026-03-25 13:32:41,642 - INFO - 192.168.1.156 - - [25/Mar/2026 13:32:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 13:32:41,647 - WARNING - 404 error occurred
+2026-03-25 13:32:41,648 - INFO - 192.168.1.156 - - [25/Mar/2026 13:32:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 13:33:30,549 - INFO - User Server Started
+2026-03-25 13:33:30,554 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:33:30,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:33:30,620 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:33:30,621 - INFO -  * Restarting with stat
+2026-03-25 13:33:31,200 - INFO - User Server Started
+2026-03-25 13:33:31,204 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:33:31,238 - WARNING -  * Debugger is active!
+2026-03-25 13:33:31,241 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:33:41,859 - INFO - 192.168.1.156 - - [25/Mar/2026 13:33:41] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:33:41,878 - INFO - 192.168.1.156 - - [25/Mar/2026 13:33:41] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:34:31,395 - INFO - User Server Started
+2026-03-25 13:34:31,399 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:34:31,462 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 13:34:31,462 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 13:34:31,463 - INFO -  * Restarting with stat
+2026-03-25 13:34:32,022 - INFO - User Server Started
+2026-03-25 13:34:32,026 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 13:34:32,057 - WARNING -  * Debugger is active!
+2026-03-25 13:34:32,060 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 13:34:37,912 - INFO - 192.168.1.156 - - [25/Mar/2026 13:34:37] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 13:34:37,932 - INFO - 192.168.1.156 - - [25/Mar/2026 13:34:37] "GET /login HTTP/1.1" 200 -
+2026-03-25 13:35:06,532 - INFO - User rizswana logged in successfully
+2026-03-25 13:35:06,535 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 13:35:06,567 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:06] "GET / HTTP/1.1" 200 -
+2026-03-25 13:35:14,752 - INFO - Search: Amount=8988, Location=, Results=5
+2026-03-25 13:35:14,753 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:14] "POST / HTTP/1.1" 200 -
+2026-03-25 13:35:24,859 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:24] "GET / HTTP/1.1" 200 -
+2026-03-25 13:35:34,935 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:34] "GET / HTTP/1.1" 200 -
+2026-03-25 13:35:45,000 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:45] "GET / HTTP/1.1" 200 -
+2026-03-25 13:35:54,747 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:54] "POST /login HTTP/1.1" 200 -
+2026-03-25 13:35:55,063 - INFO - 192.168.1.156 - - [25/Mar/2026 13:35:55] "GET / HTTP/1.1" 200 -
+2026-03-25 13:36:05,126 - INFO - 192.168.1.156 - - [25/Mar/2026 13:36:05] "GET / HTTP/1.1" 200 -
+2026-03-25 14:18:00,875 - INFO - User Server Started
+2026-03-25 14:18:00,878 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:18:00,945 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 14:18:00,945 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:18:00,947 - INFO -  * Restarting with stat
+2026-03-25 14:18:01,614 - INFO - User Server Started
+2026-03-25 14:18:01,618 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:18:01,647 - WARNING -  * Debugger is active!
+2026-03-25 14:18:01,649 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 14:18:09,233 - INFO - 192.168.1.156 - - [25/Mar/2026 14:18:09] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 14:18:09,919 - INFO - 192.168.1.156 - - [25/Mar/2026 14:18:09] "GET /login HTTP/1.1" 200 -
+2026-03-25 14:18:10,112 - WARNING - 404 error occurred
+2026-03-25 14:18:10,112 - INFO - 192.168.1.156 - - [25/Mar/2026 14:18:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 14:23:39,364 - INFO - User Server Started
+2026-03-25 14:23:39,367 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:23:39,444 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 14:23:39,444 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:23:39,447 - INFO -  * Restarting with stat
+2026-03-25 14:23:40,153 - INFO - User Server Started
+2026-03-25 14:23:40,157 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:23:40,190 - WARNING -  * Debugger is active!
+2026-03-25 14:23:40,195 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 14:23:45,242 - INFO - 192.168.1.156 - - [25/Mar/2026 14:23:45] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 14:23:45,780 - INFO - 192.168.1.156 - - [25/Mar/2026 14:23:45] "GET /login HTTP/1.1" 200 -
+2026-03-25 14:23:45,968 - WARNING - 404 error occurred
+2026-03-25 14:23:45,969 - INFO - 192.168.1.156 - - [25/Mar/2026 14:23:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 14:27:42,725 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 14:27:42,828 - INFO -  * Restarting with stat
+2026-03-25 14:27:43,615 - INFO - User Server Started
+2026-03-25 14:27:43,618 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:27:43,649 - WARNING -  * Debugger is active!
+2026-03-25 14:27:43,652 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 14:27:47,331 - INFO - User Server Started
+2026-03-25 14:27:47,335 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:27:47,401 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 14:27:47,401 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:27:47,403 - INFO -  * Restarting with stat
+2026-03-25 14:27:47,961 - INFO - User Server Started
+2026-03-25 14:27:47,965 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:27:47,998 - WARNING -  * Debugger is active!
+2026-03-25 14:27:48,003 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 14:27:52,018 - INFO - 192.168.1.156 - - [25/Mar/2026 14:27:52] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 14:27:52,036 - INFO - 192.168.1.156 - - [25/Mar/2026 14:27:52] "GET /login HTTP/1.1" 200 -
+2026-03-25 14:28:17,687 - INFO - User rizswana logged in successfully
+2026-03-25 14:28:17,694 - INFO - 192.168.1.156 - - [25/Mar/2026 14:28:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 14:28:17,718 - INFO - 192.168.1.156 - - [25/Mar/2026 14:28:17] "GET / HTTP/1.1" 200 -
+2026-03-25 14:28:22,448 - INFO - Search: Amount=8999, Location=, Results=5
+2026-03-25 14:28:22,449 - INFO - 192.168.1.156 - - [25/Mar/2026 14:28:22] "POST / HTTP/1.1" 200 -
+2026-03-25 14:34:56,444 - INFO - User Server Started
+2026-03-25 14:34:56,451 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:34:56,553 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 14:34:56,553 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 14:34:56,555 - INFO -  * Restarting with stat
+2026-03-25 14:34:57,500 - INFO - User Server Started
+2026-03-25 14:34:57,504 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 14:34:57,553 - WARNING -  * Debugger is active!
+2026-03-25 14:34:57,558 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 14:35:00,802 - INFO - 192.168.1.156 - - [25/Mar/2026 14:35:00] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 14:35:01,557 - INFO - 192.168.1.156 - - [25/Mar/2026 14:35:01] "GET /login HTTP/1.1" 200 -
+2026-03-25 14:35:01,712 - WARNING - 404 error occurred
+2026-03-25 14:35:01,713 - INFO - 192.168.1.156 - - [25/Mar/2026 14:35:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 14:35:24,792 - INFO - User rizswana logged in successfully
+2026-03-25 14:35:24,794 - INFO - 192.168.1.156 - - [25/Mar/2026 14:35:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 14:35:24,820 - INFO - 192.168.1.156 - - [25/Mar/2026 14:35:24] "GET / HTTP/1.1" 200 -
+2026-03-25 14:35:35,111 - INFO - 192.168.1.156 - - [25/Mar/2026 14:35:35] "GET / HTTP/1.1" 200 -
+2026-03-25 15:26:58,086 - INFO - User Server Started
+2026-03-25 15:26:58,091 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 15:27:02,705 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-25 15:27:02,705 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 15:27:02,710 - INFO -  * Restarting with stat
+2026-03-25 15:27:03,179 - INFO - User Server Started
+2026-03-25 15:27:03,183 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-25 15:27:03,218 - WARNING -  * Debugger is active!
+2026-03-25 15:27:03,226 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 19:58:24,945 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 19:58:24,946 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 19:58:24,948 - INFO -  * Restarting with stat
+2026-03-25 19:58:25,666 - WARNING -  * Debugger is active!
+2026-03-25 19:58:25,669 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 19:58:33,026 - INFO - 192.168.1.19 - - [25/Mar/2026 19:58:33] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 19:58:33,057 - INFO - 192.168.1.19 - - [25/Mar/2026 19:58:33] "GET /login HTTP/1.1" 200 -
+2026-03-25 19:58:33,179 - INFO - 192.168.1.19 - - [25/Mar/2026 19:58:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 19:58:52,288 - INFO - 192.168.1.19 - - [25/Mar/2026 19:58:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 19:58:52,312 - INFO - 192.168.1.19 - - [25/Mar/2026 19:58:52] "GET / HTTP/1.1" 200 -
+2026-03-25 19:59:00,720 - ERROR - Bank API error: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/suspicious (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-25 19:59:00,725 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:00] "POST / HTTP/1.1" 200 -
+2026-03-25 19:59:07,357 - ERROR - Bank API error: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/suspicious (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-25 19:59:07,360 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:07] "POST / HTTP/1.1" 200 -
+2026-03-25 19:59:12,955 - ERROR - Bank API error: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/suspicious (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-25 19:59:12,958 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:12] "POST / HTTP/1.1" 200 -
+2026-03-25 19:59:23,088 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:23] "GET / HTTP/1.1" 200 -
+2026-03-25 19:59:26,115 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:26] "POST / HTTP/1.1" 200 -
+2026-03-25 19:59:36,223 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:36] "GET / HTTP/1.1" 200 -
+2026-03-25 19:59:46,303 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:46] "GET / HTTP/1.1" 200 -
+2026-03-25 19:59:56,392 - INFO - 192.168.1.19 - - [25/Mar/2026 19:59:56] "GET / HTTP/1.1" 200 -
+2026-03-25 20:00:06,479 - INFO - 192.168.1.19 - - [25/Mar/2026 20:00:06] "GET / HTTP/1.1" 200 -
+2026-03-25 20:00:16,558 - INFO - 192.168.1.19 - - [25/Mar/2026 20:00:16] "GET / HTTP/1.1" 200 -
+2026-03-25 20:00:26,641 - INFO - 192.168.1.19 - - [25/Mar/2026 20:00:26] "GET / HTTP/1.1" 200 -
+2026-03-25 20:00:36,733 - INFO - 192.168.1.19 - - [25/Mar/2026 20:00:36] "GET / HTTP/1.1" 200 -
+2026-03-25 20:00:46,826 - INFO - 192.168.1.19 - - [25/Mar/2026 20:00:46] "GET / HTTP/1.1" 200 -
+2026-03-25 20:00:56,931 - INFO - 192.168.1.19 - - [25/Mar/2026 20:00:56] "GET / HTTP/1.1" 200 -
+2026-03-25 20:01:07,025 - INFO - 192.168.1.19 - - [25/Mar/2026 20:01:07] "GET / HTTP/1.1" 200 -
+2026-03-25 20:01:17,111 - INFO - 192.168.1.19 - - [25/Mar/2026 20:01:17] "GET / HTTP/1.1" 200 -
+2026-03-25 20:01:27,197 - INFO - 192.168.1.19 - - [25/Mar/2026 20:01:27] "GET / HTTP/1.1" 200 -
+2026-03-25 20:01:37,273 - INFO - 192.168.1.19 - - [25/Mar/2026 20:01:37] "GET / HTTP/1.1" 200 -
+2026-03-25 20:01:47,359 - INFO - 192.168.1.19 - - [25/Mar/2026 20:01:47] "GET / HTTP/1.1" 200 -
+2026-03-25 20:01:57,453 - INFO - 192.168.1.19 - - [25/Mar/2026 20:01:57] "GET / HTTP/1.1" 200 -
+2026-03-25 20:02:07,536 - INFO - 192.168.1.19 - - [25/Mar/2026 20:02:07] "GET / HTTP/1.1" 200 -
+2026-03-25 20:02:17,636 - INFO - 192.168.1.19 - - [25/Mar/2026 20:02:17] "GET / HTTP/1.1" 200 -
+2026-03-25 20:02:27,720 - INFO - 192.168.1.19 - - [25/Mar/2026 20:02:27] "GET / HTTP/1.1" 200 -
+2026-03-25 20:02:37,807 - INFO - 192.168.1.19 - - [25/Mar/2026 20:02:37] "GET / HTTP/1.1" 200 -
+2026-03-25 20:02:47,892 - INFO - 192.168.1.19 - - [25/Mar/2026 20:02:47] "GET / HTTP/1.1" 200 -
+2026-03-25 20:02:57,949 - INFO - 192.168.1.19 - - [25/Mar/2026 20:02:57] "GET / HTTP/1.1" 200 -
+2026-03-25 20:03:08,064 - INFO - 192.168.1.19 - - [25/Mar/2026 20:03:08] "GET / HTTP/1.1" 200 -
+2026-03-25 20:03:18,130 - INFO - 192.168.1.19 - - [25/Mar/2026 20:03:18] "GET / HTTP/1.1" 200 -
+2026-03-25 20:04:40,337 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-25 20:04:40,469 - INFO -  * Restarting with stat
+2026-03-25 20:04:41,419 - WARNING -  * Debugger is active!
+2026-03-25 20:04:41,422 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 20:04:43,482 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-25 20:04:43,579 - INFO -  * Restarting with stat
+2026-03-25 20:04:44,160 - INFO - User Server Started
+2026-03-25 20:04:44,164 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:04:44,201 - WARNING -  * Debugger is active!
+2026-03-25 20:04:44,204 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 20:05:00,789 - INFO - User Server Started
+2026-03-25 20:05:00,795 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:05:00,850 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 20:05:00,850 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 20:05:00,852 - INFO -  * Restarting with stat
+2026-03-25 20:05:01,392 - INFO - User Server Started
+2026-03-25 20:05:01,395 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:05:01,433 - WARNING -  * Debugger is active!
+2026-03-25 20:05:01,436 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 20:05:06,016 - INFO - 192.168.1.19 - - [25/Mar/2026 20:05:06] "GET / HTTP/1.1" 200 -
+2026-03-25 20:05:45,161 - INFO - User Server Started
+2026-03-25 20:05:45,165 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:05:45,210 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 20:05:45,210 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 20:05:45,211 - INFO -  * Restarting with stat
+2026-03-25 20:05:45,708 - INFO - User Server Started
+2026-03-25 20:05:45,714 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:05:45,745 - WARNING -  * Debugger is active!
+2026-03-25 20:05:45,752 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 20:05:50,702 - INFO - 192.168.1.19 - - [25/Mar/2026 20:05:50] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 20:05:51,281 - INFO - 192.168.1.19 - - [25/Mar/2026 20:05:51] "GET /login HTTP/1.1" 200 -
+2026-03-25 20:05:51,420 - WARNING - 404 error occurred
+2026-03-25 20:05:51,421 - INFO - 192.168.1.19 - - [25/Mar/2026 20:05:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 20:41:16,515 - INFO - User Server Started
+2026-03-25 20:41:16,522 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:41:16,609 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 20:41:16,609 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 20:41:16,611 - INFO -  * Restarting with stat
+2026-03-25 20:41:17,461 - INFO - User Server Started
+2026-03-25 20:41:17,467 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:41:17,507 - WARNING -  * Debugger is active!
+2026-03-25 20:41:17,513 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 20:41:25,989 - INFO - 192.168.1.19 - - [25/Mar/2026 20:41:25] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 20:41:26,013 - INFO - 192.168.1.19 - - [25/Mar/2026 20:41:26] "GET /login HTTP/1.1" 200 -
+2026-03-25 20:41:26,161 - WARNING - 404 error occurred
+2026-03-25 20:41:26,161 - INFO - 192.168.1.19 - - [25/Mar/2026 20:41:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-25 20:41:51,399 - INFO - User rizswana logged in successfully
+2026-03-25 20:41:51,402 - INFO - 192.168.1.19 - - [25/Mar/2026 20:41:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 20:41:51,430 - INFO - 192.168.1.19 - - [25/Mar/2026 20:41:51] "GET / HTTP/1.1" 200 -
+2026-03-25 20:41:54,952 - INFO - Search: Amount=600, Location=, Results=5
+2026-03-25 20:41:54,955 - INFO - 192.168.1.19 - - [25/Mar/2026 20:41:54] "POST / HTTP/1.1" 200 -
+2026-03-25 20:42:01,089 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Max retries exceeded with url: /api/high-amount-alert (Caused by NewConnectionError("HTTPConnection(host='192.168.1.19', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-25 20:42:01,091 - INFO - Search: Amount=5000000000, Location=, Results=0
+2026-03-25 20:42:01,092 - INFO - 192.168.1.19 - - [25/Mar/2026 20:42:01] "POST / HTTP/1.1" 200 -
+2026-03-25 20:42:11,186 - INFO - 192.168.1.19 - - [25/Mar/2026 20:42:11] "GET / HTTP/1.1" 200 -
+2026-03-25 20:42:21,265 - INFO - 192.168.1.19 - - [25/Mar/2026 20:42:21] "GET / HTTP/1.1" 200 -
+2026-03-25 20:42:31,339 - INFO - 192.168.1.19 - - [25/Mar/2026 20:42:31] "GET / HTTP/1.1" 200 -
+2026-03-25 20:42:41,415 - INFO - 192.168.1.19 - - [25/Mar/2026 20:42:41] "GET / HTTP/1.1" 200 -
+2026-03-25 20:42:51,477 - INFO - 192.168.1.19 - - [25/Mar/2026 20:42:51] "GET / HTTP/1.1" 200 -
+2026-03-25 20:43:01,562 - INFO - 192.168.1.19 - - [25/Mar/2026 20:43:01] "GET / HTTP/1.1" 200 -
+2026-03-25 20:43:11,639 - INFO - 192.168.1.19 - - [25/Mar/2026 20:43:11] "GET / HTTP/1.1" 200 -
+2026-03-25 20:43:21,718 - INFO - 192.168.1.19 - - [25/Mar/2026 20:43:21] "GET / HTTP/1.1" 200 -
+2026-03-25 20:49:12,607 - INFO - User Server Started
+2026-03-25 20:49:12,611 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:49:12,688 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 20:49:12,689 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 20:49:12,694 - INFO -  * Restarting with stat
+2026-03-25 20:49:13,416 - INFO - User Server Started
+2026-03-25 20:49:13,420 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 20:49:13,451 - WARNING -  * Debugger is active!
+2026-03-25 20:49:13,454 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 20:49:58,014 - INFO - 192.168.1.19 - - [25/Mar/2026 20:49:58] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 20:49:58,029 - INFO - 192.168.1.19 - - [25/Mar/2026 20:49:58] "GET /login HTTP/1.1" 200 -
+2026-03-25 20:50:21,098 - INFO - 192.168.1.19 - - [25/Mar/2026 20:50:21] "POST /login HTTP/1.1" 200 -
+2026-03-25 20:50:43,944 - INFO - User rizswana logged in successfully
+2026-03-25 20:50:43,945 - INFO - 192.168.1.19 - - [25/Mar/2026 20:50:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 20:50:43,964 - INFO - 192.168.1.19 - - [25/Mar/2026 20:50:43] "GET / HTTP/1.1" 200 -
+2026-03-25 20:50:51,608 - INFO - High amount alert sent for rizswana - Amount: \u20b960000
+2026-03-25 20:50:51,614 - INFO - Search: Amount=60000, Location=, Results=5
+2026-03-25 20:50:51,615 - INFO - 192.168.1.19 - - [25/Mar/2026 20:50:51] "POST / HTTP/1.1" 200 -
+2026-03-25 20:51:01,756 - INFO - 192.168.1.19 - - [25/Mar/2026 20:51:01] "GET / HTTP/1.1" 200 -
+2026-03-25 20:51:11,847 - INFO - 192.168.1.19 - - [25/Mar/2026 20:51:11] "GET / HTTP/1.1" 200 -
+2026-03-25 20:51:21,952 - INFO - 192.168.1.19 - - [25/Mar/2026 20:51:21] "GET / HTTP/1.1" 200 -
+2026-03-25 20:51:32,036 - INFO - 192.168.1.19 - - [25/Mar/2026 20:51:32] "GET / HTTP/1.1" 200 -
+2026-03-25 20:51:42,109 - INFO - 192.168.1.19 - - [25/Mar/2026 20:51:42] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 20:51:42,123 - INFO - 192.168.1.19 - - [25/Mar/2026 20:51:42] "GET /login HTTP/1.1" 200 -
+2026-03-25 21:05:19,208 - INFO - User Server Started
+2026-03-25 21:05:19,211 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 21:05:19,245 - INFO - Dummy users inserted into users table
+2026-03-25 21:05:19,317 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 21:05:19,318 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 21:05:19,321 - INFO -  * Restarting with stat
+2026-03-25 21:05:20,163 - INFO - User Server Started
+2026-03-25 21:05:20,166 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 21:05:20,193 - WARNING -  * Debugger is active!
+2026-03-25 21:05:20,196 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 21:05:30,891 - INFO - 192.168.1.19 - - [25/Mar/2026 21:05:30] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 21:05:30,911 - INFO - 192.168.1.19 - - [25/Mar/2026 21:05:30] "GET /login HTTP/1.1" 200 -
+2026-03-25 21:05:47,536 - INFO - User rizswana logged in successfully
+2026-03-25 21:05:47,539 - INFO - 192.168.1.19 - - [25/Mar/2026 21:05:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 21:05:47,560 - INFO - 192.168.1.19 - - [25/Mar/2026 21:05:47] "GET / HTTP/1.1" 200 -
+2026-03-25 21:05:55,610 - INFO - High amount alert sent for rizswana - Amount: \u20b9600000
+2026-03-25 21:05:55,615 - INFO - Search: Amount=600000, Location=, Results=0
+2026-03-25 21:05:55,616 - INFO - 192.168.1.19 - - [25/Mar/2026 21:05:55] "POST / HTTP/1.1" 200 -
+2026-03-25 21:06:05,727 - INFO - 192.168.1.19 - - [25/Mar/2026 21:06:05] "GET / HTTP/1.1" 200 -
+2026-03-25 21:06:15,863 - INFO - 192.168.1.19 - - [25/Mar/2026 21:06:15] "GET / HTTP/1.1" 200 -
+2026-03-25 21:06:25,934 - INFO - 192.168.1.19 - - [25/Mar/2026 21:06:25] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 21:06:25,946 - INFO - 192.168.1.19 - - [25/Mar/2026 21:06:25] "GET /login HTTP/1.1" 200 -
+2026-03-25 21:07:11,031 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-25 21:07:11,182 - INFO -  * Restarting with stat
+2026-03-25 21:07:12,278 - INFO - User Server Started
+2026-03-25 21:07:12,284 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 21:07:12,335 - WARNING -  * Debugger is active!
+2026-03-25 21:07:12,341 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 21:07:51,243 - INFO - User Server Started
+2026-03-25 21:07:51,247 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 21:07:51,332 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 21:07:51,333 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 21:07:51,336 - INFO -  * Restarting with stat
+2026-03-25 21:07:52,262 - INFO - User Server Started
+2026-03-25 21:07:52,266 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 21:07:52,307 - WARNING -  * Debugger is active!
+2026-03-25 21:07:52,312 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 21:08:21,435 - INFO - User Server Started
+2026-03-25 21:08:21,438 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 21:08:21,507 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 21:08:21,507 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 21:08:21,510 - INFO -  * Restarting with stat
+2026-03-25 21:08:22,338 - INFO - User Server Started
+2026-03-25 21:08:22,342 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 21:08:22,387 - WARNING -  * Debugger is active!
+2026-03-25 21:08:22,392 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 21:08:26,607 - INFO - 192.168.1.19 - - [25/Mar/2026 21:08:26] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 21:08:26,625 - INFO - 192.168.1.19 - - [25/Mar/2026 21:08:26] "GET /login HTTP/1.1" 200 -
+2026-03-25 21:09:04,107 - INFO - User rizswana logged in successfully
+2026-03-25 21:09:04,108 - INFO - 192.168.1.19 - - [25/Mar/2026 21:09:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 21:09:04,136 - INFO - 192.168.1.19 - - [25/Mar/2026 21:09:04] "GET / HTTP/1.1" 200 -
+2026-03-25 21:09:12,961 - INFO - High amount alert sent for rizswana - Amount: \u20b960000000
+2026-03-25 21:09:12,966 - INFO - Search: Amount=60000000, Location=, Results=0
+2026-03-25 21:09:12,967 - INFO - 192.168.1.19 - - [25/Mar/2026 21:09:12] "POST / HTTP/1.1" 200 -
+2026-03-25 21:09:23,071 - INFO - 192.168.1.19 - - [25/Mar/2026 21:09:23] "GET / HTTP/1.1" 200 -
+2026-03-25 21:09:33,203 - INFO - 192.168.1.19 - - [25/Mar/2026 21:09:33] "GET / HTTP/1.1" 200 -
+2026-03-25 21:09:43,275 - INFO - 192.168.1.19 - - [25/Mar/2026 21:09:43] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 21:09:43,290 - INFO - 192.168.1.19 - - [25/Mar/2026 21:09:43] "GET /login HTTP/1.1" 200 -
+2026-03-25 21:13:45,604 - INFO - User rizswana logged in successfully
+2026-03-25 21:13:45,605 - INFO - 192.168.1.19 - - [25/Mar/2026 21:13:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-25 21:13:45,619 - INFO - 192.168.1.19 - - [25/Mar/2026 21:13:45] "GET / HTTP/1.1" 200 -
+2026-03-25 21:13:52,967 - INFO - High amount alert sent for rizswana - Amount: \u20b96000000
+2026-03-25 21:13:52,969 - INFO - Search: Amount=6000000, Location=, Results=0
+2026-03-25 21:13:52,970 - INFO - 192.168.1.19 - - [25/Mar/2026 21:13:52] "POST / HTTP/1.1" 200 -
+2026-03-25 21:14:03,064 - INFO - 192.168.1.19 - - [25/Mar/2026 21:14:03] "GET / HTTP/1.1" 200 -
+2026-03-25 21:14:13,134 - INFO - 192.168.1.19 - - [25/Mar/2026 21:14:13] "GET / HTTP/1.1" 200 -
+2026-03-25 21:14:23,208 - INFO - 192.168.1.19 - - [25/Mar/2026 21:14:23] "GET / HTTP/1.1" 200 -
+2026-03-25 21:14:33,296 - INFO - 192.168.1.19 - - [25/Mar/2026 21:14:33] "GET / HTTP/1.1" 200 -
+2026-03-25 21:14:43,375 - INFO - 192.168.1.19 - - [25/Mar/2026 21:14:43] "GET / HTTP/1.1" 200 -
+2026-03-25 21:14:53,437 - INFO - 192.168.1.19 - - [25/Mar/2026 21:14:53] "GET / HTTP/1.1" 200 -
+2026-03-25 21:15:03,505 - INFO - 192.168.1.19 - - [25/Mar/2026 21:15:03] "GET / HTTP/1.1" 200 -
+2026-03-25 21:15:13,576 - INFO - 192.168.1.19 - - [25/Mar/2026 21:15:13] "GET / HTTP/1.1" 200 -
+2026-03-25 21:15:23,655 - INFO - 192.168.1.19 - - [25/Mar/2026 21:15:23] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-25 21:15:23,669 - INFO - 192.168.1.19 - - [25/Mar/2026 21:15:23] "GET /login HTTP/1.1" 200 -
+2026-03-25 23:27:33,072 - INFO - User Server Started
+2026-03-25 23:27:33,075 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 23:27:33,128 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-25 23:27:33,128 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 23:27:33,129 - INFO -  * Restarting with stat
+2026-03-25 23:27:33,959 - INFO - User Server Started
+2026-03-25 23:27:33,962 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 23:27:33,998 - WARNING -  * Debugger is active!
+2026-03-25 23:27:34,005 - INFO -  * Debugger PIN: 470-879-029
+2026-03-25 23:35:28,161 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-25 23:35:28,278 - INFO -  * Restarting with stat
+2026-03-25 23:35:28,998 - INFO - User Server Started
+2026-03-25 23:35:29,002 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-25 23:35:29,038 - WARNING -  * Debugger is active!
+2026-03-25 23:35:29,043 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 00:43:49,583 - INFO - User Server Started
+2026-03-26 00:43:49,590 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 00:43:49,657 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 00:43:49,657 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 00:43:49,660 - INFO -  * Restarting with stat
+2026-03-26 00:43:50,539 - INFO - User Server Started
+2026-03-26 00:43:50,543 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 00:43:50,660 - WARNING -  * Debugger is active!
+2026-03-26 00:43:50,663 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 00:49:20,885 - INFO - User Server Started
+2026-03-26 00:49:20,888 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 00:49:20,958 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 00:49:20,958 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 00:49:20,961 - INFO -  * Restarting with stat
+2026-03-26 00:49:22,069 - INFO - User Server Started
+2026-03-26 00:49:22,074 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 00:49:22,115 - WARNING -  * Debugger is active!
+2026-03-26 00:49:22,122 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:10:12,433 - INFO - User Server Started
+2026-03-26 01:10:12,436 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:10:12,487 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:10:12,487 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:10:12,489 - INFO -  * Restarting with stat
+2026-03-26 01:10:13,346 - INFO - User Server Started
+2026-03-26 01:10:13,349 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:10:13,378 - WARNING -  * Debugger is active!
+2026-03-26 01:10:13,384 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:10:19,361 - INFO - 192.168.1.19 - - [26/Mar/2026 01:10:19] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:10:19,429 - INFO - 192.168.1.19 - - [26/Mar/2026 01:10:19] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:10:19,593 - WARNING - 404 error occurred
+2026-03-26 01:10:19,594 - INFO - 192.168.1.19 - - [26/Mar/2026 01:10:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 01:10:52,526 - INFO - User rizswana logged in successfully
+2026-03-26 01:10:52,528 - INFO - 192.168.1.19 - - [26/Mar/2026 01:10:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:10:52,641 - INFO - 192.168.1.19 - - [26/Mar/2026 01:10:52] "GET / HTTP/1.1" 200 -
+2026-03-26 01:10:57,551 - WARNING - Failed to send alert: 500
+2026-03-26 01:10:57,553 - INFO - Search: Amount=700000000, Location=, Results=0
+2026-03-26 01:10:57,554 - INFO - 192.168.1.19 - - [26/Mar/2026 01:10:57] "POST / HTTP/1.1" 200 -
+2026-03-26 01:11:07,658 - INFO - 192.168.1.19 - - [26/Mar/2026 01:11:07] "GET / HTTP/1.1" 200 -
+2026-03-26 01:11:17,737 - INFO - 192.168.1.19 - - [26/Mar/2026 01:11:17] "GET / HTTP/1.1" 200 -
+2026-03-26 01:11:27,800 - INFO - 192.168.1.19 - - [26/Mar/2026 01:11:27] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:11:27,811 - INFO - 192.168.1.19 - - [26/Mar/2026 01:11:27] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:17:09,523 - INFO - User Server Started
+2026-03-26 01:17:09,526 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:17:09,573 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:17:09,573 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:17:09,574 - INFO -  * Restarting with stat
+2026-03-26 01:17:10,366 - INFO - User Server Started
+2026-03-26 01:17:10,373 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:17:10,398 - WARNING -  * Debugger is active!
+2026-03-26 01:17:10,402 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:17:14,627 - INFO - 192.168.1.19 - - [26/Mar/2026 01:17:14] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:17:14,644 - INFO - 192.168.1.19 - - [26/Mar/2026 01:17:14] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:17:32,205 - INFO - User rizswana logged in successfully
+2026-03-26 01:17:32,207 - INFO - 192.168.1.19 - - [26/Mar/2026 01:17:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:17:32,231 - INFO - 192.168.1.19 - - [26/Mar/2026 01:17:32] "GET / HTTP/1.1" 200 -
+2026-03-26 01:17:36,554 - WARNING - Failed to send alert: 500
+2026-03-26 01:17:36,556 - INFO - Search: Amount=70000000, Location=, Results=0
+2026-03-26 01:17:36,557 - INFO - 192.168.1.19 - - [26/Mar/2026 01:17:36] "POST / HTTP/1.1" 200 -
+2026-03-26 01:17:46,669 - INFO - 192.168.1.19 - - [26/Mar/2026 01:17:46] "GET / HTTP/1.1" 200 -
+2026-03-26 01:17:56,757 - INFO - 192.168.1.19 - - [26/Mar/2026 01:17:56] "GET / HTTP/1.1" 200 -
+2026-03-26 01:20:22,636 - INFO - User Server Started
+2026-03-26 01:20:22,639 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:20:22,691 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:20:22,691 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:20:22,693 - INFO -  * Restarting with stat
+2026-03-26 01:20:23,454 - INFO - User Server Started
+2026-03-26 01:20:23,458 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:20:23,503 - WARNING -  * Debugger is active!
+2026-03-26 01:20:23,508 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:20:27,799 - INFO - 192.168.1.19 - - [26/Mar/2026 01:20:27] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:20:27,820 - INFO - 192.168.1.19 - - [26/Mar/2026 01:20:27] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:20:27,918 - WARNING - 404 error occurred
+2026-03-26 01:20:27,918 - INFO - 192.168.1.19 - - [26/Mar/2026 01:20:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 01:20:54,187 - INFO - User rizswana logged in successfully
+2026-03-26 01:20:54,188 - INFO - 192.168.1.19 - - [26/Mar/2026 01:20:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:20:54,211 - INFO - 192.168.1.19 - - [26/Mar/2026 01:20:54] "GET / HTTP/1.1" 200 -
+2026-03-26 01:21:01,387 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Max retries exceeded with url: /api/high-amount-alert (Caused by NewConnectionError("HTTPConnection(host='192.168.1.19', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-26 01:21:01,389 - INFO - Search: Amount=8998898898, Location=, Results=0
+2026-03-26 01:21:01,390 - INFO - 192.168.1.19 - - [26/Mar/2026 01:21:01] "POST / HTTP/1.1" 200 -
+2026-03-26 01:21:11,489 - INFO - 192.168.1.19 - - [26/Mar/2026 01:21:11] "GET / HTTP/1.1" 200 -
+2026-03-26 01:21:21,558 - INFO - 192.168.1.19 - - [26/Mar/2026 01:21:21] "GET / HTTP/1.1" 200 -
+2026-03-26 01:21:31,631 - INFO - 192.168.1.19 - - [26/Mar/2026 01:21:31] "GET / HTTP/1.1" 200 -
+2026-03-26 01:21:50,545 - INFO - 192.168.1.19 - - [26/Mar/2026 01:21:50] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:21:51,137 - INFO - 192.168.1.19 - - [26/Mar/2026 01:21:51] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:21:51,327 - WARNING - 404 error occurred
+2026-03-26 01:21:51,328 - INFO - 192.168.1.19 - - [26/Mar/2026 01:21:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 01:22:23,716 - INFO - User rizswana logged in successfully
+2026-03-26 01:22:23,717 - INFO - 192.168.1.19 - - [26/Mar/2026 01:22:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:22:23,729 - INFO - 192.168.1.19 - - [26/Mar/2026 01:22:23] "GET / HTTP/1.1" 200 -
+2026-03-26 01:22:30,935 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Max retries exceeded with url: /api/high-amount-alert (Caused by NewConnectionError("HTTPConnection(host='192.168.1.19', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-26 01:22:30,940 - INFO - Search: Amount=60000000, Location=, Results=0
+2026-03-26 01:22:30,942 - INFO - 192.168.1.19 - - [26/Mar/2026 01:22:30] "POST / HTTP/1.1" 200 -
+2026-03-26 01:31:20,720 - INFO - User Server Started
+2026-03-26 01:31:20,724 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:31:20,785 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:31:20,785 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:31:20,788 - INFO -  * Restarting with stat
+2026-03-26 01:31:21,580 - INFO - User Server Started
+2026-03-26 01:31:21,583 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:31:21,620 - WARNING -  * Debugger is active!
+2026-03-26 01:31:21,623 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:31:26,239 - INFO - 192.168.1.19 - - [26/Mar/2026 01:31:26] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:31:26,265 - INFO - 192.168.1.19 - - [26/Mar/2026 01:31:26] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:31:26,415 - WARNING - 404 error occurred
+2026-03-26 01:31:26,416 - INFO - 192.168.1.19 - - [26/Mar/2026 01:31:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 01:31:57,821 - INFO - User rizswana logged in successfully
+2026-03-26 01:31:57,822 - INFO - 192.168.1.19 - - [26/Mar/2026 01:31:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:31:57,851 - INFO - 192.168.1.19 - - [26/Mar/2026 01:31:57] "GET / HTTP/1.1" 200 -
+2026-03-26 01:32:02,265 - WARNING - Failed to send alert: 500
+2026-03-26 01:32:02,267 - INFO - Search: Amount=60000000, Location=, Results=0
+2026-03-26 01:32:02,269 - INFO - 192.168.1.19 - - [26/Mar/2026 01:32:02] "POST / HTTP/1.1" 200 -
+2026-03-26 01:32:12,364 - INFO - 192.168.1.19 - - [26/Mar/2026 01:32:12] "GET / HTTP/1.1" 200 -
+2026-03-26 01:32:22,485 - INFO - 192.168.1.19 - - [26/Mar/2026 01:32:22] "GET / HTTP/1.1" 200 -
+2026-03-26 01:32:32,568 - INFO - 192.168.1.19 - - [26/Mar/2026 01:32:32] "GET / HTTP/1.1" 200 -
+2026-03-26 01:35:44,449 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 01:35:44,559 - INFO -  * Restarting with stat
+2026-03-26 01:35:45,454 - INFO - User Server Started
+2026-03-26 01:35:45,458 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:35:45,488 - WARNING -  * Debugger is active!
+2026-03-26 01:35:45,492 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:36:45,408 - INFO - User Server Started
+2026-03-26 01:36:45,411 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:36:45,473 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:36:45,473 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:36:45,474 - INFO -  * Restarting with stat
+2026-03-26 01:36:46,370 - INFO - User Server Started
+2026-03-26 01:36:46,373 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:36:46,404 - WARNING -  * Debugger is active!
+2026-03-26 01:36:46,406 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:37:04,088 - INFO - 192.168.1.19 - - [26/Mar/2026 01:37:04] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:37:04,108 - INFO - 192.168.1.19 - - [26/Mar/2026 01:37:04] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:37:26,063 - INFO - User rizswana logged in successfully
+2026-03-26 01:37:26,064 - INFO - 192.168.1.19 - - [26/Mar/2026 01:37:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:37:26,086 - INFO - 192.168.1.19 - - [26/Mar/2026 01:37:26] "GET / HTTP/1.1" 200 -
+2026-03-26 01:37:36,242 - INFO - 192.168.1.19 - - [26/Mar/2026 01:37:36] "GET / HTTP/1.1" 200 -
+2026-03-26 01:37:44,839 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Read timed out. (read timeout=5)
+2026-03-26 01:37:44,841 - INFO - Search: Amount=60000000, Location=, Results=0
+2026-03-26 01:37:44,842 - INFO - 192.168.1.19 - - [26/Mar/2026 01:37:44] "POST / HTTP/1.1" 200 -
+2026-03-26 01:37:54,928 - INFO - 192.168.1.19 - - [26/Mar/2026 01:37:54] "GET / HTTP/1.1" 200 -
+2026-03-26 01:38:04,994 - INFO - 192.168.1.19 - - [26/Mar/2026 01:38:04] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:38:05,005 - INFO - 192.168.1.19 - - [26/Mar/2026 01:38:05] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:39:26,479 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 01:39:26,590 - INFO -  * Restarting with stat
+2026-03-26 01:39:27,291 - INFO - User Server Started
+2026-03-26 01:39:27,295 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:39:27,324 - WARNING -  * Debugger is active!
+2026-03-26 01:39:27,327 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:40:59,382 - INFO - User Server Started
+2026-03-26 01:40:59,385 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:40:59,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:40:59,528 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:40:59,530 - INFO -  * Restarting with stat
+2026-03-26 01:41:00,398 - INFO - User Server Started
+2026-03-26 01:41:00,404 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:41:00,451 - WARNING -  * Debugger is active!
+2026-03-26 01:41:00,457 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:41:25,100 - INFO - 192.168.1.19 - - [26/Mar/2026 01:41:25] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:41:25,117 - INFO - 192.168.1.19 - - [26/Mar/2026 01:41:25] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:41:44,192 - INFO - User rizswana logged in successfully
+2026-03-26 01:41:44,195 - INFO - 192.168.1.19 - - [26/Mar/2026 01:41:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:41:44,221 - INFO - 192.168.1.19 - - [26/Mar/2026 01:41:44] "GET / HTTP/1.1" 200 -
+2026-03-26 01:41:48,604 - WARNING - Failed to send alert: 500
+2026-03-26 01:41:48,605 - INFO - Search: Amount=60000000, Location=, Results=0
+2026-03-26 01:41:48,606 - INFO - 192.168.1.19 - - [26/Mar/2026 01:41:48] "POST / HTTP/1.1" 200 -
+2026-03-26 01:41:58,692 - INFO - 192.168.1.19 - - [26/Mar/2026 01:41:58] "GET / HTTP/1.1" 200 -
+2026-03-26 01:42:08,745 - INFO - 192.168.1.19 - - [26/Mar/2026 01:42:08] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:42:08,754 - INFO - 192.168.1.19 - - [26/Mar/2026 01:42:08] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:51:42,597 - INFO - User Server Started
+2026-03-26 01:51:42,599 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:51:42,662 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:51:42,662 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:51:42,664 - INFO -  * Restarting with stat
+2026-03-26 01:51:43,307 - INFO - User Server Started
+2026-03-26 01:51:43,311 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:51:43,337 - WARNING -  * Debugger is active!
+2026-03-26 01:51:43,345 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:54:21,129 - INFO - User Server Started
+2026-03-26 01:54:21,131 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:54:21,191 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 01:54:21,191 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 01:54:21,195 - INFO -  * Restarting with stat
+2026-03-26 01:54:21,999 - INFO - User Server Started
+2026-03-26 01:54:22,002 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:54:22,038 - WARNING -  * Debugger is active!
+2026-03-26 01:54:22,045 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:54:26,167 - INFO - 192.168.1.19 - - [26/Mar/2026 01:54:26] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 01:54:26,188 - INFO - 192.168.1.19 - - [26/Mar/2026 01:54:26] "GET /login HTTP/1.1" 200 -
+2026-03-26 01:54:26,303 - WARNING - 404 error occurred
+2026-03-26 01:54:26,304 - INFO - 192.168.1.19 - - [26/Mar/2026 01:54:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 01:54:45,497 - INFO - User rizswana logged in successfully
+2026-03-26 01:54:45,498 - INFO - 192.168.1.19 - - [26/Mar/2026 01:54:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 01:54:45,523 - INFO - 192.168.1.19 - - [26/Mar/2026 01:54:45] "GET / HTTP/1.1" 200 -
+2026-03-26 01:54:48,504 - INFO - Search: Amount=500, Location=, Results=5
+2026-03-26 01:54:48,506 - INFO - 192.168.1.19 - - [26/Mar/2026 01:54:48] "POST / HTTP/1.1" 200 -
+2026-03-26 01:54:58,619 - INFO - 192.168.1.19 - - [26/Mar/2026 01:54:58] "GET / HTTP/1.1" 200 -
+2026-03-26 01:55:08,704 - INFO - 192.168.1.19 - - [26/Mar/2026 01:55:08] "GET / HTTP/1.1" 200 -
+2026-03-26 01:55:18,782 - INFO - 192.168.1.19 - - [26/Mar/2026 01:55:18] "GET / HTTP/1.1" 200 -
+2026-03-26 01:55:30,526 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Max retries exceeded with url: /api/high-amount-alert (Caused by NewConnectionError("HTTPConnection(host='192.168.1.19', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-26 01:55:30,528 - INFO - Search: Amount=700000, Location=SHOPPING MALL, Results=0
+2026-03-26 01:55:30,529 - INFO - 192.168.1.19 - - [26/Mar/2026 01:55:30] "POST / HTTP/1.1" 200 -
+2026-03-26 01:55:40,608 - INFO - 192.168.1.19 - - [26/Mar/2026 01:55:40] "GET / HTTP/1.1" 200 -
+2026-03-26 01:55:50,653 - INFO - 192.168.1.19 - - [26/Mar/2026 01:55:50] "GET / HTTP/1.1" 200 -
+2026-03-26 01:58:28,497 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\user_server.py', reloading
+2026-03-26 01:58:28,605 - INFO -  * Restarting with stat
+2026-03-26 01:58:29,506 - INFO - User Server Started
+2026-03-26 01:58:29,510 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:58:29,548 - WARNING -  * Debugger is active!
+2026-03-26 01:58:29,552 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 01:58:44,838 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 01:58:44,990 - INFO -  * Restarting with stat
+2026-03-26 01:58:45,905 - INFO - User Server Started
+2026-03-26 01:58:45,908 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 01:58:45,946 - WARNING -  * Debugger is active!
+2026-03-26 01:58:45,950 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:00:02,483 - INFO - User Server Started
+2026-03-26 02:00:02,491 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:00:02,540 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:00:02,541 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:00:02,543 - INFO -  * Restarting with stat
+2026-03-26 02:00:03,318 - INFO - User Server Started
+2026-03-26 02:00:03,324 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:00:03,352 - WARNING -  * Debugger is active!
+2026-03-26 02:00:03,355 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:00:06,897 - INFO - 192.168.1.19 - - [26/Mar/2026 02:00:06] "GET / HTTP/1.1" 200 -
+2026-03-26 02:00:15,517 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Max retries exceeded with url: /api/high-amount-alert (Caused by NewConnectionError("HTTPConnection(host='192.168.1.19', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-26 02:00:15,523 - INFO - Search: Amount=60000000, Location=, Results=0
+2026-03-26 02:00:15,524 - INFO - 192.168.1.19 - - [26/Mar/2026 02:00:15] "POST / HTTP/1.1" 200 -
+2026-03-26 02:00:25,617 - INFO - 192.168.1.19 - - [26/Mar/2026 02:00:25] "GET / HTTP/1.1" 200 -
+2026-03-26 02:00:35,684 - INFO - 192.168.1.19 - - [26/Mar/2026 02:00:35] "GET / HTTP/1.1" 200 -
+2026-03-26 02:00:45,751 - INFO - 192.168.1.19 - - [26/Mar/2026 02:00:45] "GET / HTTP/1.1" 200 -
+2026-03-26 02:00:55,840 - INFO - 192.168.1.19 - - [26/Mar/2026 02:00:55] "GET / HTTP/1.1" 200 -
+2026-03-26 02:01:05,923 - INFO - 192.168.1.19 - - [26/Mar/2026 02:01:05] "GET / HTTP/1.1" 200 -
+2026-03-26 02:01:15,990 - INFO - 192.168.1.19 - - [26/Mar/2026 02:01:15] "GET / HTTP/1.1" 200 -
+2026-03-26 02:01:26,048 - INFO - 192.168.1.19 - - [26/Mar/2026 02:01:26] "GET / HTTP/1.1" 200 -
+2026-03-26 02:01:36,123 - INFO - 192.168.1.19 - - [26/Mar/2026 02:01:36] "GET / HTTP/1.1" 200 -
+2026-03-26 02:01:46,184 - INFO - 192.168.1.19 - - [26/Mar/2026 02:01:46] "GET / HTTP/1.1" 200 -
+2026-03-26 02:01:56,238 - INFO - 192.168.1.19 - - [26/Mar/2026 02:01:56] "GET / HTTP/1.1" 200 -
+2026-03-26 02:02:06,292 - INFO - 192.168.1.19 - - [26/Mar/2026 02:02:06] "GET / HTTP/1.1" 200 -
+2026-03-26 02:02:16,354 - INFO - 192.168.1.19 - - [26/Mar/2026 02:02:16] "GET / HTTP/1.1" 200 -
+2026-03-26 02:02:26,431 - INFO - 192.168.1.19 - - [26/Mar/2026 02:02:26] "GET / HTTP/1.1" 200 -
+2026-03-26 02:02:36,482 - INFO - 192.168.1.19 - - [26/Mar/2026 02:02:36] "GET / HTTP/1.1" 200 -
+2026-03-26 02:02:46,533 - INFO - 192.168.1.19 - - [26/Mar/2026 02:02:46] "GET / HTTP/1.1" 200 -
+2026-03-26 02:02:56,595 - INFO - 192.168.1.19 - - [26/Mar/2026 02:02:56] "GET / HTTP/1.1" 200 -
+2026-03-26 02:03:06,661 - INFO - 192.168.1.19 - - [26/Mar/2026 02:03:06] "GET / HTTP/1.1" 200 -
+2026-03-26 02:03:16,724 - INFO - 192.168.1.19 - - [26/Mar/2026 02:03:16] "GET / HTTP/1.1" 200 -
+2026-03-26 02:03:26,786 - INFO - 192.168.1.19 - - [26/Mar/2026 02:03:26] "GET / HTTP/1.1" 200 -
+2026-03-26 02:03:36,849 - INFO - 192.168.1.19 - - [26/Mar/2026 02:03:36] "GET / HTTP/1.1" 200 -
+2026-03-26 02:03:44,343 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 02:03:44,444 - INFO -  * Restarting with stat
+2026-03-26 02:03:45,215 - INFO - User Server Started
+2026-03-26 02:03:45,218 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:03:45,250 - WARNING -  * Debugger is active!
+2026-03-26 02:03:45,255 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:03:46,938 - INFO - 192.168.1.19 - - [26/Mar/2026 02:03:46] "GET / HTTP/1.1" 200 -
+2026-03-26 02:03:57,002 - INFO - 192.168.1.19 - - [26/Mar/2026 02:03:57] "GET / HTTP/1.1" 200 -
+2026-03-26 02:04:07,060 - INFO - 192.168.1.19 - - [26/Mar/2026 02:04:07] "GET / HTTP/1.1" 200 -
+2026-03-26 02:04:17,103 - INFO - 192.168.1.19 - - [26/Mar/2026 02:04:17] "GET / HTTP/1.1" 200 -
+2026-03-26 02:04:27,154 - INFO - 192.168.1.19 - - [26/Mar/2026 02:04:27] "GET / HTTP/1.1" 200 -
+2026-03-26 02:04:37,221 - INFO - 192.168.1.19 - - [26/Mar/2026 02:04:37] "GET / HTTP/1.1" 200 -
+2026-03-26 02:04:47,298 - INFO - 192.168.1.19 - - [26/Mar/2026 02:04:47] "GET / HTTP/1.1" 200 -
+2026-03-26 02:04:47,503 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 02:04:47,582 - INFO -  * Restarting with stat
+2026-03-26 02:04:48,246 - INFO - User Server Started
+2026-03-26 02:04:48,249 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:04:48,275 - WARNING -  * Debugger is active!
+2026-03-26 02:04:48,280 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:04:57,385 - INFO - 192.168.1.19 - - [26/Mar/2026 02:04:57] "GET / HTTP/1.1" 200 -
+2026-03-26 02:05:07,454 - INFO - 192.168.1.19 - - [26/Mar/2026 02:05:07] "GET / HTTP/1.1" 200 -
+2026-03-26 02:05:17,513 - INFO - 192.168.1.19 - - [26/Mar/2026 02:05:17] "GET / HTTP/1.1" 200 -
+2026-03-26 02:05:27,569 - INFO - 192.168.1.19 - - [26/Mar/2026 02:05:27] "GET / HTTP/1.1" 200 -
+2026-03-26 02:05:32,082 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 02:05:32,168 - INFO -  * Restarting with stat
+2026-03-26 02:05:32,989 - INFO - User Server Started
+2026-03-26 02:05:32,992 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:05:33,026 - WARNING -  * Debugger is active!
+2026-03-26 02:05:33,031 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:07:47,292 - INFO - User Server Started
+2026-03-26 02:07:47,299 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:07:47,388 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:07:47,388 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:07:47,390 - INFO -  * Restarting with stat
+2026-03-26 02:07:48,255 - INFO - User Server Started
+2026-03-26 02:07:48,259 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:07:48,288 - WARNING -  * Debugger is active!
+2026-03-26 02:07:48,291 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:07:52,420 - INFO - 192.168.1.19 - - [26/Mar/2026 02:07:52] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:07:52,451 - INFO - 192.168.1.19 - - [26/Mar/2026 02:07:52] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:08:12,298 - INFO - User rizswana logged in successfully
+2026-03-26 02:08:12,299 - INFO - 192.168.1.19 - - [26/Mar/2026 02:08:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:08:12,320 - INFO - 192.168.1.19 - - [26/Mar/2026 02:08:12] "GET / HTTP/1.1" 200 -
+2026-03-26 02:08:19,228 - WARNING - Failed to send alert: 500
+2026-03-26 02:08:19,230 - INFO - Search: Amount=70000000, Location=, Results=0
+2026-03-26 02:08:19,231 - INFO - 192.168.1.19 - - [26/Mar/2026 02:08:19] "POST / HTTP/1.1" 200 -
+2026-03-26 02:08:29,324 - INFO - 192.168.1.19 - - [26/Mar/2026 02:08:29] "GET / HTTP/1.1" 200 -
+2026-03-26 02:08:39,393 - INFO - 192.168.1.19 - - [26/Mar/2026 02:08:39] "GET / HTTP/1.1" 200 -
+2026-03-26 02:08:49,477 - INFO - 192.168.1.19 - - [26/Mar/2026 02:08:49] "GET / HTTP/1.1" 200 -
+2026-03-26 02:08:59,552 - INFO - 192.168.1.19 - - [26/Mar/2026 02:08:59] "GET / HTTP/1.1" 200 -
+2026-03-26 02:09:09,611 - INFO - 192.168.1.19 - - [26/Mar/2026 02:09:09] "GET / HTTP/1.1" 200 -
+2026-03-26 02:09:19,683 - INFO - 192.168.1.19 - - [26/Mar/2026 02:09:19] "GET / HTTP/1.1" 200 -
+2026-03-26 02:09:29,736 - INFO - 192.168.1.19 - - [26/Mar/2026 02:09:29] "GET / HTTP/1.1" 200 -
+2026-03-26 02:09:39,787 - INFO - 192.168.1.19 - - [26/Mar/2026 02:09:39] "GET / HTTP/1.1" 200 -
+2026-03-26 02:09:49,838 - INFO - 192.168.1.19 - - [26/Mar/2026 02:09:49] "GET / HTTP/1.1" 200 -
+2026-03-26 02:09:59,915 - INFO - 192.168.1.19 - - [26/Mar/2026 02:09:59] "GET / HTTP/1.1" 200 -
+2026-03-26 02:10:09,991 - INFO - 192.168.1.19 - - [26/Mar/2026 02:10:09] "GET / HTTP/1.1" 200 -
+2026-03-26 02:10:20,047 - INFO - 192.168.1.19 - - [26/Mar/2026 02:10:20] "GET / HTTP/1.1" 200 -
+2026-03-26 02:10:30,104 - INFO - 192.168.1.19 - - [26/Mar/2026 02:10:30] "GET / HTTP/1.1" 200 -
+2026-03-26 02:10:40,156 - INFO - 192.168.1.19 - - [26/Mar/2026 02:10:40] "GET / HTTP/1.1" 200 -
+2026-03-26 02:10:50,222 - INFO - 192.168.1.19 - - [26/Mar/2026 02:10:50] "GET / HTTP/1.1" 200 -
+2026-03-26 02:11:00,292 - INFO - 192.168.1.19 - - [26/Mar/2026 02:11:00] "GET / HTTP/1.1" 200 -
+2026-03-26 02:11:10,382 - INFO - 192.168.1.19 - - [26/Mar/2026 02:11:10] "GET / HTTP/1.1" 200 -
+2026-03-26 02:11:20,433 - INFO - 192.168.1.19 - - [26/Mar/2026 02:11:20] "GET / HTTP/1.1" 200 -
+2026-03-26 02:11:30,502 - INFO - 192.168.1.19 - - [26/Mar/2026 02:11:30] "GET / HTTP/1.1" 200 -
+2026-03-26 02:11:40,584 - INFO - 192.168.1.19 - - [26/Mar/2026 02:11:40] "GET / HTTP/1.1" 200 -
+2026-03-26 02:11:50,647 - INFO - 192.168.1.19 - - [26/Mar/2026 02:11:50] "GET / HTTP/1.1" 200 -
+2026-03-26 02:12:00,713 - INFO - 192.168.1.19 - - [26/Mar/2026 02:12:00] "GET / HTTP/1.1" 200 -
+2026-03-26 02:12:10,773 - INFO - 192.168.1.19 - - [26/Mar/2026 02:12:10] "GET / HTTP/1.1" 200 -
+2026-03-26 02:12:20,833 - INFO - 192.168.1.19 - - [26/Mar/2026 02:12:20] "GET / HTTP/1.1" 200 -
+2026-03-26 02:12:30,908 - INFO - 192.168.1.19 - - [26/Mar/2026 02:12:30] "GET / HTTP/1.1" 200 -
+2026-03-26 02:12:40,988 - INFO - 192.168.1.19 - - [26/Mar/2026 02:12:40] "GET / HTTP/1.1" 200 -
+2026-03-26 02:12:51,048 - INFO - 192.168.1.19 - - [26/Mar/2026 02:12:51] "GET / HTTP/1.1" 200 -
+2026-03-26 02:13:01,114 - INFO - 192.168.1.19 - - [26/Mar/2026 02:13:01] "GET / HTTP/1.1" 200 -
+2026-03-26 02:13:11,178 - INFO - 192.168.1.19 - - [26/Mar/2026 02:13:11] "GET / HTTP/1.1" 200 -
+2026-03-26 02:13:21,236 - INFO - 192.168.1.19 - - [26/Mar/2026 02:13:21] "GET / HTTP/1.1" 200 -
+2026-03-26 02:13:31,299 - INFO - 192.168.1.19 - - [26/Mar/2026 02:13:31] "GET / HTTP/1.1" 200 -
+2026-03-26 02:13:41,372 - INFO - 192.168.1.19 - - [26/Mar/2026 02:13:41] "GET / HTTP/1.1" 200 -
+2026-03-26 02:13:51,428 - INFO - 192.168.1.19 - - [26/Mar/2026 02:13:51] "GET / HTTP/1.1" 200 -
+2026-03-26 02:14:01,504 - INFO - 192.168.1.19 - - [26/Mar/2026 02:14:01] "GET / HTTP/1.1" 200 -
+2026-03-26 02:14:11,562 - INFO - 192.168.1.19 - - [26/Mar/2026 02:14:11] "GET / HTTP/1.1" 200 -
+2026-03-26 02:14:21,622 - INFO - 192.168.1.19 - - [26/Mar/2026 02:14:21] "GET / HTTP/1.1" 200 -
+2026-03-26 02:14:31,684 - INFO - 192.168.1.19 - - [26/Mar/2026 02:14:31] "GET / HTTP/1.1" 200 -
+2026-03-26 02:14:41,736 - INFO - 192.168.1.19 - - [26/Mar/2026 02:14:41] "GET / HTTP/1.1" 200 -
+2026-03-26 02:14:51,799 - INFO - 192.168.1.19 - - [26/Mar/2026 02:14:51] "GET / HTTP/1.1" 200 -
+2026-03-26 02:15:01,862 - INFO - 192.168.1.19 - - [26/Mar/2026 02:15:01] "GET / HTTP/1.1" 200 -
+2026-03-26 02:15:11,912 - INFO - 192.168.1.19 - - [26/Mar/2026 02:15:11] "GET / HTTP/1.1" 200 -
+2026-03-26 02:15:21,978 - INFO - 192.168.1.19 - - [26/Mar/2026 02:15:21] "GET / HTTP/1.1" 200 -
+2026-03-26 02:15:32,024 - INFO - 192.168.1.19 - - [26/Mar/2026 02:15:32] "GET / HTTP/1.1" 200 -
+2026-03-26 02:15:42,096 - INFO - 192.168.1.19 - - [26/Mar/2026 02:15:42] "GET / HTTP/1.1" 200 -
+2026-03-26 02:15:52,146 - INFO - 192.168.1.19 - - [26/Mar/2026 02:15:52] "GET / HTTP/1.1" 200 -
+2026-03-26 02:16:02,200 - INFO - 192.168.1.19 - - [26/Mar/2026 02:16:02] "GET / HTTP/1.1" 200 -
+2026-03-26 02:16:12,252 - INFO - 192.168.1.19 - - [26/Mar/2026 02:16:12] "GET / HTTP/1.1" 200 -
+2026-03-26 02:16:22,303 - INFO - 192.168.1.19 - - [26/Mar/2026 02:16:22] "GET / HTTP/1.1" 200 -
+2026-03-26 02:16:32,381 - INFO - 192.168.1.19 - - [26/Mar/2026 02:16:32] "GET / HTTP/1.1" 200 -
+2026-03-26 02:16:42,445 - INFO - 192.168.1.19 - - [26/Mar/2026 02:16:42] "GET / HTTP/1.1" 200 -
+2026-03-26 02:16:43,966 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 02:16:44,087 - INFO -  * Restarting with stat
+2026-03-26 02:16:44,789 - INFO - User Server Started
+2026-03-26 02:16:44,792 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:16:44,818 - WARNING -  * Debugger is active!
+2026-03-26 02:16:44,822 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:16:52,555 - INFO - 192.168.1.19 - - [26/Mar/2026 02:16:52] "GET / HTTP/1.1" 200 -
+2026-03-26 02:17:02,637 - INFO - 192.168.1.19 - - [26/Mar/2026 02:17:02] "GET / HTTP/1.1" 200 -
+2026-03-26 02:18:56,726 - INFO - User Server Started
+2026-03-26 02:18:56,730 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:18:56,775 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:18:56,775 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:18:56,777 - INFO -  * Restarting with stat
+2026-03-26 02:18:57,521 - INFO - User Server Started
+2026-03-26 02:18:57,524 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:18:57,556 - WARNING -  * Debugger is active!
+2026-03-26 02:18:57,559 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:19:05,487 - INFO - 192.168.1.19 - - [26/Mar/2026 02:19:05] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:19:05,506 - INFO - 192.168.1.19 - - [26/Mar/2026 02:19:05] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:19:23,926 - INFO - User rizswana logged in successfully
+2026-03-26 02:19:23,927 - INFO - 192.168.1.19 - - [26/Mar/2026 02:19:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:19:23,951 - INFO - 192.168.1.19 - - [26/Mar/2026 02:19:23] "GET / HTTP/1.1" 200 -
+2026-03-26 02:19:27,805 - INFO - Search: Amount=699, Location=, Results=5
+2026-03-26 02:19:27,806 - INFO - 192.168.1.19 - - [26/Mar/2026 02:19:27] "POST / HTTP/1.1" 200 -
+2026-03-26 02:19:36,479 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Max retries exceeded with url: /api/high-amount-alert (Caused by NewConnectionError("HTTPConnection(host='192.168.1.19', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-26 02:19:36,481 - INFO - Search: Amount=699996990, Location=, Results=0
+2026-03-26 02:19:36,482 - INFO - 192.168.1.19 - - [26/Mar/2026 02:19:36] "POST / HTTP/1.1" 200 -
+2026-03-26 02:19:46,585 - INFO - 192.168.1.19 - - [26/Mar/2026 02:19:46] "GET / HTTP/1.1" 200 -
+2026-03-26 02:21:20,622 - INFO - User Server Started
+2026-03-26 02:21:20,625 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:21:20,672 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:21:20,672 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:21:20,674 - INFO -  * Restarting with stat
+2026-03-26 02:21:21,401 - INFO - User Server Started
+2026-03-26 02:21:21,404 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:21:21,441 - WARNING -  * Debugger is active!
+2026-03-26 02:21:21,447 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:21:28,065 - INFO - 192.168.1.19 - - [26/Mar/2026 02:21:28] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:21:28,098 - INFO - 192.168.1.19 - - [26/Mar/2026 02:21:28] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:22:00,671 - INFO - User rizswana logged in successfully
+2026-03-26 02:22:00,672 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:22:00,692 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:00] "GET / HTTP/1.1" 200 -
+2026-03-26 02:22:06,876 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Max retries exceeded with url: /api/high-amount-alert (Caused by NewConnectionError("HTTPConnection(host='192.168.1.19', port=5000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-03-26 02:22:06,882 - INFO - Search: Amount=60000000, Location=, Results=0
+2026-03-26 02:22:06,896 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:06] "POST / HTTP/1.1" 200 -
+2026-03-26 02:22:16,989 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:16] "GET / HTTP/1.1" 200 -
+2026-03-26 02:22:27,040 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:27] "GET / HTTP/1.1" 200 -
+2026-03-26 02:22:37,088 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:37] "GET / HTTP/1.1" 200 -
+2026-03-26 02:22:47,170 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:47] "GET / HTTP/1.1" 200 -
+2026-03-26 02:22:57,226 - INFO - 192.168.1.19 - - [26/Mar/2026 02:22:57] "GET / HTTP/1.1" 200 -
+2026-03-26 02:23:07,295 - INFO - 192.168.1.19 - - [26/Mar/2026 02:23:07] "GET / HTTP/1.1" 200 -
+2026-03-26 02:23:17,372 - INFO - 192.168.1.19 - - [26/Mar/2026 02:23:17] "GET / HTTP/1.1" 200 -
+2026-03-26 02:23:27,437 - INFO - 192.168.1.19 - - [26/Mar/2026 02:23:27] "GET / HTTP/1.1" 200 -
+2026-03-26 02:23:37,497 - INFO - 192.168.1.19 - - [26/Mar/2026 02:23:37] "GET / HTTP/1.1" 200 -
+2026-03-26 02:23:47,565 - INFO - 192.168.1.19 - - [26/Mar/2026 02:23:47] "GET / HTTP/1.1" 200 -
+2026-03-26 02:23:57,626 - INFO - 192.168.1.19 - - [26/Mar/2026 02:23:57] "GET / HTTP/1.1" 200 -
+2026-03-26 02:24:07,689 - INFO - 192.168.1.19 - - [26/Mar/2026 02:24:07] "GET / HTTP/1.1" 200 -
+2026-03-26 02:24:17,758 - INFO - 192.168.1.19 - - [26/Mar/2026 02:24:17] "GET / HTTP/1.1" 200 -
+2026-03-26 02:24:27,825 - INFO - 192.168.1.19 - - [26/Mar/2026 02:24:27] "GET / HTTP/1.1" 200 -
+2026-03-26 02:24:37,874 - INFO - 192.168.1.19 - - [26/Mar/2026 02:24:37] "GET / HTTP/1.1" 200 -
+2026-03-26 02:24:47,943 - INFO - 192.168.1.19 - - [26/Mar/2026 02:24:47] "GET / HTTP/1.1" 200 -
+2026-03-26 02:24:58,033 - INFO - 192.168.1.19 - - [26/Mar/2026 02:24:58] "GET / HTTP/1.1" 200 -
+2026-03-26 02:25:08,101 - INFO - 192.168.1.19 - - [26/Mar/2026 02:25:08] "GET / HTTP/1.1" 200 -
+2026-03-26 02:25:18,160 - INFO - 192.168.1.19 - - [26/Mar/2026 02:25:18] "GET / HTTP/1.1" 200 -
+2026-03-26 02:26:29,872 - INFO - User Server Started
+2026-03-26 02:26:29,876 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:26:29,932 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:26:29,932 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:26:29,934 - INFO -  * Restarting with stat
+2026-03-26 02:26:31,136 - INFO - User Server Started
+2026-03-26 02:26:31,139 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:26:31,174 - WARNING -  * Debugger is active!
+2026-03-26 02:26:31,179 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:26:37,181 - INFO - 192.168.1.19 - - [26/Mar/2026 02:26:37] "GET / HTTP/1.1" 200 -
+2026-03-26 02:26:47,341 - INFO - 192.168.1.19 - - [26/Mar/2026 02:26:47] "GET / HTTP/1.1" 200 -
+2026-03-26 02:26:57,407 - INFO - 192.168.1.19 - - [26/Mar/2026 02:26:57] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:26:57,422 - INFO - 192.168.1.19 - - [26/Mar/2026 02:26:57] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:27:12,076 - INFO - 192.168.1.19 - - [26/Mar/2026 02:27:12] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:27:12,085 - INFO - 192.168.1.19 - - [26/Mar/2026 02:27:12] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:27:39,276 - INFO - User rizswana logged in successfully
+2026-03-26 02:27:39,277 - INFO - 192.168.1.19 - - [26/Mar/2026 02:27:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:27:39,291 - INFO - 192.168.1.19 - - [26/Mar/2026 02:27:39] "GET / HTTP/1.1" 200 -
+2026-03-26 02:27:48,495 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Read timed out. (read timeout=5)
+2026-03-26 02:27:48,497 - INFO - Search: Amount=7000000, Location=, Results=0
+2026-03-26 02:27:48,498 - INFO - 192.168.1.19 - - [26/Mar/2026 02:27:48] "POST / HTTP/1.1" 200 -
+2026-03-26 02:27:58,605 - INFO - 192.168.1.19 - - [26/Mar/2026 02:27:58] "GET / HTTP/1.1" 200 -
+2026-03-26 02:28:08,663 - INFO - 192.168.1.19 - - [26/Mar/2026 02:28:08] "GET / HTTP/1.1" 200 -
+2026-03-26 02:28:18,737 - INFO - 192.168.1.19 - - [26/Mar/2026 02:28:18] "GET / HTTP/1.1" 200 -
+2026-03-26 02:28:32,410 - INFO - High amount alert sent for rizswana - Amount: \u20b98000000
+2026-03-26 02:28:32,416 - INFO - Search: Amount=8000000, Location=, Results=0
+2026-03-26 02:28:32,418 - INFO - 192.168.1.19 - - [26/Mar/2026 02:28:32] "POST / HTTP/1.1" 200 -
+2026-03-26 02:28:42,492 - INFO - 192.168.1.19 - - [26/Mar/2026 02:28:42] "GET / HTTP/1.1" 200 -
+2026-03-26 02:28:52,558 - INFO - 192.168.1.19 - - [26/Mar/2026 02:28:52] "GET / HTTP/1.1" 200 -
+2026-03-26 02:29:02,626 - INFO - 192.168.1.19 - - [26/Mar/2026 02:29:02] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:29:02,638 - INFO - 192.168.1.19 - - [26/Mar/2026 02:29:02] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:30:51,620 - INFO - User Server Started
+2026-03-26 02:30:51,625 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:30:51,689 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:30:51,690 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:30:51,691 - INFO -  * Restarting with stat
+2026-03-26 02:30:52,438 - INFO - User Server Started
+2026-03-26 02:30:52,442 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:30:52,485 - WARNING -  * Debugger is active!
+2026-03-26 02:30:52,489 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:31:08,369 - INFO - 192.168.1.19 - - [26/Mar/2026 02:31:08] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:31:08,388 - INFO - 192.168.1.19 - - [26/Mar/2026 02:31:08] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:31:08,491 - WARNING - 404 error occurred
+2026-03-26 02:31:08,492 - INFO - 192.168.1.19 - - [26/Mar/2026 02:31:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 02:31:32,801 - INFO - User rizswana logged in successfully
+2026-03-26 02:31:32,802 - INFO - 192.168.1.19 - - [26/Mar/2026 02:31:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:31:32,827 - INFO - 192.168.1.19 - - [26/Mar/2026 02:31:32] "GET / HTTP/1.1" 200 -
+2026-03-26 02:31:43,039 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Read timed out. (read timeout=5)
+2026-03-26 02:31:43,044 - INFO - Search: Amount=600000000, Location=, Results=0
+2026-03-26 02:31:43,045 - INFO - 192.168.1.19 - - [26/Mar/2026 02:31:43] "POST / HTTP/1.1" 200 -
+2026-03-26 02:31:53,139 - INFO - 192.168.1.19 - - [26/Mar/2026 02:31:53] "GET / HTTP/1.1" 200 -
+2026-03-26 02:32:02,090 - INFO - High amount alert sent for rizswana - Amount: \u20b97999999999
+2026-03-26 02:32:02,106 - INFO - Search: Amount=7999999999, Location=, Results=0
+2026-03-26 02:32:02,108 - INFO - 192.168.1.19 - - [26/Mar/2026 02:32:02] "POST / HTTP/1.1" 200 -
+2026-03-26 02:32:12,175 - INFO - 192.168.1.19 - - [26/Mar/2026 02:32:12] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:32:12,181 - INFO - 192.168.1.19 - - [26/Mar/2026 02:32:12] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:33:08,181 - INFO - User rizswana logged in successfully
+2026-03-26 02:33:08,183 - INFO - 192.168.1.19 - - [26/Mar/2026 02:33:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:33:08,196 - INFO - 192.168.1.19 - - [26/Mar/2026 02:33:08] "GET / HTTP/1.1" 200 -
+2026-03-26 02:33:18,172 - ERROR - Error sending high amount alert: HTTPConnectionPool(host='192.168.1.19', port=5000): Read timed out. (read timeout=5)
+2026-03-26 02:33:18,174 - INFO - Search: Amount=7000000655, Location=, Results=0
+2026-03-26 02:33:18,177 - INFO - 192.168.1.19 - - [26/Mar/2026 02:33:18] "POST / HTTP/1.1" 200 -
+2026-03-26 02:33:28,265 - INFO - 192.168.1.19 - - [26/Mar/2026 02:33:28] "GET / HTTP/1.1" 200 -
+2026-03-26 02:33:38,334 - INFO - 192.168.1.19 - - [26/Mar/2026 02:33:38] "GET / HTTP/1.1" 200 -
+2026-03-26 02:40:39,136 - INFO - User Server Started
+2026-03-26 02:40:39,141 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:40:39,237 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:40:39,237 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:40:39,239 - INFO -  * Restarting with stat
+2026-03-26 02:40:40,261 - INFO - User Server Started
+2026-03-26 02:40:40,266 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:40:40,307 - WARNING -  * Debugger is active!
+2026-03-26 02:40:40,310 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:41:48,407 - INFO - 192.168.1.19 - - [26/Mar/2026 02:41:48] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:41:48,436 - INFO - 192.168.1.19 - - [26/Mar/2026 02:41:48] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:41:48,595 - WARNING - 404 error occurred
+2026-03-26 02:41:48,596 - INFO - 192.168.1.19 - - [26/Mar/2026 02:41:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 02:42:10,814 - INFO - User rizswana logged in successfully
+2026-03-26 02:42:10,815 - INFO - 192.168.1.19 - - [26/Mar/2026 02:42:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:42:10,913 - INFO - 192.168.1.19 - - [26/Mar/2026 02:42:10] "GET / HTTP/1.1" 200 -
+2026-03-26 02:42:18,779 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b9700000000
+2026-03-26 02:42:18,781 - INFO - Search: Amount=700000000, Location=, Results=0
+2026-03-26 02:42:18,782 - INFO - 192.168.1.19 - - [26/Mar/2026 02:42:18] "POST / HTTP/1.1" 200 -
+2026-03-26 02:42:28,878 - INFO - 192.168.1.19 - - [26/Mar/2026 02:42:28] "GET / HTTP/1.1" 200 -
+2026-03-26 02:42:38,945 - INFO - 192.168.1.19 - - [26/Mar/2026 02:42:38] "GET / HTTP/1.1" 200 -
+2026-03-26 02:42:49,005 - INFO - 192.168.1.19 - - [26/Mar/2026 02:42:49] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:42:49,019 - INFO - 192.168.1.19 - - [26/Mar/2026 02:42:49] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:50:20,215 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 02:50:20,333 - INFO -  * Restarting with stat
+2026-03-26 02:50:22,073 - INFO - User Server Started
+2026-03-26 02:50:22,079 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:50:22,130 - WARNING -  * Debugger is active!
+2026-03-26 02:50:22,134 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:51:57,584 - INFO - User Server Started
+2026-03-26 02:51:57,587 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:51:57,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:51:57,654 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:51:57,655 - INFO -  * Restarting with stat
+2026-03-26 02:51:58,818 - INFO - User Server Started
+2026-03-26 02:51:58,824 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:51:58,878 - WARNING -  * Debugger is active!
+2026-03-26 02:51:58,881 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:52:05,719 - INFO - 192.168.1.19 - - [26/Mar/2026 02:52:05] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:52:05,734 - INFO - 192.168.1.19 - - [26/Mar/2026 02:52:05] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:57:35,202 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 02:57:35,305 - INFO -  * Restarting with stat
+2026-03-26 02:57:36,341 - INFO - User Server Started
+2026-03-26 02:57:36,347 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:57:36,416 - WARNING -  * Debugger is active!
+2026-03-26 02:57:36,424 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:59:14,403 - INFO - User Server Started
+2026-03-26 02:59:14,406 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:59:14,453 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.19:5001
+2026-03-26 02:59:14,453 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 02:59:14,455 - INFO -  * Restarting with stat
+2026-03-26 02:59:15,306 - INFO - User Server Started
+2026-03-26 02:59:15,310 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 02:59:15,355 - WARNING -  * Debugger is active!
+2026-03-26 02:59:15,362 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 02:59:19,709 - INFO - 192.168.1.19 - - [26/Mar/2026 02:59:19] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 02:59:20,309 - INFO - 192.168.1.19 - - [26/Mar/2026 02:59:20] "GET /login HTTP/1.1" 200 -
+2026-03-26 02:59:20,442 - WARNING - 404 error occurred
+2026-03-26 02:59:20,443 - INFO - 192.168.1.19 - - [26/Mar/2026 02:59:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 02:59:42,135 - INFO - User rizswana logged in successfully
+2026-03-26 02:59:42,137 - INFO - 192.168.1.19 - - [26/Mar/2026 02:59:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 02:59:42,164 - INFO - 192.168.1.19 - - [26/Mar/2026 02:59:42] "GET / HTTP/1.1" 200 -
+2026-03-26 02:59:48,569 - WARNING - \u26a0\ufe0f Attempt 1 - Connection error (Bank server not ready?)
+2026-03-26 02:59:51,611 - WARNING - \u26a0\ufe0f Attempt 2 - Connection error (Bank server not ready?)
+2026-03-26 02:59:54,653 - WARNING - \u26a0\ufe0f Attempt 3 - Connection error (Bank server not ready?)
+2026-03-26 02:59:54,655 - ERROR - \u274c Failed to send high amount alert after 3 attempts
+2026-03-26 02:59:54,658 - INFO - Search: Amount=8787887877, Location=, Results=0
+2026-03-26 02:59:54,660 - INFO - 192.168.1.19 - - [26/Mar/2026 02:59:54] "POST / HTTP/1.1" 200 -
+2026-03-26 02:59:56,708 - WARNING - \u26a0\ufe0f Attempt 1 - Connection error (Bank server not ready?)
+2026-03-26 02:59:59,748 - WARNING - \u26a0\ufe0f Attempt 2 - Connection error (Bank server not ready?)
+2026-03-26 03:00:02,792 - WARNING - \u26a0\ufe0f Attempt 3 - Connection error (Bank server not ready?)
+2026-03-26 03:00:02,795 - ERROR - \u274c Failed to send high amount alert after 3 attempts
+2026-03-26 03:00:04,773 - INFO - 192.168.1.19 - - [26/Mar/2026 03:00:04] "GET / HTTP/1.1" 200 -
+2026-03-26 03:00:14,869 - INFO - 192.168.1.19 - - [26/Mar/2026 03:00:14] "GET / HTTP/1.1" 200 -
+2026-03-26 03:00:24,938 - INFO - 192.168.1.19 - - [26/Mar/2026 03:00:24] "GET / HTTP/1.1" 200 -
+2026-03-26 03:00:34,023 - WARNING - \u26a0\ufe0f Attempt 1 - Connection error (Bank server not ready?)
+2026-03-26 03:00:37,077 - WARNING - \u26a0\ufe0f Attempt 2 - Connection error (Bank server not ready?)
+2026-03-26 03:00:37,773 - WARNING - \u26a0\ufe0f Attempt 1 - Connection error (Bank server not ready?)
+2026-03-26 03:00:40,101 - WARNING - \u26a0\ufe0f Attempt 3 - Connection error (Bank server not ready?)
+2026-03-26 03:00:40,101 - ERROR - \u274c Failed to send high amount alert after 3 attempts
+2026-03-26 03:00:40,106 - INFO - Search: Amount=55666678889, Location=, Results=0
+2026-03-26 03:00:40,108 - INFO - 192.168.1.19 - - [26/Mar/2026 03:00:40] "POST / HTTP/1.1" 200 -
+2026-03-26 03:00:40,805 - WARNING - \u26a0\ufe0f Attempt 2 - Connection error (Bank server not ready?)
+2026-03-26 03:00:42,154 - WARNING - \u26a0\ufe0f Attempt 1 - Connection error (Bank server not ready?)
+2026-03-26 03:00:43,835 - WARNING - \u26a0\ufe0f Attempt 3 - Connection error (Bank server not ready?)
+2026-03-26 03:00:43,836 - ERROR - \u274c Failed to send high amount alert after 3 attempts
+2026-03-26 03:00:43,840 - INFO - Search: Amount=55666678889, Location=, Results=0
+2026-03-26 03:00:43,841 - INFO - 192.168.1.19 - - [26/Mar/2026 03:00:43] "POST / HTTP/1.1" 200 -
+2026-03-26 03:00:45,204 - WARNING - \u26a0\ufe0f Attempt 2 - Connection error (Bank server not ready?)
+2026-03-26 03:00:45,870 - WARNING - \u26a0\ufe0f Attempt 1 - Connection error (Bank server not ready?)
+2026-03-26 03:00:48,225 - WARNING - \u26a0\ufe0f Attempt 3 - Connection error (Bank server not ready?)
+2026-03-26 03:00:48,226 - ERROR - \u274c Failed to send high amount alert after 3 attempts
+2026-03-26 03:00:48,903 - WARNING - \u26a0\ufe0f Attempt 2 - Connection error (Bank server not ready?)
+2026-03-26 03:00:51,933 - WARNING - \u26a0\ufe0f Attempt 3 - Connection error (Bank server not ready?)
+2026-03-26 03:00:51,934 - ERROR - \u274c Failed to send high amount alert after 3 attempts
+2026-03-26 03:00:53,940 - INFO - 192.168.1.19 - - [26/Mar/2026 03:00:53] "GET / HTTP/1.1" 200 -
+2026-03-26 03:01:04,012 - INFO - 192.168.1.19 - - [26/Mar/2026 03:01:04] "GET / HTTP/1.1" 200 -
+2026-03-26 03:01:14,102 - INFO - 192.168.1.19 - - [26/Mar/2026 03:01:14] "GET / HTTP/1.1" 200 -
+2026-03-26 03:01:24,179 - INFO - 192.168.1.19 - - [26/Mar/2026 03:01:24] "GET / HTTP/1.1" 200 -
+2026-03-26 03:01:34,276 - INFO - 192.168.1.19 - - [26/Mar/2026 03:01:34] "GET / HTTP/1.1" 200 -
+2026-03-26 03:01:40,674 - INFO -  * Detected change in 'C:\\Users\\acer\\Documents\\GitHub\\atm-monitoring-system\\bank_server.py', reloading
+2026-03-26 03:01:40,799 - INFO -  * Restarting with stat
+2026-03-26 03:01:41,652 - INFO - User Server Started
+2026-03-26 03:01:41,656 - INFO - User Server Running on 192.168.1.19:5001
+2026-03-26 03:01:41,689 - WARNING -  * Debugger is active!
+2026-03-26 03:01:41,692 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 10:28:35,047 - INFO - User Server Started
+2026-03-26 10:28:35,051 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-26 10:28:35,110 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-26 10:28:35,111 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 10:28:35,112 - INFO -  * Restarting with stat
+2026-03-26 10:28:35,880 - INFO - User Server Started
+2026-03-26 10:28:35,883 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-26 10:28:35,911 - WARNING -  * Debugger is active!
+2026-03-26 10:28:35,914 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 10:28:41,692 - INFO - 192.168.1.156 - - [26/Mar/2026 10:28:41] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 10:28:41,722 - INFO - 192.168.1.156 - - [26/Mar/2026 10:28:41] "GET /login HTTP/1.1" 200 -
+2026-03-26 10:28:41,866 - WARNING - 404 error occurred
+2026-03-26 10:28:41,866 - INFO - 192.168.1.156 - - [26/Mar/2026 10:28:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 10:29:03,905 - INFO - User rizswana logged in successfully
+2026-03-26 10:29:03,906 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 10:29:03,931 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:03] "GET / HTTP/1.1" 200 -
+2026-03-26 10:29:08,256 - INFO - Search: Amount=700, Location=, Results=5
+2026-03-26 10:29:08,257 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:08] "POST / HTTP/1.1" 200 -
+2026-03-26 10:29:18,948 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b970005400
+2026-03-26 10:29:18,971 - INFO - Search: Amount=70005400, Location=, Results=0
+2026-03-26 10:29:18,973 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:18] "POST / HTTP/1.1" 200 -
+2026-03-26 10:29:29,059 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:29] "GET / HTTP/1.1" 200 -
+2026-03-26 10:29:39,137 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:39] "GET / HTTP/1.1" 200 -
+2026-03-26 10:29:49,207 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:49] "GET / HTTP/1.1" 200 -
+2026-03-26 10:29:59,281 - INFO - 192.168.1.156 - - [26/Mar/2026 10:29:59] "GET / HTTP/1.1" 200 -
+2026-03-26 10:30:11,066 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b960000660
+2026-03-26 10:30:11,068 - INFO - Search: Amount=60000660, Location=, Results=0
+2026-03-26 10:30:11,069 - INFO - 192.168.1.156 - - [26/Mar/2026 10:30:11] "POST / HTTP/1.1" 200 -
+2026-03-26 10:30:21,167 - INFO - 192.168.1.156 - - [26/Mar/2026 10:30:21] "GET / HTTP/1.1" 200 -
+2026-03-26 10:30:31,240 - INFO - 192.168.1.156 - - [26/Mar/2026 10:30:31] "GET / HTTP/1.1" 200 -
+2026-03-26 10:30:41,293 - INFO - 192.168.1.156 - - [26/Mar/2026 10:30:41] "GET / HTTP/1.1" 200 -
+2026-03-26 10:30:51,355 - INFO - 192.168.1.156 - - [26/Mar/2026 10:30:51] "GET / HTTP/1.1" 200 -
+2026-03-26 10:31:01,417 - INFO - 192.168.1.156 - - [26/Mar/2026 10:31:01] "GET / HTTP/1.1" 200 -
+2026-03-26 11:52:03,807 - INFO - User Server Started
+2026-03-26 11:52:03,810 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-26 11:52:03,867 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-26 11:52:03,867 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 11:52:03,869 - INFO -  * Restarting with stat
+2026-03-26 11:52:04,839 - INFO - User Server Started
+2026-03-26 11:52:04,843 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-26 11:52:04,887 - WARNING -  * Debugger is active!
+2026-03-26 11:52:04,891 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 11:52:27,620 - INFO - 192.168.1.156 - - [26/Mar/2026 11:52:27] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 11:52:27,647 - INFO - 192.168.1.156 - - [26/Mar/2026 11:52:27] "GET /login HTTP/1.1" 200 -
+2026-03-26 11:52:27,801 - WARNING - 404 error occurred
+2026-03-26 11:52:27,802 - INFO - 192.168.1.156 - - [26/Mar/2026 11:52:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 11:52:53,125 - INFO - User rizswana logged in successfully
+2026-03-26 11:52:53,126 - INFO - 192.168.1.156 - - [26/Mar/2026 11:52:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 11:52:53,160 - INFO - 192.168.1.156 - - [26/Mar/2026 11:52:53] "GET / HTTP/1.1" 200 -
+2026-03-26 11:52:56,342 - INFO - Search: Amount=600, Location=, Results=5
+2026-03-26 11:52:56,344 - INFO - 192.168.1.156 - - [26/Mar/2026 11:52:56] "POST / HTTP/1.1" 200 -
+2026-03-26 11:53:06,464 - INFO - 192.168.1.156 - - [26/Mar/2026 11:53:06] "GET / HTTP/1.1" 200 -
+2026-03-26 11:53:18,111 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b9558589595
+2026-03-26 11:53:18,115 - INFO - Search: Amount=558589595, Location=, Results=0
+2026-03-26 11:53:18,116 - INFO - 192.168.1.156 - - [26/Mar/2026 11:53:18] "POST / HTTP/1.1" 200 -
+2026-03-26 11:53:28,212 - INFO - 192.168.1.156 - - [26/Mar/2026 11:53:28] "GET / HTTP/1.1" 200 -
+2026-03-26 11:53:38,295 - INFO - 192.168.1.156 - - [26/Mar/2026 11:53:38] "GET / HTTP/1.1" 200 -
+2026-03-26 11:53:48,377 - INFO - 192.168.1.156 - - [26/Mar/2026 11:53:48] "GET / HTTP/1.1" 200 -
+2026-03-26 11:54:01,971 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b98765544323
+2026-03-26 11:54:01,974 - INFO - Search: Amount=8765544323, Location=BUS STAND, Results=0
+2026-03-26 11:54:01,976 - INFO - 192.168.1.156 - - [26/Mar/2026 11:54:01] "POST / HTTP/1.1" 200 -
+2026-03-26 11:54:12,055 - INFO - 192.168.1.156 - - [26/Mar/2026 11:54:12] "GET / HTTP/1.1" 200 -
+2026-03-26 11:54:22,115 - INFO - 192.168.1.156 - - [26/Mar/2026 11:54:22] "GET / HTTP/1.1" 200 -
+2026-03-26 11:54:33,159 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b98787766767
+2026-03-26 11:54:33,161 - INFO - Search: Amount=8787766767, Location=, Results=0
+2026-03-26 11:54:33,164 - INFO - 192.168.1.156 - - [26/Mar/2026 11:54:33] "POST / HTTP/1.1" 200 -
+2026-03-26 11:54:43,251 - INFO - 192.168.1.156 - - [26/Mar/2026 11:54:43] "GET / HTTP/1.1" 200 -
+2026-03-26 11:54:56,419 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b96000000
+2026-03-26 11:54:56,425 - INFO - Search: Amount=6000000, Location=, Results=0
+2026-03-26 11:54:56,426 - INFO - 192.168.1.156 - - [26/Mar/2026 11:54:56] "POST / HTTP/1.1" 200 -
+2026-03-26 11:55:06,525 - INFO - 192.168.1.156 - - [26/Mar/2026 11:55:06] "GET / HTTP/1.1" 200 -
+2026-03-26 11:55:16,597 - INFO - 192.168.1.156 - - [26/Mar/2026 11:55:16] "GET / HTTP/1.1" 200 -
+2026-03-26 11:55:26,659 - INFO - 192.168.1.156 - - [26/Mar/2026 11:55:26] "GET / HTTP/1.1" 200 -
+2026-03-26 11:55:36,735 - INFO - 192.168.1.156 - - [26/Mar/2026 11:55:36] "GET / HTTP/1.1" 200 -
+2026-03-26 11:55:46,805 - INFO - 192.168.1.156 - - [26/Mar/2026 11:55:46] "GET / HTTP/1.1" 200 -
+2026-03-26 11:55:56,872 - INFO - 192.168.1.156 - - [26/Mar/2026 11:55:56] "GET / HTTP/1.1" 200 -
+2026-03-26 11:56:06,950 - INFO - 192.168.1.156 - - [26/Mar/2026 11:56:06] "GET / HTTP/1.1" 200 -
+2026-03-26 11:56:17,029 - INFO - 192.168.1.156 - - [26/Mar/2026 11:56:17] "GET / HTTP/1.1" 200 -
+2026-03-26 11:56:27,113 - INFO - 192.168.1.156 - - [26/Mar/2026 11:56:27] "GET / HTTP/1.1" 200 -
+2026-03-26 11:56:37,177 - INFO - 192.168.1.156 - - [26/Mar/2026 11:56:37] "GET / HTTP/1.1" 200 -
+2026-03-26 11:56:47,266 - INFO - 192.168.1.156 - - [26/Mar/2026 11:56:47] "GET / HTTP/1.1" 200 -
+2026-03-26 11:56:57,344 - INFO - 192.168.1.156 - - [26/Mar/2026 11:56:57] "GET / HTTP/1.1" 200 -
+2026-03-26 11:57:07,409 - INFO - 192.168.1.156 - - [26/Mar/2026 11:57:07] "GET / HTTP/1.1" 200 -
+2026-03-26 11:57:17,474 - INFO - 192.168.1.156 - - [26/Mar/2026 11:57:17] "GET / HTTP/1.1" 200 -
+2026-03-26 11:57:27,562 - INFO - 192.168.1.156 - - [26/Mar/2026 11:57:27] "GET / HTTP/1.1" 200 -
+2026-03-26 11:57:37,634 - INFO - 192.168.1.156 - - [26/Mar/2026 11:57:37] "GET / HTTP/1.1" 200 -
+2026-03-26 11:57:47,703 - INFO - 192.168.1.156 - - [26/Mar/2026 11:57:47] "GET / HTTP/1.1" 200 -
+2026-03-26 11:57:57,777 - INFO - 192.168.1.156 - - [26/Mar/2026 11:57:57] "GET / HTTP/1.1" 200 -
+2026-03-26 11:58:07,865 - INFO - 192.168.1.156 - - [26/Mar/2026 11:58:07] "GET / HTTP/1.1" 200 -
+2026-03-26 11:58:17,932 - INFO - 192.168.1.156 - - [26/Mar/2026 11:58:17] "GET / HTTP/1.1" 200 -
+2026-03-26 11:58:28,029 - INFO - 192.168.1.156 - - [26/Mar/2026 11:58:28] "GET / HTTP/1.1" 200 -
+2026-03-26 11:58:38,105 - INFO - 192.168.1.156 - - [26/Mar/2026 11:58:38] "GET / HTTP/1.1" 200 -
+2026-03-26 11:58:48,202 - INFO - 192.168.1.156 - - [26/Mar/2026 11:58:48] "GET / HTTP/1.1" 200 -
+2026-03-26 11:58:58,289 - INFO - 192.168.1.156 - - [26/Mar/2026 11:58:58] "GET / HTTP/1.1" 200 -
+2026-03-26 11:59:08,371 - INFO - 192.168.1.156 - - [26/Mar/2026 11:59:08] "GET / HTTP/1.1" 200 -
+2026-03-26 11:59:18,452 - INFO - 192.168.1.156 - - [26/Mar/2026 11:59:18] "GET / HTTP/1.1" 200 -
+2026-03-26 11:59:28,538 - INFO - 192.168.1.156 - - [26/Mar/2026 11:59:28] "GET / HTTP/1.1" 200 -
+2026-03-26 11:59:38,610 - INFO - 192.168.1.156 - - [26/Mar/2026 11:59:38] "GET / HTTP/1.1" 200 -
+2026-03-26 11:59:48,732 - INFO - 192.168.1.156 - - [26/Mar/2026 11:59:48] "GET / HTTP/1.1" 200 -
+2026-03-26 11:59:58,815 - INFO - 192.168.1.156 - - [26/Mar/2026 11:59:58] "GET / HTTP/1.1" 200 -
+2026-03-26 12:00:08,893 - INFO - 192.168.1.156 - - [26/Mar/2026 12:00:08] "GET / HTTP/1.1" 200 -
+2026-03-26 12:00:18,983 - INFO - 192.168.1.156 - - [26/Mar/2026 12:00:18] "GET / HTTP/1.1" 200 -
+2026-03-26 12:00:29,054 - INFO - 192.168.1.156 - - [26/Mar/2026 12:00:29] "GET / HTTP/1.1" 200 -
+2026-03-26 12:00:39,138 - INFO - 192.168.1.156 - - [26/Mar/2026 12:00:39] "GET / HTTP/1.1" 200 -
+2026-03-26 12:00:49,218 - INFO - 192.168.1.156 - - [26/Mar/2026 12:00:49] "GET / HTTP/1.1" 200 -
+2026-03-26 12:00:59,287 - INFO - 192.168.1.156 - - [26/Mar/2026 12:00:59] "GET / HTTP/1.1" 200 -
+2026-03-26 12:01:09,366 - INFO - 192.168.1.156 - - [26/Mar/2026 12:01:09] "GET / HTTP/1.1" 200 -
+2026-03-26 12:01:19,452 - INFO - 192.168.1.156 - - [26/Mar/2026 12:01:19] "GET / HTTP/1.1" 200 -
+2026-03-26 12:01:29,510 - INFO - 192.168.1.156 - - [26/Mar/2026 12:01:29] "GET / HTTP/1.1" 200 -
+2026-03-26 12:01:39,593 - INFO - 192.168.1.156 - - [26/Mar/2026 12:01:39] "GET / HTTP/1.1" 200 -
+2026-03-26 12:01:49,671 - INFO - 192.168.1.156 - - [26/Mar/2026 12:01:49] "GET / HTTP/1.1" 200 -
+2026-03-26 12:01:59,735 - INFO - 192.168.1.156 - - [26/Mar/2026 12:01:59] "GET / HTTP/1.1" 200 -
+2026-03-26 12:02:09,790 - INFO - 192.168.1.156 - - [26/Mar/2026 12:02:09] "GET / HTTP/1.1" 200 -
+2026-03-26 12:02:19,832 - INFO - 192.168.1.156 - - [26/Mar/2026 12:02:19] "GET / HTTP/1.1" 200 -
+2026-03-26 12:02:29,897 - INFO - 192.168.1.156 - - [26/Mar/2026 12:02:29] "GET / HTTP/1.1" 200 -
+2026-03-26 12:02:39,965 - INFO - 192.168.1.156 - - [26/Mar/2026 12:02:39] "GET / HTTP/1.1" 200 -
+2026-03-26 12:02:50,018 - INFO - 192.168.1.156 - - [26/Mar/2026 12:02:50] "GET / HTTP/1.1" 200 -
+2026-03-26 12:03:00,136 - INFO - 192.168.1.156 - - [26/Mar/2026 12:03:00] "GET / HTTP/1.1" 200 -
+2026-03-26 12:03:10,211 - INFO - 192.168.1.156 - - [26/Mar/2026 12:03:10] "GET / HTTP/1.1" 200 -
+2026-03-26 12:03:20,260 - INFO - 192.168.1.156 - - [26/Mar/2026 12:03:20] "GET / HTTP/1.1" 200 -
+2026-03-26 13:28:41,696 - INFO - User Server Started
+2026-03-26 13:28:41,700 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-26 13:28:41,752 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.156:5001
+2026-03-26 13:28:41,752 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 13:28:41,754 - INFO -  * Restarting with stat
+2026-03-26 13:28:42,539 - INFO - User Server Started
+2026-03-26 13:28:42,543 - INFO - User Server Running on 192.168.1.156:5001
+2026-03-26 13:28:42,574 - WARNING -  * Debugger is active!
+2026-03-26 13:28:42,579 - INFO -  * Debugger PIN: 470-879-029
+2026-03-26 13:29:15,488 - INFO - 192.168.1.156 - - [26/Mar/2026 13:29:15] "[32mGET / HTTP/1.1[0m" 302 -
+2026-03-26 13:29:15,538 - INFO - 192.168.1.156 - - [26/Mar/2026 13:29:15] "GET /login HTTP/1.1" 200 -
+2026-03-26 13:29:36,125 - INFO - User rizswana logged in successfully
+2026-03-26 13:29:36,126 - INFO - 192.168.1.156 - - [26/Mar/2026 13:29:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 13:29:36,286 - INFO - 192.168.1.156 - - [26/Mar/2026 13:29:36] "GET / HTTP/1.1" 200 -
+2026-03-26 13:29:39,928 - INFO - Search: Amount=600, Location=, Results=5
+2026-03-26 13:29:39,929 - INFO - 192.168.1.156 - - [26/Mar/2026 13:29:39] "POST / HTTP/1.1" 200 -
+2026-03-26 13:29:50,024 - INFO - 192.168.1.156 - - [26/Mar/2026 13:29:50] "GET / HTTP/1.1" 200 -
+2026-03-26 13:30:02,861 - INFO - \u2705 High amount alert sent for rizswana - Amount: \u20b959987647648
+2026-03-26 13:30:02,874 - INFO - Search: Amount=59987647648, Location=, Results=0
+2026-03-26 13:30:02,876 - INFO - 192.168.1.156 - - [26/Mar/2026 13:30:02] "POST / HTTP/1.1" 200 -
+2026-03-26 13:30:12,953 - INFO - 192.168.1.156 - - [26/Mar/2026 13:30:12] "GET / HTTP/1.1" 200 -
+2026-03-26 13:30:23,033 - INFO - 192.168.1.156 - - [26/Mar/2026 13:30:23] "GET / HTTP/1.1" 200 -
